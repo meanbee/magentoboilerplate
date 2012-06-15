@@ -2,6 +2,7 @@
     <default>
         <reference name="head">
             <action method="addItem"><type>skin_css</type><name>css/fonts.css</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/html5shiv.js</name></action>
         </reference>
 
         <remove name="right.permanent.callout" />
