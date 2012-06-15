@@ -1,0 +1,11 @@
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addItem"><type>skin_css</type><name>css/fonts.css</name></action>
+        </reference>
+
+        <remove name="right.permanent.callout" />
+		<remove name="left.permanent.callout" />
+		<remove name="paypal.partner.right.logo" />
+    </default>
+</layout>
