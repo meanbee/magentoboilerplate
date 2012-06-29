@@ -1,7 +1,12 @@
 <layout>
     <default>
         <reference name="head">
+        	<action method="removeItem"><type>skin_css</type><name>css/widgets.css</name></action>
+        	<action method="removeItem"><type>skin_css</type><name>css/styles.css</name></action>
+        	<action method="addItem"><type>skin_css</type><name>css/reset.css</name></action>
             <action method="addItem"><type>skin_css</type><name>css/fonts.css</name></action>
+            <action method="addItem"><type>skin_css</type><name>css/styles.css</name></action>
+            <action method="addItem"><type>skin_css</type><name>css/widgets.css</name></action>
             <action method="addItem"><type>skin_js</type><name>js/html5shiv.js</name></action>
             <action method="addItem"><type>skin_js</type><name>js/selectivizr-min.js</name></action>
             <action method="addItem"><type>skin_js</type><name>js/prototype.formalize.min.js</name></action>
