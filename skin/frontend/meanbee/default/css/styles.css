@@ -1,0 +1,9 @@
+/********** Generic usability/accessibility styles **********/
+label, a, button, select, input[type="submit"] { 
+	cursor: pointer;
+}
+abbr{ cursor: help; }
+textarea{ resize: vertical; }
+/*::selection,::-moz-selection {  }*/
+
+html{ overflow-y: scroll; }
