@@ -11,4 +11,19 @@
 		<remove name="left.permanent.callout" />
 		<remove name="paypal.partner.right.logo" />
     </default>
+
+    <contacts_index_index>
+		<reference name="head">
+		    <action method="setTitle"><title>Contact Us</title></action>
+		</reference>
+		<reference name="breadcrumbs">
+            <action method="addCrumb">
+                <crumbName>cms_page</crumbName>
+                <crumbInfo>
+                    <label>Contact Us</label>
+                    <title>Contact Us</title>
+                </crumbInfo>
+            </action>
+        </reference>
+    </contacts_index_index>
 </layout>
