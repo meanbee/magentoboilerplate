@@ -15,6 +15,7 @@
         <remove name="right.permanent.callout" />
 		<remove name="left.permanent.callout" />
 		<remove name="paypal.partner.right.logo" />
+        <remove name="right.poll" />
     </default>
 
     <contacts_index_index>

@@ -93,7 +93,139 @@ ol {
 #nav, 
 #nav ul, 
 header[role="banner"] ul,
-footer[role="contentinfo"] ul {
+footer[role="contentinfo"] ul,
+.messages,
+.breadcrumbs ul {
     list-style-type: none;
     margin-left: 0;
 }
+
+/* Layout ================================================================================ */
+.wrapper { min-width: 954px; }
+.page {}
+.page-print { background: #fff; padding: 25px 30px; text-align: left; }
+.page-empty { background: #fff; padding: 20px; text-align: left; }
+.page-popup { background: #fff; padding: 25px 30px; text-align: left; }
+.main-container {}
+.main { margin: 0 auto; min-height: 400px; padding: 25px 25px 80px; text-align: left; width: 900px; }
+
+/* Base Columns */
+.col-left { float: left; padding: 0 0 1px; width: 195px; }
+.col-main { float: left; padding: 0 0 1px; width: 685px; }
+.col-right { float: right; padding: 0 0 1px; width: 195px; }
+
+/* 1 Column Layout */
+.col1-layout .col-main { float: none; width: auto; }
+
+/* 2 Columns Layout */
+.col2-left-layout .col-main { float: right; }
+.col2-right-layout .col-main {}
+
+/* 3 Columns Layout */
+.col3-layout {
+    .col-main { margin-left: 17px; width: 475px; }
+    .col-wrapper { float: left; width: 687px;
+        .col-main { float: right; }
+    }
+}
+
+/* Content Columns */
+.col2-set {
+    .col-1 { float: left; width: 48.5%; }
+    .col-2 { float: right; width: 48.5%; }
+    .col-narrow { width: 32%; }
+    .col-wide { width: 65%; }
+}
+
+.col3-set {
+    .col-1 { float: left; width: 32%; }
+    .col-2 { float: left; margin-left: 2%; width: 32%; }
+    .col-3 { float: right; width: 32%; }
+}
+
+.col4-set {
+    .col-1 { float: left; width: 23.5%; }
+    .col-2 { float: left; margin: 0 2%; width: 23.5%; }
+    .col-3 { float: left; width: 23.5%; }
+    .col-4 { float: right; width: 23.5%; }
+}
+
+
+/* Global Messages  */
+.success { color: #3d6611; font-weight: bold; }
+.error { color: #df280a; font-weight: bold; }
+.notice { color: #e26703; }
+
+.messages { 
+    overflow: hidden;
+    width: 100%;
+    ul { list-style: none !important; margin: 0 !important; padding: 0 !important; }
+    li { margin: 0 0 10px !important; }
+    li li { margin: 0 0 3px !important; }
+}
+.error-msg,
+.success-msg,
+.note-msg,
+.notice-msg { background-position: 10px 9px !important; background-repeat: no-repeat !important; min-height: 24px !important; padding: 8px 8px 8px 32px !important; font-size: 1em !important; font-weight: bold !important; }
+.error-msg { background-color: #D94239; color: #ffffff; }
+.success-msg { background-color: #98B95A; color: #ffffff; }
+.note-msg,
+.notice-msg { background-color: #F3F7AC; color: #363636; }
+
+
+/* Clears ================================================================================ */
+.clearer:after,
+.header-container:after,
+.header-container .top-container:after,
+.header:after,
+.header .quick-access:after,
+#nav:after,
+.main:after,
+.footer:after,
+.footer-container .bottom-container:after,
+.col-main:after,
+.col2-set:after,
+.col3-set:after,
+.col3-layout .product-options-bottom .price-box:after,
+.col4-set:after,
+.search-autocomplete li:after,
+.block .block-content:after,
+.block .actions:after,
+.block li.item:after,
+.block-poll li:after,
+.block-layered-nav .currently li:after,
+.page-title:after,
+.products-grid:after,
+.products-list li.item:after,
+.box-account .box-head:after,
+.dashboard .box .box-title:after,
+.box-reviews li.item:after,
+.box-tags li.item:after,
+.pager:after,
+.sorter:after,
+.ratings:after,
+.add-to-box:after,
+.add-to-cart:after,
+.product-essential:after,
+.product-collateral:after,
+.product-view .product-img-box .more-views ul:after,
+.product-view .box-tags .form-add:after,
+.product-view .product-shop .short-description:after,
+.product-view .box-description:after,
+.product-options .options-list li:after,
+.product-options-bottom:after,
+.product-review:after,
+.cart:after,
+.cart-collaterals:after,
+.cart .crosssell li.item:after,
+.opc .step-title:after,
+.checkout-progress:after,
+.multiple-checkout .place-order:after,
+.group-select li:after,
+.form-list li:after,
+.form-list .field:after,
+.buttons-set:after,
+.page-print .print-head:after,
+.advanced-search-summary:after,
+.gift-messages-form .item:after,
+.send-friend .form-list li p:after { display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
