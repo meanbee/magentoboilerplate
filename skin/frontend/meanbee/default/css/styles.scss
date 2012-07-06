@@ -1,3 +1,7 @@
+@import "functions";
+$font-start: 12;
+$font-base: setBase($font-start);
+
 /********** Generic usability/accessibility styles **********/
 label, a, button, select, input[type="submit"] { 
 	cursor: pointer;
@@ -5,11 +9,91 @@ label, a, button, select, input[type="submit"] {
 abbr {
     cursor: help; 
 }
-textarea{
+textarea {
     resize: vertical; 
 }
 /*::selection,::-moz-selection {  }*/
 
-html{ 
-    overflow-y: scroll; 
+html { 
+    background: white;
+    color: black;
+    font: #{$font-base}em/1.5 Arial, Helvetica, sans-serif; /* Set base font size here = 12px */
+    overflow-y: scroll;
+}
+
+a { color: blue;
+    text-decoration: underline;
+    &:hover { text-decoration: none; }
+}
+
+/* Headings */
+h1,h2,h3,
+h4,h5,h6      { color: #0a263c; font-weight: bold; line-height: 1.35; margin: 0 0 5px; }
+h1            { font-size: em(32); font-weight:normal; } /* = 32px */
+h2            { font-size: em(26); font-weight:normal; } /* = 26px */
+h3            { font-size: em(22); } /* = 22px */
+h4            { font-size: em(18); } /* = 18px */
+h5            { font-size: em(16); } /* = 16px */
+h6            { font-size: em(14); } /* = 14px */
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+/* Forms */
+form          { display: inline; }
+fieldset      { border: 0; }
+
+/* Table */
+table         { border: 0; empty-cells: show; font-size:100%; }
+caption,th,td { vertical-align: top; text-align: left; font-weight: normal; }
+
+/* Tools */
+.hidden       { display: block !important; border: 0 !important; margin: 0 !important; padding: 0 !important; font-size: 0 !important; line-height: 0 !important; width: 0 !important; height: 0 !important; overflow: hidden !important; }
+.nobr         { white-space: nowrap !important; }
+.wrap         { white-space: normal !important; }
+.a-left       { text-align: left !important; }
+.a-center     { text-align: center !important; }
+.a-right      { text-align: right !important; }
+.v-top        { vertical-align: top; }
+.v-middle     { vertical-align: middle; }
+.f-left,
+.left         { float: left !important; }
+.f-right,
+.right        { float: right !important; }
+.f-none       { float: none !important; }
+.f-fix        { float: left; width: 100%; }
+.no-display   { display: none; }
+.no-margin    { margin: 0 !important; }
+.no-padding   { padding: 0 !important; }
+.no-bg        { background: none !important; }
+
+/* Content */
+p             { margin: 0 0 10px; }
+strong        { font-weight: bold; }
+address       { font-style: normal; line-height: 1.35; }
+cite          { font-style: normal; }
+q,
+blockquote    { quotes: none; }
+q:before,
+q:after       { content: ''; }
+small,big     { font-size: 1em; }
+
+/* Remove list styling from certain blocks on site but leave generally */
+ul,ol {
+    margin-left: 30px;
+}
+ul {
+    list-style-type: disc;
+}
+ol {
+    list-style-type: decimal;
+}
+#nav, 
+#nav ul, 
+header[role="banner"] ul,
+footer[role="contentinfo"] ul {
+    list-style-type: none;
+    margin-left: 0;
 }

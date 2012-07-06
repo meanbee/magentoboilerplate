@@ -1,0 +1,7 @@
+@function setBase($pixels) {
+    @return $pixels / 16
+}
+
+@function em($pixels, $context: $font-start) {
+    @return #{ 1 / $context * $pixels }em
+}
