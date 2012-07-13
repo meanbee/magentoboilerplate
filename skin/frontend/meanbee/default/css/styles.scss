@@ -539,6 +539,51 @@ tr {
     overflow: hidden; 
 }
 
+/* Notices =============================================================== */
+/* Global site notices */
+.global-site-notice { 
+    background: #ffff90; 
+    border: 1px solid #cfcfcf; 
+    border-width: 0 0 1px; 
+    color: #2f2f2f;
+    font-size: 12px; 
+    line-height: 1.25; 
+    text-align: center; 
+
+    .notice-inner { 
+        background: url(../images/i_notice.gif) no-repeat 20px 25px; 
+        margin: 0 auto; 
+        padding: 12px 0 12px 80px; 
+        text-align: left;
+        width: 860px; 
+
+        p { border: 1px dotted #cccc73; margin: 0; padding: 10px; }
+        .actions { padding-top: 10px; }
+    }
+}
+
+/* Cookie Notice */
+.notice-cookie { }
+
+/* Noscript Notice */
+.noscript {}
+
+/* Demo Notice */
+.demo-notice { 
+    background: #d75f07; 
+    border: 0; 
+    color: #fff;
+    font-size: 12px; 
+    line-height: 1.15; 
+    margin: 0; 
+    padding: 6px 10px; 
+    text-align: center; 
+
+    .notice-inner { background: none; padding: 0; text-align: center; width: auto;
+        p { border: 0; padding: 0; }
+    }
+}
+
 /* Global Messages =============================================================== */
 .success { color: #3d6611; font-weight: bold; }
 .error { color: #df280a; font-weight: bold; }
