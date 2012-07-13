@@ -605,6 +605,58 @@ tr {
 .note-msg,
 .notice-msg { background-color: #F3F7AC; color: #363636; }
 
+/* Header ================================================================================ */
+.logo { float: left; }
+.header-container { 
+    background: url(../images/bkg_header.jpg) repeat 50% 0;
+    border-top: 5px solid #0d2131; 
+    border-bottom: 1px solid #415966;
+
+    .top-container { clear: both; padding: 5px 10px 0 12px; text-align: right;
+        a { color: #ebbc58; font-size: 11px; }
+    }
+}
+.header { 
+    margin: 0 auto; padding: 10px; position: relative; text-align: right; width: 930px; z-index: 10;
+
+    .logo { float: left; margin: 3px 0 10px 12px; text-decoration: none !important;
+        strong { 
+            font-size: 0; height: 0; left: -999em; line-height: 0; overflow: hidden; position: absolute; text-indent: -999em; top: -999em; width: 0; 
+        }
+    }
+    h1.logo { margin: 0; }
+    .quick-access { float: right; padding: 28px 10px 0 0; width: 600px; }
+    .welcome-msg { color: #fff; margin: 0; text-align: right;
+        a { color: #ebbc58; }
+    }
+    .form-search { background: url(../images/bkg_form-search.gif) no-repeat 0 0; height: 30px; padding: 1px 0 0 16px; position: absolute; right: 29px; top: 0; width: 315px;
+        label { float: left; height: 21px; overflow: hidden; text-align: left; text-indent: -999em; width: 24px; }
+        input.input-text { border-color: #5c7989; float: left; margin-right: 4px; width: 209px; }
+
+        button.button { float:left;
+            span { background: url(../images/btn_search.gif) no-repeat 0 0; border: 0; font: bold 11px/21px Tahoma, Verdana, Arial, sans-serif; height: 21px; padding: 0 0 0 3px;
+                span { background-position: 100% 0; padding: 0 6px 0 3px; }
+            }
+        }
+
+        .search-autocomplete { left: 40px !important; top: 22px !important; z-index: 999; 
+            ul { background-color: #f9f5f0; border: 1px solid #5c7989; }
+            li { border-bottom: 1px solid #f4eee7; cursor: pointer; padding: 2px 8px 1px 8px; text-align: left; }
+            li .amount { float: right; font-weight: bold; }
+            li.odd { background-color: #fffefb; }
+            li.selected { background-color: #f7e8dd; }
+        }
+    }
+    .form-language { clear: both; padding: 5px 0 0; text-align: right;
+        label { color: #a7c6dd; font-weight: bold; padding-right: 5px; vertical-align: middle; }
+        select { padding: 0; }
+        select.flags option { background-position: 4px 50%; background-repeat: no-repeat; padding-left: 25px; }
+    }
+    .links { float: right; margin: 0 0 6px; 
+        li { float: left; font-size: 11px; background: url(../images/bkg_pipe1.gif) no-repeat 100% 60%; padding: 0 8px 0 7px; }
+        a { color: #ebbc58; }
+    }
+}
 
 /* Clears ======================================================================== */
 .clearer:after,
