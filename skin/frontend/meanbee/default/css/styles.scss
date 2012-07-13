@@ -165,7 +165,7 @@ button.button { background: transparent; border: 0; cursor: pointer; margin: 0; 
 }
 button.disabled span { background: #bbb !important; border-color: #bbb !important; }
 
-button.btn-checkout span { border: 0; background: url(../images/btn_checkout.gif) 0 0 no-repeat; color: #fff; font: bold 15px/40px Arial, Helvetica, sans-serif; height: 40px; padding: 0 0 0 9px;
+button.btn-checkout span { border: 0; background: url(../images/btn_checkout.gif) no-repeat 0 0; color: #fff; font: bold 15px/40px Arial, Helvetica, sans-serif; height: 40px; padding: 0 0 0 9px;
     span { background-position: 100% 0; padding: 0 25px 0 16px; }
 }
 button.btn-checkout.no-checkout span { background-position: 0 100%; color: #b8baba;
@@ -302,7 +302,7 @@ input.input-text:focus,select:focus,textarea:focus { background-color: #edf7fd; 
 .fieldset .legend { background: #f9f3e3; border: 1px solid #f19900; color: #e76200; float: left; font-weight: bold; font-size: 13px; margin: -33px 0 0 -10px; padding: 0 8px; position: relative; }
 
 /* Form Validation */
-.validation-advice { background: url(../images/validation_advice_bg.gif) 2px 0 no-repeat; color: #eb340a; clear: both; font-size: 11px; font-weight: bold; line-height: 13px; margin: 3px 0 0; min-height: 13px; padding-left: 17px; }
+.validation-advice { background: url(../images/validation_advice_bg.gif) no-repeat 2px 0; color: #eb340a; clear: both; font-size: 11px; font-weight: bold; line-height: 13px; margin: 3px 0 0; min-height: 13px; padding-left: 17px; }
 .validation-failed { background: #faebe7 !important; border: 1px dashed #eb340a !important; }
 .validation-passed {}
 p.required { color: #EB340A; font-size: 11px; text-align: right; }
@@ -333,6 +333,81 @@ p.required { color: #EB340A; font-size: 11px; text-align: right; }
 
 .subtitle,
 .sub-title { clear: both; color: #e25203; font-size: 15px; font-weight: bold; margin: 0 0 6px; padding: 15px 0 0; }
+
+
+/* Pager ========================================================================= */
+.pager { background: #fff url(../images/bkg_toolbar.gif) repeat-x 0 100%; border-top: 1px solid #e2e2e2; font-size: 11px; padding: 4px 8px; text-align: center;
+    .amount { float: left; margin: 0; }
+    .limiter { float: right;
+        label { vertical-align: middle; }
+        select { margin: 0 0 1px; padding: 0; vertical-align: middle; }
+    }
+    .pages { margin: 0 140px;
+        ol { display: inline; }
+        li { display: inline; margin: 0 2px; }
+        .current {}
+    }
+}
+
+/* Sorter ======================================================================== */
+.sorter { background: #fff url(../images/bkg_toolbar.gif) repeat-x 0 100%; border-top: 1px solid #e2e2e2; font-size: 11px; padding: 3px 8px;
+    .view-mode { float: left; margin: 0; }
+    .sort-by { float: right; padding-right: 36px;
+        label { vertical-align: middle; }
+        select { margin: 0 0 1px; padding: 0; vertical-align: middle; }
+    }
+    .link-feed {}
+}
+
+/* Toolbar ======================================================================= */
+.toolbar {
+    .pager { border-bottom: 1px solid #fff; padding: 3px 8px; }
+    .sorter { border-bottom: 1px solid #fff; }
+}
+.toolbar-bottom {}
+
+/* Data Tables =================================================================== */
+.data-table { border: 1px solid #bebcb7; width: 100%;
+    .odd  { background: #f8f7f5 }
+    .even { background: #eeeded; }
+    tr.even:hover { background: #ebf1f6; }
+    td.last,
+    th.last { border-right: 0; }
+    tr.last th,
+    tr.last td { border-bottom: 0 !important; }
+    th { font-weight: bold; padding: 3px 8px; }
+    td { padding: 3px 8px; }
+
+    thead {
+        th { border-right: 1px solid #c2d3e0; color: #0a263c; font-weight: bold; padding: 2px 8px; vertical-align: middle; white-space: nowrap; }
+        th.wrap { white-space: normal; }
+        th a,
+        th a:hover { color: #fff; }
+        th { background: #d9e5ee url(../images/bkg_th.gif) repeat-x 0 100%; }
+        th .tax-flag { font-size: 11px; white-space: nowrap; }
+    }
+
+    tfoot { border-bottom: 1px solid #d9dde3;
+        tr.first td { background: url(../images/bkg_tfoot.gif) repeat-x 0 0; }
+        tr { background-color: #dee5e8 !important; }
+        td { border-bottom: 0; border-right: 1px solid #d9dde3; padding-top: 1px; padding-bottom: 1px; }
+        strong { font-size: 16px; }
+    }
+
+    tbody {
+        th,
+        td { border-bottom: 1px solid #d9dde3; border-right: 1px solid #d9dde3; }
+        /* Bundle products tables */
+        &.odd tr { background: #f8f7f5 !important; }
+        &.even tr { background: #f6f6f6 !important; }
+        &.odd tr td,
+        &.even tr td { border-bottom: 0; }
+        &.odd tr.border td,
+        &.even tr.border td { border-bottom: 1px solid #d9dde3; }
+
+        td .option-label { font-style: italic; font-weight: bold; }
+        td .option-value { padding-left: 10px; }
+    }
 
 /* Global Messages =============================================================== */
 .success { color: #3d6611; font-weight: bold; }
