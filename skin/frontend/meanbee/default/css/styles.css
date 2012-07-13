@@ -2642,6 +2642,88 @@ tr.summary-details-excluded {
     width: 609px; }
 
 /* ======================================================================================= */
+/* Content Styles ================================================================= */
+.product-name {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0; }
+  .product-name a {
+    color: #1e7ec8; }
+
+/* Product Tags */
+.tags-list {
+  background: #f8f7f5;
+  border: 1px solid #c1c4bc;
+  display: block;
+  font-size: 13px;
+  padding: 10px; }
+  .tags-list li {
+    display: inline !important;
+    margin: 0 4px 0 0; }
+    .tags-list li a {
+      color: #1b2d3b; }
+
+/* Advanced Search */
+.advanced-search .form-list label {
+  padding-right: 10px;
+  width: 160px; }
+.advanced-search .form-list .input-box, .advanced-search .form-list .input-range {
+  clear: none;
+  float: left; }
+
+.advanced-search-amount {
+  margin: 0 0 10px; }
+
+.advanced-search-summary {
+  background: #fff6f1;
+  border: 1px solid #e9d7c9;
+  margin: 10px 0;
+  padding: 10px; }
+  .advanced-search-summary ul {
+    float: left;
+    width: 49%; }
+  .advanced-search-summary strong {
+    background: url(../images/i_search_criteria.gif) no-repeat 0 3px;
+    color: #E17C24;
+    padding-left: 15px; }
+  .advanced-search-summary p {
+    clear: both;
+    font-weight: bold;
+    margin: 0; }
+
+/* CMS Home Page */
+/* Sitemap */
+.page-sitemap .links {
+  margin: 0 8px -22px 0;
+  text-align: right; }
+.page-sitemap .links a {
+  position: relative;
+  text-decoration: none; }
+.page-sitemap .links a:hover {
+  text-decoration: underline; }
+.page-sitemap .sitemap {
+  margin: 12px; }
+.page-sitemap .sitemap a {
+  color: #1b2d3b; }
+.page-sitemap .sitemap li {
+  margin: 3px 0; }
+.page-sitemap .sitemap li.level-0 {
+  font-weight: bold;
+  margin: 10px 0 0; }
+.page-sitemap .sitemap li.level-0 a {
+  color: #1e7ec8; }
+
+/* RSS */
+.rss-title h1 {
+  background: url(../images/i_rss-big.png) no-repeat 0 4px;
+  padding-left: 27px; }
+
+.rss-table .link-rss {
+  background-position: 0 4px;
+  display: block;
+  line-height: 1.55; }
+
+/* ======================================================================================= */
 /* MAP Popup====================================================================== */
 .cart-msrp-totals {
   color: red;

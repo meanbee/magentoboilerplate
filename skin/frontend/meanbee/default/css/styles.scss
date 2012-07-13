@@ -1442,6 +1442,52 @@ tr {
 }
 /* ======================================================================================= */
 
+/* Content Styles ================================================================= */
+.product-name { font-size: 1em; font-weight: normal; margin: 0; 
+    a { color: #1e7ec8; }
+}
+
+/* Product Tags */
+.tags-list { background: #f8f7f5; border: 1px solid #c1c4bc; display: block; font-size: 13px; padding: 10px;
+    li { display: inline !important; margin: 0 4px 0 0;
+        a { color: #1b2d3b; }
+    }
+}
+
+/* Advanced Search */
+.advanced-search .form-list {
+    label { padding-right: 10px; width: 160px; }
+    .input-box, .input-range { clear: none; float: left; }
+}
+.advanced-search-amount { margin: 0 0 10px; }
+.advanced-search-summary { background: #fff6f1; border: 1px solid #e9d7c9; margin: 10px 0; padding: 10px;
+    ul { float: left; width: 49%; }
+    strong { background: url(../images/i_search_criteria.gif) no-repeat 0 3px; color: #E17C24; padding-left: 15px; }
+    p { clear: both; font-weight: bold; margin: 0; }
+}
+
+/* CMS Home Page */
+.cms-home .subtitle {}
+.cms-index-index .subtitle {}
+
+/* Sitemap */
+.page-sitemap {
+    .links { margin: 0 8px -22px 0; text-align: right; }
+    .links a { position: relative; text-decoration: none; }
+    .links a:hover { text-decoration: underline; }
+
+    .sitemap { margin: 12px; }
+    .sitemap a { color: #1b2d3b; }
+    .sitemap li { margin: 3px 0; }
+    .sitemap li.level-0 { font-weight: bold; margin: 10px 0 0;}
+    .sitemap li.level-0 a { color: #1e7ec8; }
+}
+
+/* RSS */
+.rss-title h1 { background: url(../images/i_rss-big.png) no-repeat 0 4px; padding-left: 27px; }
+.rss-table .link-rss { background-position: 0 4px; display: block; line-height: 1.55; }
+/* ======================================================================================= */
+
 /* MAP Popup====================================================================== */
 .cart-msrp-totals { color:red; font-size:12px !important; font-weight:bold; margin:10px 10px 0; padding:10px; text-align:right; text-transform:uppercase;}
 .map-cart-sidebar-total { color:red; display:block; font-size:10px; font-weight:bold; text-align:left; padding:2px 5px; text-shadow:0 1px 0 #fff; }
