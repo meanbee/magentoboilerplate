@@ -1158,6 +1158,59 @@ tr.summary-details-excluded {
     .header .links a {
       color: #ebbc58; }
 
+/* Footer ====================================================================== */
+.footer-container {
+  border-top: 15px solid #b6d1e2; }
+  .footer-container .bottom-container {
+    margin: 0 0 5px; }
+
+.footer {
+  margin: 0 auto;
+  padding: 10px 10px 50px;
+  width: 930px; }
+  .footer .store-switcher {
+    color: #fff;
+    display: inline;
+    margin: 0 5px 0 0; }
+    .footer .store-switcher label {
+      font-weight: bold;
+      vertical-align: middle; }
+    .footer .store-switcher select {
+      padding: 0;
+      vertical-align: middle; }
+  .footer a {
+    color: #fff;
+    text-decoration: none; }
+    .footer a:hover {
+      text-decoration: underline; }
+  .footer .bugs {
+    color: #ecf3f6;
+    margin: 13px 0 0; }
+    .footer .bugs a {
+      color: #ecf3f6;
+      text-decoration: underline; }
+      .footer .bugs a:hover {
+        text-decoration: none; }
+  .footer address {
+    color: #ecf3f6;
+    margin: 0 0 20px; }
+    .footer address a {
+      color: #ecf3f6;
+      text-decoration: underline; }
+      .footer address a:hover {
+        text-decoration: none; }
+  .footer ul {
+    display: inline; }
+  .footer ul.links {
+    display: block; }
+  .footer li {
+    background: url(../images/bkg_pipe2.gif) 100% 60% no-repeat;
+    display: inline;
+    padding: 0 7px 0 4px; }
+  .footer li.last {
+    background: none !important;
+    padding-right: 0 !important; }
+
 /* Navigation ================================================================== */
 .nav-container {
   background: #0a263d url(../images/bkg_nav0.jpg) repeat-y 50% 0; }
