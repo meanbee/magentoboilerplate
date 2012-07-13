@@ -1,3 +1,4 @@
+/* Generic usability/accessibility styles ======================================== */
 /********** Generic usability/accessibility styles **********/
 label, a, button, select, input[type="submit"] {
   cursor: pointer; }
@@ -22,7 +23,7 @@ a {
   a:hover {
     text-decoration: none; }
 
-/* Headings */
+/* Headings ===================================================================== */
 h1, h2, h3,
 h4, h5, h6 {
   color: #0a263c;
@@ -60,14 +61,7 @@ img {
   border: 0;
   vertical-align: top; }
 
-/* Forms */
-form {
-  display: inline; }
-
-fieldset {
-  border: 0; }
-
-/* Table */
+/* Table ======================================================================== */
 table {
   border: 0;
   empty-cells: show;
@@ -78,7 +72,7 @@ caption, th, td {
   text-align: left;
   font-weight: normal; }
 
-/* Tools */
+/* Tools ======================================================================== */
 .hidden {
   display: block !important;
   border: 0 !important;
@@ -138,7 +132,7 @@ caption, th, td {
 .no-bg {
   background: none !important; }
 
-/* Content */
+/* Content ====================================================================== */
 p {
   margin: 0 0 10px; }
 
@@ -163,26 +157,18 @@ q:after {
 small, big {
   font-size: 1em; }
 
-/* Remove list styling from certain blocks on site but leave generally */
-ul, ol {
+/* Remove list styling from site but leave for cms pages */
+ul, ol, dt {
+  list-style: none; }
+
+.cms-page-view .main-container .std ul, .cms-page-view .main-container .std ol {
   margin-left: 30px; }
-
-ul {
+.cms-page-view .main-container .std ul {
   list-style-type: disc; }
-
-ol {
+.cms-page-view .main-container .std ol {
   list-style-type: decimal; }
 
-#nav,
-#nav ul,
-header[role="banner"] ul,
-footer[role="contentinfo"] ul,
-.messages,
-.breadcrumbs ul {
-  list-style-type: none;
-  margin-left: 0; }
-
-/* Layout ================================================================================ */
+/* Layout ======================================================================== */
 .wrapper {
   min-width: 954px; }
 
@@ -280,7 +266,329 @@ footer[role="contentinfo"] ul,
   float: right;
   width: 23.5%; }
 
-/* Global Messages  */
+/* Global Styles ================================================================ */
+/* Forms ======================================================================== */
+form {
+  display: inline; }
+
+fieldset {
+  border: 0; }
+
+input, select, textarea, button {
+  color: #2f2f2f;
+  font: 12px/15px Arial, Helvetica, sans-serif;
+  vertical-align: middle; }
+
+input.input-text, select, textarea {
+  background: #fff;
+  border: 1px solid #b6b6b6; }
+
+input.input-text, textarea {
+  padding: 2px; }
+
+select {
+  padding: 1px; }
+  select option {
+    padding-right: 10px; }
+
+select.multiselect option {
+  border-bottom: 1px solid #b6b6b6;
+  padding: 2px 5px; }
+  select.multiselect option:last-child {
+    border-bottom: 0; }
+
+textarea {
+  overflow: auto; }
+
+input.radio {
+  margin-right: 3px; }
+
+input.checkbox {
+  margin-right: 3px; }
+
+input.qty {
+  width: 2.5em !important; }
+
+button.button::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* FF Fix */
+button.button {
+  -webkit-border-fit: lines; }
+
+/* <- Safari & Google Chrome Fix */
+button.button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  width: auto; }
+  button.button span {
+    background: #f18200;
+    border: 1px solid #de5400;
+    color: #fff;
+    display: block;
+    font: bold 12px/19px Arial, Helvetica, sans-serif;
+    height: 19px;
+    padding: 0 8px;
+    text-align: center;
+    white-space: nowrap; }
+  button.button span span {
+    border: 0;
+    padding: 0; }
+
+button.disabled span {
+  background: #bbb !important;
+  border-color: #bbb !important; }
+
+button.btn-checkout span {
+  border: 0;
+  background: url(../images/btn_checkout.gif) 0 0 no-repeat;
+  color: #fff;
+  font: bold 15px/40px Arial, Helvetica, sans-serif;
+  height: 40px;
+  padding: 0 0 0 9px; }
+  button.btn-checkout span span {
+    background-position: 100% 0;
+    padding: 0 25px 0 16px; }
+
+button.btn-checkout.no-checkout span {
+  background-position: 0 100%;
+  color: #b8baba; }
+  button.btn-checkout.no-checkout span span {
+    background-position: 100% 100%; }
+
+p.control input.checkbox,
+p.control input.radio {
+  margin-right: 6px; }
+
+/* Form Highlight */
+input.input-text:focus, select:focus, textarea:focus {
+  background-color: #edf7fd; }
+
+/* Form lists */
+/* Grouped fields */
+.form-list li {
+  margin: 0 0 8px; }
+  .form-list li label {
+    color: #666;
+    float: left;
+    font-weight: bold;
+    position: relative;
+    z-index: 0; }
+    .form-list li label.required em {
+      float: right;
+      font-style: normal;
+      color: #eb340a;
+      position: absolute;
+      right: -8px;
+      top: 0; }
+  .form-list li.control label {
+    float: none; }
+  .form-list li.control input.radio,
+  .form-list li.control input.checkbox {
+    margin-right: 6px; }
+  .form-list li.control .input-box {
+    clear: none;
+    display: inline;
+    width: auto; }
+.form-list .input-box {
+  clear: both;
+  display: block;
+  width: 260px; }
+.form-list .field {
+  float: left;
+  width: 275px; }
+.form-list input.input-text {
+  width: 254px; }
+.form-list textarea {
+  height: 10em;
+  width: 254px; }
+.form-list select {
+  width: 260px; }
+.form-list li.wide .input-box {
+  width: 535px; }
+.form-list li.wide input.input-text {
+  width: 529px; }
+.form-list li.wide textarea {
+  width: 529px; }
+.form-list li.wide select {
+  width: 535px; }
+.form-list li.additional-row {
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  padding-top: 7px; }
+  .form-list li.additional-row .btn-remove {
+    float: right;
+    margin: 5px 0 0; }
+.form-list .input-range input.input-text {
+  width: 74px; }
+
+.form-list-narrow li {
+  margin-bottom: 0; }
+  .form-list-narrow li .input-box {
+    margin-bottom: 6px; }
+.form-list-narrow li.wide .input-box {
+  width: 260px; }
+.form-list-narrow li.wide input.input-text,
+.form-list-narrow li.wide textarea {
+  width: 254px; }
+.form-list-narrow li.wide select {
+  width: 260px; }
+
+/* Customer */
+.form-list .customer-name-prefix .input-box,
+.form-list .customer-name-suffix .input-box,
+.form-list .customer-name-prefix-suffix .input-box,
+.form-list .customer-name-prefix-middlename .input-box,
+.form-list .customer-name-middlename-suffix .input-box,
+.form-list .customer-name-prefix-middlename-suffix .input-box {
+  width: auto; }
+.form-list .name-prefix {
+  width: 65px; }
+  .form-list .name-prefix select {
+    width: 55px; }
+  .form-list .name-prefix input.input-text {
+    width: 49px; }
+.form-list .name-middlename {
+  width: 70px; }
+  .form-list .name-middlename .name-middlename input.input-text {
+    width: 49px; }
+.form-list .customer-name-prefix-middlename-suffix .name-firstname,
+.form-list .customer-name-prefix-middlename .name-firstname {
+  width: 140px; }
+.form-list .customer-name-prefix-middlename-suffix .name-firstname input.input-text,
+.form-list .customer-name-prefix-middlename .name-firstname input.input-text {
+  width: 124px; }
+.form-list .customer-name-prefix-middlename-suffix .name-lastname {
+  width: 205px; }
+.form-list .customer-name-prefix-middlename-suffix .name-lastname input.input-text {
+  width: 189px; }
+.form-list .customer-name-prefix-suffix .name-firstname {
+  width: 210px; }
+.form-list .customer-name-prefix-suffix .name-lastname {
+  width: 205px; }
+.form-list .customer-name-prefix-suffix .name-firstname input.input-text,
+.form-list .customer-name-prefix-suffix .name-lastname input.input-text {
+  width: 189px; }
+.form-list .customer-name-prefix-suffix .name-firstname {
+  width: 210px; }
+.form-list .customer-name-prefix-suffix .name-lastname {
+  width: 205px; }
+.form-list .customer-name-prefix-suffix .name-firstname input.input-text,
+.form-list .customer-name-prefix-suffix .name-lastname input.input-text {
+  width: 189px; }
+.form-list .customer-name-prefix .name-firstname,
+.form-list .customer-name-middlename .name-firstname {
+  width: 210px; }
+.form-list .customer-name-suffix .name-lastname,
+.form-list .customer-name-middlename .name-firstname,
+.form-list .customer-name-middlename-suffix .name-firstname,
+.form-list .customer-name-middlename-suffix .name-lastname {
+  width: 205px; }
+.form-list .customer-name-prefix .name-firstname input.input-text,
+.form-list .customer-name-suffix .name-lastname input.input-text,
+.form-list .customer-name-middlename .name-firstname input.input-text,
+.form-list .customer-name-middlename-suffix .name-firstname input.input-text,
+.form-list .customer-name-middlename-suffix .name-lastname input.input-text {
+  width: 189px; }
+.form-list .customer-dob .dob-month,
+.form-list .customer-dob .dob-day,
+.form-list .customer-dob .dob-year {
+  float: left;
+  width: 85px; }
+.form-list .customer-dob input.input-text {
+  display: block;
+  width: 74px; }
+.form-list .customer-dob label {
+  color: #888;
+  font-size: 10px;
+  font-weight: normal; }
+.form-list .customer-dob .dob-day,
+.form-list .customer-dob .dob-month {
+  width: 60px; }
+.form-list .customer-dob .dob-day input.input-text,
+.form-list .customer-dob .dob-month input.input-text {
+  width: 46px; }
+.form-list .customer-dob .dob-year {
+  width: 140px; }
+.form-list .customer-dob .dob-year input.input-text {
+  width: 134px; }
+
+/* Button sets */
+.buttons-set {
+  border-top: 1px solid #e4e4e4;
+  clear: both;
+  margin: 4em 0 0;
+  padding: 8px 0 0;
+  text-align: right; }
+  .buttons-set p.required {
+    margin: 0 0 10px; }
+  .buttons-set .back-link {
+    float: left;
+    margin: 0; }
+  .buttons-set button.button {
+    float: right;
+    margin-left: 5px; }
+
+.buttons-set-order {
+  margin: 10px 0 0; }
+
+.buttons-set-order .please-wait {
+  padding: 12px 7px 0 0; }
+
+.fieldset {
+  background: #fbfaf6;
+  border: 1px solid #bbafa0;
+  margin: 28px 0;
+  padding: 22px 25px 12px 33px; }
+
+.fieldset .legend {
+  background: #f9f3e3;
+  border: 1px solid #f19900;
+  color: #e76200;
+  float: left;
+  font-weight: bold;
+  font-size: 13px;
+  margin: -33px 0 0 -10px;
+  padding: 0 8px;
+  position: relative; }
+
+/* Form Validation */
+.validation-advice {
+  background: url(../images/validation_advice_bg.gif) 2px 0 no-repeat;
+  color: #eb340a;
+  clear: both;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+  margin: 3px 0 0;
+  min-height: 13px;
+  padding-left: 17px; }
+
+.validation-failed {
+  background: #faebe7 !important;
+  border: 1px dashed #eb340a !important; }
+
+p.required {
+  color: #EB340A;
+  font-size: 11px;
+  text-align: right; }
+
+/* Expiration date and CVV number validation fix */
+.v-fix {
+  float: left; }
+
+.v-fix .validation-advice {
+  display: block;
+  margin-right: -12em;
+  position: relative;
+  width: 12em; }
+
+/* Global Messages =============================================================== */
 .success {
   color: #3d6611;
   font-weight: bold; }
@@ -328,7 +636,7 @@ footer[role="contentinfo"] ul,
   background-color: #F3F7AC;
   color: #363636; }
 
-/* Clears ================================================================================ */
+/* Clears ======================================================================== */
 .clearer:after,
 .header-container:after,
 .header-container .top-container:after,

@@ -2,6 +2,7 @@
 $font-start: 12;
 $font-base: setBase($font-start);
 
+/* Generic usability/accessibility styles ======================================== */
 /********** Generic usability/accessibility styles **********/
 label, a, button, select, input[type="submit"] { 
 	cursor: pointer;
@@ -26,7 +27,7 @@ a { color: blue;
     &:hover { text-decoration: none; }
 }
 
-/* Headings */
+/* Headings ===================================================================== */
 h1,h2,h3,
 h4,h5,h6      { color: #0a263c; font-weight: bold; line-height: 1.35; margin: 0 0 5px; }
 h1            { font-size: em(32); font-weight:normal; } /* = 32px */
@@ -41,15 +42,11 @@ img {
     vertical-align: top;
 }
 
-/* Forms */
-form          { display: inline; }
-fieldset      { border: 0; }
-
-/* Table */
+/* Table ======================================================================== */
 table         { border: 0; empty-cells: show; font-size:100%; }
 caption,th,td { vertical-align: top; text-align: left; font-weight: normal; }
 
-/* Tools */
+/* Tools ======================================================================== */
 .hidden       { display: block !important; border: 0 !important; margin: 0 !important; padding: 0 !important; font-size: 0 !important; line-height: 0 !important; width: 0 !important; height: 0 !important; overflow: hidden !important; }
 .nobr         { white-space: nowrap !important; }
 .wrap         { white-space: normal !important; }
@@ -69,7 +66,7 @@ caption,th,td { vertical-align: top; text-align: left; font-weight: normal; }
 .no-padding   { padding: 0 !important; }
 .no-bg        { background: none !important; }
 
-/* Content */
+/* Content ====================================================================== */
 p             { margin: 0 0 10px; }
 strong        { font-weight: bold; }
 address       { font-style: normal; line-height: 1.35; }
@@ -80,27 +77,20 @@ q:before,
 q:after       { content: ''; }
 small,big     { font-size: 1em; }
 
-/* Remove list styling from certain blocks on site but leave generally */
-ul,ol {
-    margin-left: 30px;
+/* Remove list styling from site but leave for cms pages */
+ul,ol,dt { list-style: none;}
+.cms-page-view .main-container .std {
+    ul,ol {
+        margin-left: 30px;
+    }
+    ul {
+        list-style-type: disc;
+    }
+    ol {
+        list-style-type: decimal;
+    }
 }
-ul {
-    list-style-type: disc;
-}
-ol {
-    list-style-type: decimal;
-}
-#nav, 
-#nav ul, 
-header[role="banner"] ul,
-footer[role="contentinfo"] ul,
-.messages,
-.breadcrumbs ul {
-    list-style-type: none;
-    margin-left: 0;
-}
-
-/* Layout ================================================================================ */
+/* Layout ======================================================================== */
 .wrapper { min-width: 954px; }
 .page {}
 .page-print { background: #fff; padding: 25px 30px; text-align: left; }
@@ -150,8 +140,177 @@ footer[role="contentinfo"] ul,
     .col-4 { float: right; width: 23.5%; }
 }
 
+/* Global Styles ================================================================ */
+/* Forms ======================================================================== */
+form { display: inline; }
+fieldset { border: 0; }
+input,select,textarea,button { color: #2f2f2f; font: 12px/15px Arial, Helvetica, sans-serif; vertical-align: middle; }
+input.input-text,select,textarea { background: #fff; border: 1px solid #b6b6b6; }
+input.input-text,textarea { padding: 2px; }
+select { padding: 1px; 
+    option { padding-right: 10px; }
+}
+select.multiselect option { border-bottom: 1px solid #b6b6b6; padding: 2px 5px;
+    &:last-child { border-bottom: 0; }
+}
+textarea { overflow: auto; }
+input.radio { margin-right: 3px; }
+input.checkbox { margin-right: 3px; }
+input.qty { width: 2.5em !important; }
+button.button::-moz-focus-inner { border: 0; padding: 0; } /* FF Fix */
+button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
+button.button { background: transparent; border: 0; cursor: pointer; margin: 0; overflow: visible; padding: 0; width: auto; 
+    span { background: #f18200; border: 1px solid #de5400; color: #fff; display: block; font: bold 12px/19px Arial, Helvetica, sans-serif; height: 19px; padding: 0 8px; text-align: center; white-space: nowrap; }
+    span span { border: 0; padding: 0; }
+}
+button.disabled span { background: #bbb !important; border-color: #bbb !important; }
 
-/* Global Messages  */
+button.btn-checkout span { border: 0; background: url(../images/btn_checkout.gif) 0 0 no-repeat; color: #fff; font: bold 15px/40px Arial, Helvetica, sans-serif; height: 40px; padding: 0 0 0 9px;
+    span { background-position: 100% 0; padding: 0 25px 0 16px; }
+}
+button.btn-checkout.no-checkout span { background-position: 0 100%; color: #b8baba;
+    span { background-position: 100% 100%; }
+}
+
+p.control input.checkbox,
+p.control input.radio { margin-right: 6px; }
+/* Form Highlight */
+input.input-text:focus,select:focus,textarea:focus { background-color: #edf7fd; }
+
+/* Form lists */
+/* Grouped fields */
+.form-list { 
+    li { margin: 0 0 8px; 
+        label { color: #666; float: left; font-weight: bold; position: relative; z-index: 0; 
+            &.required {
+                em { float: right; font-style: normal; color: #eb340a; position: absolute; right: -8px; top: 0; }
+            }
+        }
+        &.control {
+            label { float: none; }
+            input.radio,
+            input.checkbox { margin-right: 6px; }
+            .input-box { clear: none; display: inline; width: auto; }
+        }
+    }
+    .input-box { clear: both; display: block; width: 260px; }
+    .field { float: left; width: 275px; }
+    input.input-text { width: 254px; }
+    textarea {height: 10em; width: 254px; }
+    select { width: 260px; }
+    li.wide {
+        .input-box { width: 535px; }
+        input.input-text { width: 529px; }
+        textarea { width: 529px; }
+        select { width: 535px; }
+    }
+    li.additional-row { border-top: 1px solid #ccc; margin-top: 10px; padding-top: 7px;
+        .btn-remove { float: right; margin: 5px 0 0; }
+    }
+    .input-range input.input-text { width: 74px; }
+}
+
+.form-list-narrow {
+    li  { margin-bottom: 0; 
+        .input-box { margin-bottom: 6px; }
+    }
+    li.wide {
+        .input-box { width: 260px; } 
+        input.input-text, 
+        textarea { width: 254px } 
+        select { width: 260px; }
+    }
+}
+
+/* Customer */
+.form-list {
+    .customer-name-prefix .input-box,
+    .customer-name-suffix .input-box,
+    .customer-name-prefix-suffix .input-box,
+    .customer-name-prefix-middlename .input-box,
+    .customer-name-middlename-suffix .input-box,
+    .customer-name-prefix-middlename-suffix .input-box { width: auto; }
+
+    .name-prefix { width: 65px;
+        select { width: 55px; }
+        input.input-text { width: 49px; }
+    }
+
+    .name-middlename { width: 70px;
+        .name-middlename input.input-text { width: 49px; }
+    }
+
+    .customer-name-prefix-middlename-suffix .name-firstname,
+    .customer-name-prefix-middlename .name-firstname { width: 140px; }
+    .customer-name-prefix-middlename-suffix .name-firstname input.input-text,
+    .customer-name-prefix-middlename .name-firstname input.input-text { width: 124px; }
+    .customer-name-prefix-middlename-suffix .name-lastname { width: 205px; }
+    .customer-name-prefix-middlename-suffix .name-lastname input.input-text { width: 189px; }
+
+    .customer-name-prefix-suffix {
+        .name-firstname { width: 210px; }
+        .name-lastname { width: 205px; }
+        .name-firstname input.input-text,
+        .name-lastname input.input-text { width: 189px; }
+
+        .name-firstname { width: 210px; }
+        .name-lastname { width: 205px; }
+        .name-firstname input.input-text,
+        .name-lastname input.input-text { width: 189px; }
+    }
+
+    .customer-name-prefix .name-firstname,
+    .customer-name-middlename .name-firstname { width: 210px; }
+
+    .customer-name-suffix .name-lastname,
+    .customer-name-middlename .name-firstname,
+    .customer-name-middlename-suffix .name-firstname,
+    .customer-name-middlename-suffix .name-lastname { width: 205px; }
+
+    .customer-name-prefix .name-firstname input.input-text,
+    .customer-name-suffix .name-lastname input.input-text,
+    .customer-name-middlename .name-firstname input.input-text,
+    .customer-name-middlename-suffix .name-firstname input.input-text,
+    .customer-name-middlename-suffix .name-lastname input.input-text { width: 189px; }
+
+    .customer-dob {
+        .dob-month,
+        .dob-day,
+        .dob-year { float: left; width: 85px; }
+        input.input-text { display: block; width: 74px; }
+        label { color: #888; font-size: 10px; font-weight: normal; }
+        .dob-day,
+        .dob-month { width: 60px; }
+        .dob-day input.input-text,
+        .dob-month input.input-text { width: 46px; }
+        .dob-year { width: 140px; }
+        .dob-year input.input-text { width: 134px; }
+    }
+}
+
+/* Button sets */
+.buttons-set { border-top: 1px solid #e4e4e4; clear: both; margin: 4em 0 0; padding: 8px 0 0; text-align: right;
+    p.required { margin: 0 0 10px; }
+    .back-link { float: left; margin: 0; }
+    button.button { float: right; margin-left: 5px; }
+}
+
+.buttons-set-order { margin: 10px 0 0; }
+.buttons-set-order .please-wait { padding: 12px 7px 0 0; }
+
+.fieldset { background: #fbfaf6; border: 1px solid #bbafa0; margin: 28px 0; padding: 22px 25px 12px 33px; }
+.fieldset .legend { background: #f9f3e3; border: 1px solid #f19900; color: #e76200; float: left; font-weight: bold; font-size: 13px; margin: -33px 0 0 -10px; padding: 0 8px; position: relative; }
+
+/* Form Validation */
+.validation-advice { background: url(../images/validation_advice_bg.gif) 2px 0 no-repeat; color: #eb340a; clear: both; font-size: 11px; font-weight: bold; line-height: 13px; margin: 3px 0 0; min-height: 13px; padding-left: 17px; }
+.validation-failed { background: #faebe7 !important; border: 1px dashed #eb340a !important; }
+.validation-passed {}
+p.required { color: #EB340A; font-size: 11px; text-align: right; }
+/* Expiration date and CVV number validation fix */
+.v-fix { float: left; }
+.v-fix .validation-advice { display: block; margin-right: -12em; position: relative; width: 12em; }
+
+/* Global Messages =============================================================== */
 .success { color: #3d6611; font-weight: bold; }
 .error { color: #df280a; font-weight: bold; }
 .notice { color: #e26703; }
@@ -173,7 +332,7 @@ footer[role="contentinfo"] ul,
 .notice-msg { background-color: #F3F7AC; color: #363636; }
 
 
-/* Clears ================================================================================ */
+/* Clears ======================================================================== */
 .clearer:after,
 .header-container:after,
 .header-container .top-container:after,
