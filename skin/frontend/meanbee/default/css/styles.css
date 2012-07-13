@@ -847,6 +847,100 @@ tr.summary-details-excluded {
 .std em {
   font-style: italic; }
 
+/* Miscellaneous ================================================================ */
+.links li {
+  display: inline; }
+  .links li.first {
+    padding-left: 0 !important; }
+  .links li.last {
+    background: none !important;
+    padding-right: 0 !important; }
+
+.link-cart {
+  color: #dc6809 !important;
+  font-weight: bold; }
+
+.link-wishlist {
+  color: #dc6809 !important;
+  font-weight: bold; }
+
+.link-reorder {
+  color: #dc6809 !important;
+  font-weight: bold; }
+
+.link-compare {
+  font-weight: bold; }
+
+.link-print {
+  color: #dc6809;
+  font-weight: bold; }
+
+.link-rss {
+  background: url(../images/i_rss.gif) no-repeat 0 2px;
+  line-height: 14px;
+  padding-left: 18px;
+  white-space: nowrap; }
+
+.btn-remove {
+  background: url(../images/btn_remove.gif) no-repeat 0 0;
+  display: block;
+  font-size: 0;
+  height: 11px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 11px; }
+
+.btn-previous {
+  background: url(../images/btn_previous.gif) no-repeat 0 0;
+  display: block;
+  font-size: 0;
+  height: 11px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 11px; }
+
+.btn-remove2 {
+  background: url(../images/btn_trash.gif) no-repeat 0 0;
+  display: block;
+  font-size: 0;
+  height: 16px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 16px; }
+
+.btn-edit {
+  background: url(../images/btn_edit.gif) 0 0 no-repeat;
+  display: block;
+  font-size: 0;
+  height: 11px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 11px; }
+
+.cards-list dt {
+  margin: 5px 0 0; }
+
+.cards-list .offset {
+  padding: 2px 0 2px 20px; }
+
+.separator {
+  margin: 0 3px; }
+
+.divider {
+  background: url(../images/bkg_divider1.gif) repeat-x 0 50%;
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 1px;
+  line-height: 0;
+  margin: 10px 0;
+  text-indent: -999em;
+  overflow: hidden; }
+
 /* Global Messages =============================================================== */
 .success {
   color: #3d6611;
