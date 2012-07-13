@@ -588,6 +588,54 @@ p.required {
   position: relative;
   width: 12em; }
 
+/* Breadcrumbs =================================================================== */
+.breadcrumbs {
+  font-size: 11px;
+  line-height: 1.25;
+  margin: 0 0 13px; }
+
+.breadcrumbs li {
+  display: inline; }
+
+.breadcrumbs li strong {
+  font-weight: bold; }
+
+/* Page Heading ================================================================== */
+.page-title {
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 25px;
+  overflow: hidden;
+  width: 100%; }
+  .page-title h1,
+  .page-title h2 {
+    color: #0a263c;
+    font-size: 20px;
+    margin: 0; }
+  .page-title .separator {
+    margin: 0 3px; }
+  .page-title .link-rss {
+    float: right;
+    margin: 7px 0 0; }
+
+.title-buttons {
+  text-align: right; }
+  .title-buttons h1,
+  .title-buttons h2,
+  .title-buttons h3,
+  .title-buttons h4,
+  .title-buttons h5,
+  .title-buttons h6 {
+    float: left; }
+
+.subtitle,
+.sub-title {
+  clear: both;
+  color: #e25203;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 0 6px;
+  padding: 15px 0 0; }
+
 /* Global Messages =============================================================== */
 .success {
   color: #3d6611;

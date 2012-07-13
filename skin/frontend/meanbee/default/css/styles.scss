@@ -310,6 +310,30 @@ p.required { color: #EB340A; font-size: 11px; text-align: right; }
 .v-fix { float: left; }
 .v-fix .validation-advice { display: block; margin-right: -12em; position: relative; width: 12em; }
 
+/* Breadcrumbs =================================================================== */
+.breadcrumbs { font-size: 11px; line-height: 1.25; margin: 0 0 13px; }
+.breadcrumbs li { display: inline; }
+.breadcrumbs li strong { font-weight: bold; }
+
+/* Page Heading ================================================================== */
+.page-title { border-bottom: 1px solid #ccc; margin: 0 0 25px; overflow: hidden; width: 100%; 
+    h1,
+    h2 { color: #0a263c; font-size: 20px; margin: 0; }
+    .separator { margin: 0 3px; }
+    .link-rss { float: right; margin: 7px 0 0; }
+}
+.title-buttons { text-align: right;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 { float: left; }
+}
+
+.subtitle,
+.sub-title { clear: both; color: #e25203; font-size: 15px; font-weight: bold; margin: 0 0 6px; padding: 15px 0 0; }
+
 /* Global Messages =============================================================== */
 .success { color: #3d6611; font-weight: bold; }
 .error { color: #df280a; font-weight: bold; }
