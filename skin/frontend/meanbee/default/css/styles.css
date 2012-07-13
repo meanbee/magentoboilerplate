@@ -2922,6 +2922,345 @@ tr.summary-details-excluded {
   top: 7px; }
 
 /* ======================================================================================= */
+/* My Account ============================================================================= */
+.my-account .title-buttons .link-rss {
+  float: none;
+  margin: 0; }
+
+/********** < Dashboard */
+.dashboard .welcome-msg {
+  margin: 0 8em 1.5em 0; }
+  .dashboard .welcome-msg p {
+    margin: 0; }
+
+.dashboard .col2-set {
+  margin: 0 0 15px; }
+
+/* General Box */
+.box-account {
+  background: white url(../images/bkg_account_box.gif) repeat-x 0 0;
+  border: 1px solid #ccc;
+  border-color: #ccc #999 #999 #ccc;
+  margin: 0 0 20px;
+  padding: 15px; }
+  .box-account .box-head {
+    border-bottom: 1px solid #d9dde3;
+    margin: 0 0 10px;
+    text-align: right; }
+    .box-account .box-head h2 {
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      color: #e65505;
+      float: left;
+      font-size: 13px;
+      font-weight: bold;
+      margin: 0;
+      padding-left: 21px;
+      text-transform: uppercase; }
+
+.dashboard .box .box-title {
+  background: url(../images/bkg_divider1.gif) repeat-x 0 100%;
+  margin: 0 0 8px;
+  padding: 0 0 2px;
+  text-align: right; }
+  .dashboard .box .box-title h3, .dashboard .box .box-title h4 {
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0; }
+
+/* Block: Recent Orders */
+.dashboard .box-recent .box-head h2 {
+  background-image: url(../images/i_folder-table.gif); }
+
+/* Block: Account Information */
+.dashboard .box-info .box-head h2 {
+  background-image: url(../images/i_ma-info.gif); }
+.dashboard .box-info h4 {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+/* Block: Reviews */
+.dashboard .box-reviews .box-head h2 {
+  background-image: url(../images/i_ma-reviews.gif); }
+.dashboard .box-reviews .number {
+  background: #0a263c;
+  color: #fff;
+  float: left;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 3px -20px 0 0;
+  padding: 2px 3px; }
+.dashboard .box-reviews .details {
+  margin-left: 20px; }
+.dashboard .box-reviews li.item {
+  margin: 0 0 7px; }
+.dashboard .box-reviews li.item.last {
+  margin: 0; }
+.dashboard .box-reviews .ratings {
+  margin: 7px 0 0; }
+
+/* Block: Tags */
+.dashboard .box-tags .box-head h2 {
+  background-image: url(../images/i_ma-tags.gif); }
+.dashboard .box-tags .number {
+  background: #0a263c;
+  color: #fff;
+  float: left;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 3px -20px 0 0;
+  padding: 2px 3px; }
+.dashboard .box-tags .details {
+  margin-left: 20px; }
+.dashboard .box-tags li.item {
+  margin: 0 0 7px; }
+.dashboard .box-tags li.item.last {
+  margin: 0; }
+.dashboard .box-tags .tags strong, .dashboard .box-tags .tags ul, .dashboard .box-tags .tags ul li {
+  display: inline; }
+
+/********** Dashboard > */
+/* Address Book */
+.addresses-list h2 {
+  color: #e26703;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase; }
+.addresses-list h3 {
+  font-size: 13px;
+  font-weight: bold; }
+.addresses-list address {
+  margin: 0 0 3px; }
+.addresses-list p {
+  margin: 0; }
+.addresses-list a {
+  font-weight: bold; }
+.addresses-list .link-remove {
+  color: #646464; }
+.addresses-list .separator {
+  margin: 0 3px; }
+.addresses-list li.item {
+  background: white url(../images/bkg_account_box.gif) repeat-x 0 0;
+  border: 1px solid #ccc;
+  margin: 0 0 10px;
+  padding: 10px 13px; }
+.addresses-list li.empty {
+  background: none;
+  border: 0;
+  padding: 0; }
+.addresses-list li.empty p {
+  font-weight: bold; }
+.addresses-list .addresses-additional li.item {
+  background: none;
+  border: 0;
+  padding: 0; }
+
+/* Order View */
+.order-info {
+  background: #dee5e8;
+  border: 1px solid #d0cbc1;
+  margin: 0 0 8px;
+  padding: 4px 8px; }
+  .order-info dt, .order-info dd, .order-info ul, .order-info li {
+    display: inline; }
+  .order-info .current {
+    font-weight: bold; }
+  .order-info li {
+    margin: 0 3px; }
+
+.order-date {
+  margin: 10px 0; }
+
+.order-info-box {
+  background: white url(../images/bkg_block-title.gif) repeat-x 0 0;
+  border: 1px solid #d0cbc1;
+  margin: 0 0 15px;
+  padding: 12px 15px; }
+  .order-info-box h2 {
+    font-size: 13px;
+    font-weight: bold; }
+  .order-info-box .box-payment p {
+    margin: 0 0 3px; }
+  .order-info-box .box-payment th {
+    font-weight: bold;
+    padding-right: 7px; }
+
+.order-items {
+  overflow-x: auto;
+  width: 100%; }
+  .order-items h2, .order-items h3 {
+    clear: none;
+    color: #0a263c;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 0 5px;
+    padding: 0; }
+  .order-items .product-name {
+    font-size: 1em !important;
+    font-weight: bold !important; }
+  .order-items .link-print {
+    color: #1e7ec8;
+    font-weight: normal; }
+  .order-items .order-links {
+    text-align: right; }
+
+.order-additional {
+  margin: 15px 0; }
+
+/* Order Gift Message */
+.gift-message dt strong {
+  color: #666; }
+.gift-message dd {
+  font-size: 13px;
+  margin: 5px 0 0; }
+
+/* Order Comments */
+.order-about dt {
+  font-weight: bold; }
+.order-about dd {
+  font-size: 13px;
+  margin: 0 0 7px; }
+
+.tracking-table {
+  margin: 0 0 15px; }
+  .tracking-table th {
+    font-weight: bold;
+    white-space: nowrap; }
+
+.tracking-table-popup {
+  width: 100%; }
+  .tracking-table-popup th {
+    font-weight: bold;
+    white-space: nowrap; }
+  .tracking-table-popup th, .tracking-table-popup td {
+    padding: 1px 8px; }
+
+/* Order Print Pages */
+.page-print {
+  /* Price Rewrites */ }
+  .page-print h1 {
+    font-size: 16px;
+    font-weight: bold; }
+  .page-print h2,
+  .page-print h3 {
+    font-size: 13px;
+    font-weight: bold; }
+  .page-print h2.h2 {
+    font-size: 16px;
+    font-weight: bold; }
+  .page-print .order-date {
+    background: url(../images/bkg_divider1.gif) repeat-x 0 100%;
+    margin: 0 0 10px;
+    padding: 0 0 10px; }
+  .page-print .col2-set {
+    margin: 0 0 10px; }
+  .page-print .gift-message-link {
+    display: none; }
+  .page-print .price-excl-tax, .page-print .price-incl-tax {
+    display: block;
+    white-space: nowrap; }
+  .page-print .cart-price, .page-print .price-excl-tax .label, .page-print .price-incl-tax .label, .page-print .price-excl-tax .price, .page-print .price-incl-tax .price {
+    display: inline; }
+  .page-print .print-head {
+    margin: 0 0 15px; }
+    .page-print .print-head .logo {
+      float: left; }
+    .page-print .print-head address {
+      float: left;
+      margin-left: 15px; }
+
+/* My Wishlist */
+.my-wishlist .data-table td {
+  padding: 10px; }
+.my-wishlist .product-image {
+  display: block;
+  height: 113px;
+  margin: 0 0 5px;
+  width: 113px; }
+.my-wishlist textarea {
+  display: block;
+  height: 109px;
+  width: 97%; }
+.my-wishlist .buttons-set {
+  margin-top: 2em; }
+  .my-wishlist .buttons-set button.button {
+    float: none; }
+  .my-wishlist .buttons-set .btn-add span,
+  .my-wishlist .buttons-set .btn-share span {
+    background: #618499;
+    border-color: #406a83; }
+
+#wishlist-table .add-to-links {
+  white-space: nowrap; }
+
+/* My Tags */
+.my-tag-edit {
+  float: left;
+  margin: 0 0 10px; }
+  .my-tag-edit .btn-remove {
+    float: right;
+    margin: 4px 0 0 5px; }
+
+#my-tags-table {
+  clear: both; }
+  #my-tags-table td {
+    padding: 10px; }
+  #my-tags-table .add-to-links {
+    white-space: nowrap; }
+
+/* My Reviews */
+#my-reviews-table td {
+  padding: 10px; }
+
+.product-review h3 {
+  color: #2f2f2f;
+  font-size: 12px;
+  margin: 0 0 3px; }
+.product-review dt {
+  font-weight: bold; }
+.product-review dd {
+  font-size: 13px;
+  margin: 5px 0 0; }
+.product-review .product-details {
+  margin-left: 150px; }
+.product-review .product-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px; }
+.product-review .ratings-table {
+  margin: 0 0 10px; }
+.product-review .product-img-box {
+  float: left;
+  width: 140px; }
+  .product-review .product-img-box .product-image {
+    display: block;
+    height: 125px;
+    width: 125px; }
+  .product-review .product-img-box .label {
+    font-size: 11px;
+    margin: 0 0 3px; }
+  .product-review .product-img-box .ratings .rating-box {
+    display: block;
+    float: none;
+    margin: 0 0 3px; }
+
+/* Billing Agreements */
+.billing-agreements .info-box {
+  margin: 15px 0; }
+.billing-agreements .form-list li select {
+  float: left; }
+.billing-agreements .form-list li button.button {
+  float: left;
+  margin-left: 10px; }
+.billing-agreements .table-caption {
+  font-size: 13px;
+  font-weight: bold; }
+
+/* ======================================================================================= */
 /* MAP Popup====================================================================== */
 .cart-msrp-totals {
   color: red;
