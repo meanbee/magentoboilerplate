@@ -1,40 +1,872 @@
-/*
-Syntax error: Invalid CSS after "...rflow:hidden; }": expected "}", was ""
-        on line 490 of styles.scss
+/* Generic usability/accessibility styles ======================================== */
+/********** Generic usability/accessibility styles **********/
+label, a, button, select, input[type="submit"] {
+  cursor: pointer; }
 
-485: .buttons-set:after,
-486: .page-print .print-head:after,
-487: .advanced-search-summary:after,
-488: .gift-messages-form .item:after,
-489: .send-friend .form-list li p:after { display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
+abbr {
+  cursor: help; }
 
-Backtrace:
-styles.scss:490
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/scss/parser.rb:1010:in `expected'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/scss/parser.rb:956:in `expected'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/scss/parser.rb:951:in `tok!'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/scss/parser.rb:463:in `block'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/scss/parser.rb:456:in `ruleset'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/scss/parser.rb:480:in `block_child'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/scss/parser.rb:473:in `block_contents'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/scss/parser.rb:58:in `stylesheet'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/scss/parser.rb:27:in `parse'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/engine.rb:327:in `_to_tree'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/engine.rb:300:in `_render'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/engine.rb:247:in `render'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:200:in `each'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:298:in `block in watch'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
-/Users/Thundercracker/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.20/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...rflow:hidden; }\": expected \"}\", was \"\"\A         on line 490 of styles.scss\A \A 485: .buttons-set:after,\A 486: .page-print .print-head:after,\A 487: .advanced-search-summary:after,\A 488: .gift-messages-form .item:after,\A 489: .send-friend .form-list li p:after { display:block; content:\".\"; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }"; }
+textarea {
+  resize: vertical; }
+
+/*::selection,::-moz-selection {  }*/
+html {
+  background: white;
+  color: black;
+  font: 0.75em/1.5 Arial, Helvetica, sans-serif;
+  /* Set base font size here = 12px */
+  overflow-y: scroll; }
+
+a {
+  color: blue;
+  text-decoration: underline; }
+  a:hover {
+    text-decoration: none; }
+
+/* Headings ===================================================================== */
+h1, h2, h3,
+h4, h5, h6 {
+  color: #0a263c;
+  font-weight: bold;
+  line-height: 1.35;
+  margin: 0 0 5px; }
+
+h1 {
+  font-size: 2.667em;
+  font-weight: normal; }
+
+/* = 32px */
+h2 {
+  font-size: 2.167em;
+  font-weight: normal; }
+
+/* = 26px */
+h3 {
+  font-size: 1.833em; }
+
+/* = 22px */
+h4 {
+  font-size: 1.5em; }
+
+/* = 18px */
+h5 {
+  font-size: 1.333em; }
+
+/* = 16px */
+h6 {
+  font-size: 1.167em; }
+
+/* = 14px */
+img {
+  border: 0;
+  vertical-align: top; }
+
+/* Table ======================================================================== */
+table {
+  border: 0;
+  empty-cells: show;
+  font-size: 100%; }
+
+caption, th, td {
+  vertical-align: top;
+  text-align: left;
+  font-weight: normal; }
+
+/* Tools ======================================================================== */
+.hidden {
+  display: block !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important; }
+
+.nobr {
+  white-space: nowrap !important; }
+
+.wrap {
+  white-space: normal !important; }
+
+.a-left {
+  text-align: left !important; }
+
+.a-center {
+  text-align: center !important; }
+
+.a-right {
+  text-align: right !important; }
+
+.v-top {
+  vertical-align: top; }
+
+.v-middle {
+  vertical-align: middle; }
+
+.f-left,
+.left {
+  float: left !important; }
+
+.f-right,
+.right {
+  float: right !important; }
+
+.f-none {
+  float: none !important; }
+
+.f-fix {
+  float: left;
+  width: 100%; }
+
+.no-display {
+  display: none; }
+
+.no-margin {
+  margin: 0 !important; }
+
+.no-padding {
+  padding: 0 !important; }
+
+.no-bg {
+  background: none !important; }
+
+/* Content ====================================================================== */
+p {
+  margin: 0 0 10px; }
+
+strong {
+  font-weight: bold; }
+
+address {
+  font-style: normal;
+  line-height: 1.35; }
+
+cite {
+  font-style: normal; }
+
+q,
+blockquote {
+  quotes: none; }
+
+q:before,
+q:after {
+  content: ''; }
+
+small, big {
+  font-size: 1em; }
+
+/* Remove list styling from site but leave for cms pages */
+ul, ol, dt {
+  list-style: none; }
+
+.cms-page-view .main-container .std ul, .cms-page-view .main-container .std ol {
+  margin-left: 30px; }
+.cms-page-view .main-container .std ul {
+  list-style-type: disc; }
+.cms-page-view .main-container .std ol {
+  list-style-type: decimal; }
+
+/* Layout ======================================================================== */
+.wrapper {
+  min-width: 954px; }
+
+.page-print {
+  background: #fff;
+  padding: 25px 30px;
+  text-align: left; }
+
+.page-empty {
+  background: #fff;
+  padding: 20px;
+  text-align: left; }
+
+.page-popup {
+  background: #fff;
+  padding: 25px 30px;
+  text-align: left; }
+
+.main {
+  margin: 0 auto;
+  min-height: 400px;
+  padding: 25px 25px 80px;
+  text-align: left;
+  width: 900px; }
+
+/* Base Columns */
+.col-left {
+  float: left;
+  padding: 0 0 1px;
+  width: 195px; }
+
+.col-main {
+  float: left;
+  padding: 0 0 1px;
+  width: 685px; }
+
+.col-right {
+  float: right;
+  padding: 0 0 1px;
+  width: 195px; }
+
+/* 1 Column Layout */
+.col1-layout .col-main {
+  float: none;
+  width: auto; }
+
+/* 2 Columns Layout */
+.col2-left-layout .col-main {
+  float: right; }
+
+/* 3 Columns Layout */
+.col3-layout .col-main {
+  margin-left: 17px;
+  width: 475px; }
+.col3-layout .col-wrapper {
+  float: left;
+  width: 687px; }
+  .col3-layout .col-wrapper .col-main {
+    float: right; }
+
+/* Content Columns */
+.col2-set .col-1 {
+  float: left;
+  width: 48.5%; }
+.col2-set .col-2 {
+  float: right;
+  width: 48.5%; }
+.col2-set .col-narrow {
+  width: 32%; }
+.col2-set .col-wide {
+  width: 65%; }
+
+.col3-set .col-1 {
+  float: left;
+  width: 32%; }
+.col3-set .col-2 {
+  float: left;
+  margin-left: 2%;
+  width: 32%; }
+.col3-set .col-3 {
+  float: right;
+  width: 32%; }
+
+.col4-set .col-1 {
+  float: left;
+  width: 23.5%; }
+.col4-set .col-2 {
+  float: left;
+  margin: 0 2%;
+  width: 23.5%; }
+.col4-set .col-3 {
+  float: left;
+  width: 23.5%; }
+.col4-set .col-4 {
+  float: right;
+  width: 23.5%; }
+
+/* Global Styles ================================================================ */
+/* Forms ======================================================================== */
+form {
+  display: inline; }
+
+fieldset {
+  border: 0; }
+
+input, select, textarea, button {
+  color: #2f2f2f;
+  font: 12px/15px Arial, Helvetica, sans-serif;
+  vertical-align: middle; }
+
+input.input-text, select, textarea {
+  background: #fff;
+  border: 1px solid #b6b6b6; }
+
+input.input-text, textarea {
+  padding: 2px; }
+
+select {
+  padding: 1px; }
+  select option {
+    padding-right: 10px; }
+
+select.multiselect option {
+  border-bottom: 1px solid #b6b6b6;
+  padding: 2px 5px; }
+  select.multiselect option:last-child {
+    border-bottom: 0; }
+
+textarea {
+  overflow: auto; }
+
+input.radio {
+  margin-right: 3px; }
+
+input.checkbox {
+  margin-right: 3px; }
+
+input.qty {
+  width: 2.5em !important; }
+
+button.button::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* FF Fix */
+button.button {
+  -webkit-border-fit: lines; }
+
+/* <- Safari & Google Chrome Fix */
+button.button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  width: auto; }
+  button.button span {
+    background: #f18200;
+    border: 1px solid #de5400;
+    color: #fff;
+    display: block;
+    font: bold 12px/19px Arial, Helvetica, sans-serif;
+    height: 19px;
+    padding: 0 8px;
+    text-align: center;
+    white-space: nowrap; }
+  button.button span span {
+    border: 0;
+    padding: 0; }
+
+button.disabled span {
+  background: #bbb !important;
+  border-color: #bbb !important; }
+
+button.btn-checkout span {
+  border: 0;
+  background: url(../images/btn_checkout.gif) no-repeat 0 0;
+  color: #fff;
+  font: bold 15px/40px Arial, Helvetica, sans-serif;
+  height: 40px;
+  padding: 0 0 0 9px; }
+  button.btn-checkout span span {
+    background-position: 100% 0;
+    padding: 0 25px 0 16px; }
+
+button.btn-checkout.no-checkout span {
+  background-position: 0 100%;
+  color: #b8baba; }
+  button.btn-checkout.no-checkout span span {
+    background-position: 100% 100%; }
+
+p.control input.checkbox,
+p.control input.radio {
+  margin-right: 6px; }
+
+/* Form Highlight */
+input.input-text:focus, select:focus, textarea:focus {
+  background-color: #edf7fd; }
+
+/* Form lists */
+/* Grouped fields */
+.form-list li {
+  margin: 0 0 8px; }
+  .form-list li label {
+    color: #666;
+    float: left;
+    font-weight: bold;
+    position: relative;
+    z-index: 0; }
+    .form-list li label.required em {
+      float: right;
+      font-style: normal;
+      color: #eb340a;
+      position: absolute;
+      right: -8px;
+      top: 0; }
+  .form-list li.control label {
+    float: none; }
+  .form-list li.control input.radio,
+  .form-list li.control input.checkbox {
+    margin-right: 6px; }
+  .form-list li.control .input-box {
+    clear: none;
+    display: inline;
+    width: auto; }
+.form-list .input-box {
+  clear: both;
+  display: block;
+  width: 260px; }
+.form-list .field {
+  float: left;
+  width: 275px; }
+.form-list input.input-text {
+  width: 254px; }
+.form-list textarea {
+  height: 10em;
+  width: 254px; }
+.form-list select {
+  width: 260px; }
+.form-list li.wide .input-box {
+  width: 535px; }
+.form-list li.wide input.input-text {
+  width: 529px; }
+.form-list li.wide textarea {
+  width: 529px; }
+.form-list li.wide select {
+  width: 535px; }
+.form-list li.additional-row {
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  padding-top: 7px; }
+  .form-list li.additional-row .btn-remove {
+    float: right;
+    margin: 5px 0 0; }
+.form-list .input-range input.input-text {
+  width: 74px; }
+
+.form-list-narrow li {
+  margin-bottom: 0; }
+  .form-list-narrow li .input-box {
+    margin-bottom: 6px; }
+.form-list-narrow li.wide .input-box {
+  width: 260px; }
+.form-list-narrow li.wide input.input-text,
+.form-list-narrow li.wide textarea {
+  width: 254px; }
+.form-list-narrow li.wide select {
+  width: 260px; }
+
+/* Customer */
+.form-list .customer-name-prefix .input-box,
+.form-list .customer-name-suffix .input-box,
+.form-list .customer-name-prefix-suffix .input-box,
+.form-list .customer-name-prefix-middlename .input-box,
+.form-list .customer-name-middlename-suffix .input-box,
+.form-list .customer-name-prefix-middlename-suffix .input-box {
+  width: auto; }
+.form-list .name-prefix {
+  width: 65px; }
+  .form-list .name-prefix select {
+    width: 55px; }
+  .form-list .name-prefix input.input-text {
+    width: 49px; }
+.form-list .name-middlename {
+  width: 70px; }
+  .form-list .name-middlename .name-middlename input.input-text {
+    width: 49px; }
+.form-list .customer-name-prefix-middlename-suffix .name-firstname,
+.form-list .customer-name-prefix-middlename .name-firstname {
+  width: 140px; }
+.form-list .customer-name-prefix-middlename-suffix .name-firstname input.input-text,
+.form-list .customer-name-prefix-middlename .name-firstname input.input-text {
+  width: 124px; }
+.form-list .customer-name-prefix-middlename-suffix .name-lastname {
+  width: 205px; }
+.form-list .customer-name-prefix-middlename-suffix .name-lastname input.input-text {
+  width: 189px; }
+.form-list .customer-name-prefix-suffix .name-firstname {
+  width: 210px; }
+.form-list .customer-name-prefix-suffix .name-lastname {
+  width: 205px; }
+.form-list .customer-name-prefix-suffix .name-firstname input.input-text,
+.form-list .customer-name-prefix-suffix .name-lastname input.input-text {
+  width: 189px; }
+.form-list .customer-name-prefix-suffix .name-firstname {
+  width: 210px; }
+.form-list .customer-name-prefix-suffix .name-lastname {
+  width: 205px; }
+.form-list .customer-name-prefix-suffix .name-firstname input.input-text,
+.form-list .customer-name-prefix-suffix .name-lastname input.input-text {
+  width: 189px; }
+.form-list .customer-name-prefix .name-firstname,
+.form-list .customer-name-middlename .name-firstname {
+  width: 210px; }
+.form-list .customer-name-suffix .name-lastname,
+.form-list .customer-name-middlename .name-firstname,
+.form-list .customer-name-middlename-suffix .name-firstname,
+.form-list .customer-name-middlename-suffix .name-lastname {
+  width: 205px; }
+.form-list .customer-name-prefix .name-firstname input.input-text,
+.form-list .customer-name-suffix .name-lastname input.input-text,
+.form-list .customer-name-middlename .name-firstname input.input-text,
+.form-list .customer-name-middlename-suffix .name-firstname input.input-text,
+.form-list .customer-name-middlename-suffix .name-lastname input.input-text {
+  width: 189px; }
+.form-list .customer-dob .dob-month,
+.form-list .customer-dob .dob-day,
+.form-list .customer-dob .dob-year {
+  float: left;
+  width: 85px; }
+.form-list .customer-dob input.input-text {
+  display: block;
+  width: 74px; }
+.form-list .customer-dob label {
+  color: #888;
+  font-size: 10px;
+  font-weight: normal; }
+.form-list .customer-dob .dob-day,
+.form-list .customer-dob .dob-month {
+  width: 60px; }
+.form-list .customer-dob .dob-day input.input-text,
+.form-list .customer-dob .dob-month input.input-text {
+  width: 46px; }
+.form-list .customer-dob .dob-year {
+  width: 140px; }
+.form-list .customer-dob .dob-year input.input-text {
+  width: 134px; }
+
+/* Button sets */
+.buttons-set {
+  border-top: 1px solid #e4e4e4;
+  clear: both;
+  margin: 4em 0 0;
+  padding: 8px 0 0;
+  text-align: right; }
+  .buttons-set p.required {
+    margin: 0 0 10px; }
+  .buttons-set .back-link {
+    float: left;
+    margin: 0; }
+  .buttons-set button.button {
+    float: right;
+    margin-left: 5px; }
+
+.buttons-set-order {
+  margin: 10px 0 0; }
+
+.buttons-set-order .please-wait {
+  padding: 12px 7px 0 0; }
+
+.fieldset {
+  background: #fbfaf6;
+  border: 1px solid #bbafa0;
+  margin: 28px 0;
+  padding: 22px 25px 12px 33px; }
+
+.fieldset .legend {
+  background: #f9f3e3;
+  border: 1px solid #f19900;
+  color: #e76200;
+  float: left;
+  font-weight: bold;
+  font-size: 13px;
+  margin: -33px 0 0 -10px;
+  padding: 0 8px;
+  position: relative; }
+
+/* Form Validation */
+.validation-advice {
+  background: url(../images/validation_advice_bg.gif) no-repeat 2px 0;
+  color: #eb340a;
+  clear: both;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+  margin: 3px 0 0;
+  min-height: 13px;
+  padding-left: 17px; }
+
+.validation-failed {
+  background: #faebe7 !important;
+  border: 1px dashed #eb340a !important; }
+
+p.required {
+  color: #EB340A;
+  font-size: 11px;
+  text-align: right; }
+
+/* Expiration date and CVV number validation fix */
+.v-fix {
+  float: left; }
+
+.v-fix .validation-advice {
+  display: block;
+  margin-right: -12em;
+  position: relative;
+  width: 12em; }
+
+/* Breadcrumbs =================================================================== */
+.breadcrumbs {
+  font-size: 11px;
+  line-height: 1.25;
+  margin: 0 0 13px; }
+
+.breadcrumbs li {
+  display: inline; }
+
+.breadcrumbs li strong {
+  font-weight: bold; }
+
+/* Page Heading ================================================================== */
+.page-title {
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 25px;
+  overflow: hidden;
+  width: 100%; }
+  .page-title h1,
+  .page-title h2 {
+    color: #0a263c;
+    font-size: 20px;
+    margin: 0; }
+  .page-title .separator {
+    margin: 0 3px; }
+  .page-title .link-rss {
+    float: right;
+    margin: 7px 0 0; }
+
+.title-buttons {
+  text-align: right; }
+  .title-buttons h1,
+  .title-buttons h2,
+  .title-buttons h3,
+  .title-buttons h4,
+  .title-buttons h5,
+  .title-buttons h6 {
+    float: left; }
+
+.subtitle,
+.sub-title {
+  clear: both;
+  color: #e25203;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 0 6px;
+  padding: 15px 0 0; }
+
+/* Pager ========================================================================= */
+.pager {
+  background: white url(../images/bkg_toolbar.gif) repeat-x 0 100%;
+  border-top: 1px solid #e2e2e2;
+  font-size: 11px;
+  padding: 4px 8px;
+  text-align: center; }
+  .pager .amount {
+    float: left;
+    margin: 0; }
+  .pager .limiter {
+    float: right; }
+    .pager .limiter label {
+      vertical-align: middle; }
+    .pager .limiter select {
+      margin: 0 0 1px;
+      padding: 0;
+      vertical-align: middle; }
+  .pager .pages {
+    margin: 0 140px; }
+    .pager .pages ol {
+      display: inline; }
+    .pager .pages li {
+      display: inline;
+      margin: 0 2px; }
+
+/* Sorter ======================================================================== */
+.sorter {
+  background: white url(../images/bkg_toolbar.gif) repeat-x 0 100%;
+  border-top: 1px solid #e2e2e2;
+  font-size: 11px;
+  padding: 3px 8px; }
+  .sorter .view-mode {
+    float: left;
+    margin: 0; }
+  .sorter .sort-by {
+    float: right;
+    padding-right: 36px; }
+    .sorter .sort-by label {
+      vertical-align: middle; }
+    .sorter .sort-by select {
+      margin: 0 0 1px;
+      padding: 0;
+      vertical-align: middle; }
+
+/* Toolbar ======================================================================= */
+.toolbar .pager {
+  border-bottom: 1px solid #fff;
+  padding: 3px 8px; }
+.toolbar .sorter {
+  border-bottom: 1px solid #fff; }
+
+/* Data Tables =================================================================== */
+.data-table {
+  border: 1px solid #bebcb7;
+  width: 100%; }
+  .data-table .odd {
+    background: #f8f7f5; }
+  .data-table .even {
+    background: #eeeded; }
+  .data-table tr.even:hover {
+    background: #ebf1f6; }
+  .data-table td.last,
+  .data-table th.last {
+    border-right: 0; }
+  .data-table tr.last th,
+  .data-table tr.last td {
+    border-bottom: 0 !important; }
+  .data-table th {
+    font-weight: bold;
+    padding: 3px 8px; }
+  .data-table td {
+    padding: 3px 8px; }
+  .data-table thead th {
+    border-right: 1px solid #c2d3e0;
+    color: #0a263c;
+    font-weight: bold;
+    padding: 2px 8px;
+    vertical-align: middle;
+    white-space: nowrap; }
+  .data-table thead th.wrap {
+    white-space: normal; }
+  .data-table thead th a,
+  .data-table thead th a:hover {
+    color: #fff; }
+  .data-table thead th {
+    background: #d9e5ee url(../images/bkg_th.gif) repeat-x 0 100%; }
+  .data-table thead th .tax-flag {
+    font-size: 11px;
+    white-space: nowrap; }
+  .data-table tfoot {
+    border-bottom: 1px solid #d9dde3; }
+    .data-table tfoot tr.first td {
+      background: url(../images/bkg_tfoot.gif) repeat-x 0 0; }
+    .data-table tfoot tr {
+      background-color: #dee5e8 !important; }
+    .data-table tfoot td {
+      border-bottom: 0;
+      border-right: 1px solid #d9dde3;
+      padding-top: 1px;
+      padding-bottom: 1px; }
+    .data-table tfoot strong {
+      font-size: 16px; }
+  .data-table tbody {
+    /* Bundle products tables */ }
+    .data-table tbody th,
+    .data-table tbody td {
+      border-bottom: 1px solid #d9dde3;
+      border-right: 1px solid #d9dde3; }
+    .data-table tbody.odd tr {
+      background: #f8f7f5 !important; }
+    .data-table tbody.even tr {
+      background: #f6f6f6 !important; }
+    .data-table tbody.odd tr td, .data-table tbody.even tr td {
+      border-bottom: 0; }
+    .data-table tbody.odd tr.border td, .data-table tbody.even tr.border td {
+      border-bottom: 1px solid #d9dde3; }
+    .data-table tbody td .option-label {
+      font-style: italic;
+      font-weight: bold; }
+    .data-table tbody td .option-value {
+      padding-left: 10px; }
+
+/* Global Messages =============================================================== */
+.success {
+  color: #3d6611;
+  font-weight: bold; }
+
+.error {
+  color: #df280a;
+  font-weight: bold; }
+
+.notice {
+  color: #e26703; }
+
+.messages {
+  overflow: hidden;
+  width: 100%; }
+  .messages ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important; }
+  .messages li {
+    margin: 0 0 10px !important; }
+  .messages li li {
+    margin: 0 0 3px !important; }
+
+.error-msg,
+.success-msg,
+.note-msg,
+.notice-msg {
+  background-position: 10px 9px !important;
+  background-repeat: no-repeat !important;
+  min-height: 24px !important;
+  padding: 8px 8px 8px 32px !important;
+  font-size: 1em !important;
+  font-weight: bold !important; }
+
+.error-msg {
+  background-color: #D94239;
+  color: #ffffff; }
+
+.success-msg {
+  background-color: #98B95A;
+  color: #ffffff; }
+
+.note-msg,
+.notice-msg {
+  background-color: #F3F7AC;
+  color: #363636; }
+
+/* Clears ======================================================================== */
+.clearer:after,
+.header-container:after,
+.header-container .top-container:after,
+.header:after,
+.header .quick-access:after,
+#nav:after,
+.main:after,
+.footer:after,
+.footer-container .bottom-container:after,
+.col-main:after,
+.col2-set:after,
+.col3-set:after,
+.col3-layout .product-options-bottom .price-box:after,
+.col4-set:after,
+.search-autocomplete li:after,
+.block .block-content:after,
+.block .actions:after,
+.block li.item:after,
+.block-poll li:after,
+.block-layered-nav .currently li:after,
+.page-title:after,
+.products-grid:after,
+.products-list li.item:after,
+.box-account .box-head:after,
+.dashboard .box .box-title:after,
+.box-reviews li.item:after,
+.box-tags li.item:after,
+.pager:after,
+.sorter:after,
+.ratings:after,
+.add-to-box:after,
+.add-to-cart:after,
+.product-essential:after,
+.product-collateral:after,
+.product-view .product-img-box .more-views ul:after,
+.product-view .box-tags .form-add:after,
+.product-view .product-shop .short-description:after,
+.product-view .box-description:after,
+.product-options .options-list li:after,
+.product-options-bottom:after,
+.product-review:after,
+.cart:after,
+.cart-collaterals:after,
+.cart .crosssell li.item:after,
+.opc .step-title:after,
+.checkout-progress:after,
+.multiple-checkout .place-order:after,
+.group-select li:after,
+.form-list li:after,
+.form-list .field:after,
+.buttons-set:after,
+.page-print .print-head:after,
+.advanced-search-summary:after,
+.gift-messages-form .item:after,
+.send-friend .form-list li p:after {
+  display: block;
+  content: ".";
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+  overflow: hidden; }
