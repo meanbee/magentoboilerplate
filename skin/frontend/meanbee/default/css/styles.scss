@@ -410,6 +410,60 @@ p.required { color: #EB340A; font-size: 11px; text-align: right; }
     }
 }
 
+/* Generic Info Box */
+.info-box { background: #fff url(../images/bkg_block-title.gif) repeat-x 0 0; border: 1px solid #d0cbc1; padding: 12px 15px; margin: 0 0 15px;
+    h2 { font-weight: bold; font-size: 13px; }
+}
+
+.info-table {
+    th { font-weight: bold; padding: 2px 15px 2px 0; }
+    td { padding: 2px 0; }
+}
+
+/* Shopping Cart ================================================================= */
+/* Shopping cart total summary row expandable to details */
+tr {
+    .summary-total { cursor:pointer; }
+    &.summary-total td {}
+    &.summary-total .summary-collapse { background: no-repeat url(../images/bkg_collapse.gif) 0 5px; cursor: pointer; float: right; text-align: right; padding-left: 20px; }
+    &.show-details .summary-collapse { background-position: 0 -52px; }
+    &.show-details td {}
+    &.summary-details td {background-color: #dae1e4; color: #626465; font-size: 11px; }
+    &.summary-details-first td { border-top: 1px solid #d2d8db; }
+    &.summary-details-excluded { font-style: italic; }
+}
+
+
+/* User generated content styles ================================================= */
+.std {
+    .subtitle { padding: 0; }
+    ol.ol { list-style: decimal outside; padding-left: 1.5em; }
+    ul.disc { list-style: disc outside; margin: 0 0 10px; padding-left: 18px; }
+    dl dt { font-weight: bold; }
+    dl dd { margin: 0 0 10px; }
+    ul,
+    ol,
+    dl,
+    p,
+    address,
+    blockquote { margin: 0 0 1em; padding: 0; }
+    ul { list-style: disc outside; padding-left: 1.5em; }
+    ol { list-style: decimal outside; padding-left: 1.5em; }
+    ul ul { list-style-type: circle; }
+    ul ul,
+    ol ol,
+    ul ol,
+    ol ul { margin: 0.5em 0; }
+    dt { font-weight: bold; }
+    dd { padding: 0 0 0 1.5em; }
+    blockquote { font-style: italic; padding: 0 0 0 1.5em; }
+    address { font-style: normal; }
+    b,
+    strong { font-weight: bold; }
+    i,
+    em { font-style: italic; }
+}
+
 /* Global Messages =============================================================== */
 .success { color: #3d6611; font-weight: bold; }
 .error { color: #df280a; font-weight: bold; }

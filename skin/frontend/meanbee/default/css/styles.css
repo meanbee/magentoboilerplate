@@ -759,6 +759,94 @@ p.required {
     .data-table tbody td .option-value {
       padding-left: 10px; }
 
+/* Generic Info Box */
+.info-box {
+  background: white url(../images/bkg_block-title.gif) repeat-x 0 0;
+  border: 1px solid #d0cbc1;
+  padding: 12px 15px;
+  margin: 0 0 15px; }
+  .info-box h2 {
+    font-weight: bold;
+    font-size: 13px; }
+
+.info-table th {
+  font-weight: bold;
+  padding: 2px 15px 2px 0; }
+.info-table td {
+  padding: 2px 0; }
+
+/* Shopping Cart ================================================================= */
+/* Shopping cart total summary row expandable to details */
+tr .summary-total {
+  cursor: pointer; }
+tr.summary-total .summary-collapse {
+  background: no-repeat url(../images/bkg_collapse.gif) 0 5px;
+  cursor: pointer;
+  float: right;
+  text-align: right;
+  padding-left: 20px; }
+tr.show-details .summary-collapse {
+  background-position: 0 -52px; }
+tr.summary-details td {
+  background-color: #dae1e4;
+  color: #626465;
+  font-size: 11px; }
+tr.summary-details-first td {
+  border-top: 1px solid #d2d8db; }
+tr.summary-details-excluded {
+  font-style: italic; }
+
+/* User generated content styles ================================================= */
+.std .subtitle {
+  padding: 0; }
+.std ol.ol {
+  list-style: decimal outside;
+  padding-left: 1.5em; }
+.std ul.disc {
+  list-style: disc outside;
+  margin: 0 0 10px;
+  padding-left: 18px; }
+.std dl dt {
+  font-weight: bold; }
+.std dl dd {
+  margin: 0 0 10px; }
+.std ul,
+.std ol,
+.std dl,
+.std p,
+.std address,
+.std blockquote {
+  margin: 0 0 1em;
+  padding: 0; }
+.std ul {
+  list-style: disc outside;
+  padding-left: 1.5em; }
+.std ol {
+  list-style: decimal outside;
+  padding-left: 1.5em; }
+.std ul ul {
+  list-style-type: circle; }
+.std ul ul,
+.std ol ol,
+.std ul ol,
+.std ol ul {
+  margin: 0.5em 0; }
+.std dt {
+  font-weight: bold; }
+.std dd {
+  padding: 0 0 0 1.5em; }
+.std blockquote {
+  font-style: italic;
+  padding: 0 0 0 1.5em; }
+.std address {
+  font-style: normal; }
+.std b,
+.std strong {
+  font-weight: bold; }
+.std i,
+.std em {
+  font-style: italic; }
+
 /* Global Messages =============================================================== */
 .success {
   color: #3d6611;
