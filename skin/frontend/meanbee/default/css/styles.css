@@ -2299,11 +2299,12 @@ tr.summary-details-excluded {
       right: 2px;
       top: 0; }
     .product-view .product-img-box .zoom.disabled {
-      -moz-opacity: .3;
-      -webkit-opacity: .3;
+      -webkit-opacity: 0.3;
+      -khtml-opacity: 0.3;
+      -moz-opacity: 0.3;
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-      /*IE8*/
-      opacity: .3; }
+      filter: "alpha(opacity=30)";
+      opacity: 0.3; }
   .product-view .product-img-box .more-views h2 {
     border-bottom: 1px solid #ccc;
     font-size: 0.917em;

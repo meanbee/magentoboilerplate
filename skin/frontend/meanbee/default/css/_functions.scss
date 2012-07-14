@@ -17,3 +17,12 @@
     -moz-animation: $name $duration $iteration $timing;
     animation: $name $duration $iteration $timing;
 }
+
+@mixin opacity($transparency) {
+    -webkit-opacity: $transparency;
+    -khtml-opacity: $transparency;
+    -moz-opacity: $transparency;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + round($transparency*100) + ")";
+    filter: "alpha(opacity=" + round($transparency*100) + ")";
+    opacity: $transparency;
+}
