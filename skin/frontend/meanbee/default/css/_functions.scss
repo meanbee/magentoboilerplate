@@ -26,3 +26,9 @@
     filter: "alpha(opacity=" + round($transparency*100) + ")";
     opacity: $transparency;
 }
+
+@mixin borderRadius($pixel) {
+    -webkit-border-radius: $pixel;
+    -moz-border-radius: $pixel;
+    border-radius: $pixel;
+}
