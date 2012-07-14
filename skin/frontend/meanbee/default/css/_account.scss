@@ -4,7 +4,7 @@
     .registered-users h2 { background-image: url(../images/i_page2.gif); }
     .buttons-set { border: 1px solid #bbb6a5; border-top: 0; margin: 0; padding: 8px 13px; background: #dee5e8 url(../images/bkg_buttons-set1.gif) repeat-x 0 0; }
     .content { background: #faf7ee url(../images/bkg_login-box.gif) repeat-x 0 0; border: 1px solid #bbb6a5; border-bottom: 0; min-height: 345px; padding: 14px 21px;
-        h2 { border-bottom: 1px solid #ddd; background-position: 0 1px; background-repeat: no-repeat; color: #e76200; font-size: 13px; font-weight: bold; margin: 0 0 14px; padding: 0 0 5px 23px; text-transform: uppercase; }
+        h2 { border-bottom: 1px solid #ddd; background-position: 0 1px; background-repeat: no-repeat; color: #e76200; font-size: em(13); font-weight: bold; margin: 0 0 14px; padding: 0 0 5px 23px; text-transform: uppercase; }
     }
 }
 
@@ -36,12 +36,12 @@
 
 .remember-me label { float: none; margin: 0 6px; }
 .remember-me-popup { background: #fff; border: 1px solid #ccc; -moz-box-shadow: 0 0 6px #ccc; -webkit-box-shadow: 0 0 6px #ccc; -box-shadow: 0 0 6px #ccc; left: 50%; margin: -85px 0 0 -200px; position: absolute; text-align: left; top: 50%; width: 400px; z-index: 1000;
-    h3 { background: #d9e5ee; border-bottom: 1px solid #ccc; font-size: 14px; padding: 5px 10px; }
+    h3 { background: #d9e5ee; border-bottom: 1px solid #ccc; font-size: em(14); padding: 5px 10px; }
     .remember-me-popup-head { position: relative;
         .remember-me-popup-close { background: url(../images/btn_window_close.gif) no-repeat; display: block; height: 15px; position: absolute; right: 7px; text-indent: -9999em; top: 7px; width: 15px; }
     }
     .remember-me-popup-body { padding: 10px;
-        a { background: #f18200; border: 1px solid #de5400; color: #fff; display: inline-block; font: bold 12px/19px Arial, Helvetica, sans-serif; height: 19px; padding: 0 8px; text-align: center; text-decoration: none; white-space: nowrap; }
+        a { background: #f18200; border: 1px solid #de5400; color: #fff; display: inline-block; font: bold em(12)/em(19) Arial, Helvetica, sans-serif; height: 19px; padding: 0 8px; text-align: center; text-decoration: none; white-space: nowrap; }
     }
 }
 /* Remember Me Popup ===================================================================== */
@@ -58,12 +58,12 @@
 /* General Box */
 .box-account { background: #fff url(../images/bkg_account_box.gif) repeat-x 0 0; border: 1px solid #ccc; border-color: #ccc #999 #999 #ccc; margin: 0 0 20px; padding: 15px;
     .box-head { border-bottom: 1px solid #d9dde3; margin: 0 0 10px; text-align: right;
-        h2 { background-position: 0 0; background-repeat: no-repeat; color: #e65505; float: left; font-size: 13px; font-weight: bold; margin: 0; padding-left: 21px; text-transform: uppercase; }
+        h2 { background-position: 0 0; background-repeat: no-repeat; color: #e65505; float: left; font-size: em(13); font-weight: bold; margin: 0; padding-left: 21px; text-transform: uppercase; }
     }
 }
 
 .dashboard .box .box-title { background: url(../images/bkg_divider1.gif) repeat-x 0 100%; margin: 0 0 8px; padding: 0 0 2px; text-align: right;
-    h3, h4 { float: left; font-size: 13px; font-weight: bold; margin: 0; }
+    h3, h4 { float: left; font-size: em(13); font-weight: bold; margin: 0; }
 }
 
 /* Block: Recent Orders */
@@ -72,13 +72,13 @@
 /* Block: Account Information */
 .dashboard .box-info {
     .box-head h2 { background-image: url(../images/i_ma-info.gif); }
-    h4 { font-size: 11px; font-weight: bold; text-transform: uppercase; }
+    h4 { font-size: em(11); font-weight: bold; text-transform: uppercase; }
 }
 
 /* Block: Reviews */
 .dashboard .box-reviews {
     .box-head h2 { background-image: url(../images/i_ma-reviews.gif); }
-    .number { background: #0a263c; color: #fff; float: left; font-size: 10px; font-weight: bold; line-height: 1; margin: 3px -20px 0 0; padding: 2px 3px; }
+    .number { background: #0a263c; color: #fff; float: left; font-size: em(10); font-weight: bold; line-height: 1; margin: 3px -20px 0 0; padding: 2px 3px; }
     .details { margin-left: 20px; }
     li.item { margin: 0 0 7px; }
     li.item.last { margin: 0; }
@@ -88,7 +88,7 @@
 /* Block: Tags */
 .dashboard .box-tags {
     .box-head h2 { background-image: url(../images/i_ma-tags.gif); }
-    .number { background: #0a263c; color: #fff; float: left; font-size: 10px; font-weight: bold; line-height: 1; margin: 3px -20px 0 0; padding: 2px 3px; }
+    .number { background: #0a263c; color: #fff; float: left; font-size: em(10); font-weight: bold; line-height: 1; margin: 3px -20px 0 0; padding: 2px 3px; }
     .details { margin-left: 20px; }
     li.item { margin: 0 0 7px; }
     li.item.last { margin: 0; }
@@ -98,8 +98,8 @@
 
 /* Address Book */
 .addresses-list {
-    h2 { color: #e26703; font-size: 13px; font-weight: bold; text-transform: uppercase; }
-    h3 { font-size: 13px; font-weight: bold; }
+    h2 { color: #e26703; font-size: em(13); font-weight: bold; text-transform: uppercase; }
+    h3 { font-size: em(13); font-weight: bold; }
     address { margin: 0 0 3px; }
     p { margin: 0; }
     a { font-weight: bold; }
@@ -121,7 +121,7 @@
 .order-date { margin: 10px 0; }
 
 .order-info-box { background: #fff url(../images/bkg_block-title.gif) repeat-x 0 0; border: 1px solid #d0cbc1; margin: 0 0 15px; padding: 12px 15px;
-    h2 { font-size: 13px; font-weight: bold; }
+    h2 { font-size: em(13); font-weight: bold; }
     .box-payment {
         p { margin: 0 0 3px; }
         th { font-weight: bold; padding-right: 7px; }
@@ -129,7 +129,7 @@
 }
 
 .order-items { overflow-x: auto; width: 100%;
-    h2, h3 { clear: none; color: #0a263c; font-size: 13px; font-weight: bold; margin: 0 0 5px; padding: 0; }
+    h2, h3 { clear: none; color: #0a263c; font-size: em(13); font-weight: bold; margin: 0 0 5px; padding: 0; }
     .product-name { font-size: 1em !important; font-weight: bold !important; }
     .link-print { color: #1e7ec8; font-weight: normal; }
     .order-links { text-align: right; }
@@ -139,12 +139,12 @@
 /* Order Gift Message */
 .gift-message {
     dt strong { color: #666; }
-    dd { font-size: 13px; margin: 5px 0 0; }
+    dd { font-size: em(13); margin: 5px 0 0; }
 }
 /* Order Comments */
 .order-about {
     dt { font-weight: bold; }
-    dd { font-size: 13px; margin: 0 0 7px; }
+    dd { font-size: em(13); margin: 0 0 7px; }
 }
 
 .tracking-table { margin: 0 0 15px; 
@@ -158,10 +158,10 @@
 
 /* Order Print Pages */
 .page-print {
-    h1 { font-size: 16px; font-weight: bold; }
+    h1 { font-size: em(16); font-weight: bold; }
     h2,
-    h3 { font-size: 13px; font-weight: bold; }
-    h2.h2 { font-size: 16px; font-weight: bold; }
+    h3 { font-size: em(13); font-weight: bold; }
+    h2.h2 { font-size: em(16); font-weight: bold; }
     .order-date { background: url(../images/bkg_divider1.gif) repeat-x 0 100%; margin: 0 0 10px; padding: 0 0 10px; }
     .col2-set { margin: 0 0 10px; }
     /* Price Rewrites */
@@ -200,15 +200,15 @@
 #my-reviews-table td { padding: 10px; }
 
 .product-review {
-    h3 { color: #2f2f2f; font-size: 12px; margin: 0 0 3px; }
+    h3 { color: #2f2f2f; font-size: em(12); margin: 0 0 3px; }
     dt { font-weight: bold; }
-    dd { font-size: 13px; margin: 5px 0 0; }
+    dd { font-size: em(13); margin: 5px 0 0; }
     .product-details { margin-left: 150px; }
-    .product-name { font-size: 16px; font-weight: bold; margin: 0 0 10px; }
+    .product-name { font-size: em(16); font-weight: bold; margin: 0 0 10px; }
     .ratings-table { margin: 0 0 10px; }
     .product-img-box { float: left; width: 140px;
         .product-image { display: block; height: 125px; width: 125px; }
-        .label { font-size: 11px; margin: 0 0 3px; }
+        .label { font-size: em(11); margin: 0 0 3px; }
         .ratings .rating-box { display: block; float: none; margin: 0 0 3px; }
     }
 }
@@ -218,6 +218,6 @@
     .info-box { margin: 15px 0; }
     .form-list li select { float: left; }
     .form-list li button.button { float: left; margin-left: 10px; }
-    .table-caption { font-size: 13px; font-weight: bold; }
+    .table-caption { font-size: em(13); font-weight: bold; }
 }
 /* ======================================================================================= */

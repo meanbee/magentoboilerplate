@@ -4,7 +4,7 @@
 }
 
 /* Product Tags */
-.tags-list { background: #f8f7f5; border: 1px solid #c1c4bc; display: block; font-size: 13px; padding: 10px;
+.tags-list { background: #f8f7f5; border: 1px solid #c1c4bc; display: block; font-size: em(13); padding: 10px;
     li { display: inline !important; margin: 0 4px 0 0;
         a { color: #1b2d3b; }
     }
@@ -54,14 +54,14 @@
 .cart .title-buttons .checkout-types { float: right; }
 .cart .title-buttons .checkout-types li { float: left; margin: 0 0 5px 5px; }
 .cart .checkout-types .paypal-or { line-height: 2.3; margin: 0 8px; }
-.cart .totals .checkout-types .paypal-or { clear: both; display: block; font-size: 11px; line-height: 1.0; padding: 8px 55px 0 0; }
+.cart .totals .checkout-types .paypal-or { clear: both; display: block; font-size: em(11); line-height: 1.0; padding: 8px 55px 0 0; }
 
 /* Shopping Cart Table */
 .cart-table {
     th { padding: 2px 10px; }
     td { padding: 10px; }
     .product-name { color: #2f2f2f; font-weight: bold; margin: 0 0 5px; }
-    .item-msg { color: #df280a; font-size: 11px; font-weight: bold; margin: 5px 0; }
+    .item-msg { color: #df280a; font-size: em(11); font-weight: bold; margin: 5px 0; }
     tfoot td { padding: 5px 10px; }
     .btn-continue { float: left; }
     .btn-empty span, .btn-continue span, .btn-update span { background: #618499; border-color: #406a83; }
@@ -77,7 +77,7 @@
 }
 
 .cart .crosssell { background: #fafaec; border: 1px solid #cec3b6; padding: 12px 15px;
-    h2 { font-size: 13px; font-weight: bold; }
+    h2 { font-size: em(13); font-weight: bold; }
     .product-image { border: 1px solid #d0cdc9; float: left; height: 75px; width: 75px; }
     .product-details { margin-left: 90px; }
     .product-name { font-weight: bold; }
@@ -111,9 +111,9 @@
     tfoot {
         th { padding: 5px 15px 5px 7px; }
         td { padding-top: 5px; padding-bottom: 5px; }
-        th strong, td strong { font-size: 15px; }
+        th strong, td strong { font-size: em(15); }
     }
-    .checkout-types { font-size: 13px; padding: 8px 15px 15px; text-align: right;
+    .checkout-types { font-size: em(13); padding: 8px 15px 15px; text-align: right;
         li { clear: both; margin: 10px 0; }
     }
 }

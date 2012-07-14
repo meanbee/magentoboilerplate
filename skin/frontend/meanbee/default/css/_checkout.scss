@@ -35,7 +35,7 @@
 .please-wait { float: right;
     img { vertical-align: middle; }
 }
-.cvv-what-is-this { cursor: help; font-size: 11px; margin-left: 10px; }
+.cvv-what-is-this { cursor: help; font-size: em(11); margin-left: 10px; }
 
 /* Tooltip */
 .tool-tip { background: #EAF6FF; border: 1px solid #7BA7C9; padding: 15px 20px; position: absolute; z-index: 9999;
@@ -47,19 +47,19 @@
 
 /* Gift Messages */
 .gift-messages {
-    h3 { color: #e87403; font-size: 12px; font-weight: bold; }
+    h3 { color: #e87403; font-size: em(12); font-weight: bold; }
     p.control { color: #8e8d8b; }
 }
 .gift-messages-form { position: relative;
     label { float: none !important; position: static !important; }
-    h4 { color: #e87403; font-size: 12px; font-weight: bold; }
+    h4 { color: #e87403; font-size: em(12); font-weight: bold; }
     .whole-order { margin: 0 0 25px; }
     .item { margin: 0 0 10px;
         .product-img-box { float: left; width: 75px; }
         .product-image { margin: 0 0 7px; }
         .number { color: #8a8987; font-weight: bold; margin: 0; text-align: center; }
         .details { margin-left: 90px;
-            .product-name { font-size: 13px; font-weight: bold; margin: 0 0 10px; }
+            .product-name { font-size: em(13); font-weight: bold; margin: 0 0 10px; }
             .form-list .field { width: 255px; }
             .form-list .input-box { width: 240px; }
             .form-list input.input-text { width: 234px; }
@@ -69,7 +69,7 @@
     }
 } 
 
-.gift-message-link { background: url(../images/bkg_collapse-gm.gif) no-repeat 100% 6px; font-size: 11px; padding-right: 7px; }
+.gift-message-link { background: url(../images/bkg_collapse-gm.gif) no-repeat 100% 6px; font-size: em(11); padding-right: 7px; }
 .gift-message-link.expanded { background-position: 100% -40px; }
 .gift-message-row { background: #f2efe9; }
 .gift-message-row .btn-close { background: url(../images/btn_gm-close.gif) no-repeat 0 0; float: right; font-size: 0; height: 16px; line-height: 0; overflow: hidden; text-indent: -999em; width: 16px; }
@@ -100,8 +100,8 @@
 
 /* Generic Info Set */
 .info-set { background: #fbfaf6 url(../images/bkg_checkout.gif) repeat-x 0 0; border: 1px solid #bbb6a5; margin: 0 0 25px; padding: 20px;
-    h2 { font-size: 13px; font-weight: bold; margin: 0 0 10px; }
-    h3, h4 { color: #E26703; font-size: 13px; font-weight: bold; }
+    h2 { font-size: em(13); font-weight: bold; margin: 0 0 10px; }
+    h3, h4 { color: #E26703; font-size: em(13); font-weight: bold; }
     h2 a, h3 a, h4 a { font-weight: normal; }
     h2.legend { background: #f9f3e3; border-bottom: 1px solid #bbafa0; margin: -20px -20px 15px; padding: 5px 10px; position: relative; }
     h3.legend { color: #0a263c; margin: 0 0 10px; }
@@ -122,10 +122,10 @@
 /* One Page Checkout */
 .block-progress { border: 0; margin: 0;
     .block-title { background: none; border: 0; padding: 0; margin: 0 0 5px;
-        strong { color: #0a263c; font-size: 13px; }
+        strong { color: #0a263c; font-size: em(13); }
     }
     .block-content { background: none; }
-    dt { background: #eee; border: 1px solid #a3aeb3; color: #999; font-size: 13px; font-weight: bold; line-height: 1.35; margin: 0 0 6px; padding: 2px 8px;
+    dt { background: #eee; border: 1px solid #a3aeb3; color: #999; font-size: em(13); font-weight: bold; line-height: 1.35; margin: 0 0 6px; padding: 2px 8px;
         &.complete { background: #d0dce1; color: #5e8ab4; margin: 0; }
     }
     dd { background: #eee; border: 1px solid #a3aeb3; border-top: 0; margin: 0 0 6px; padding: 8px 13px;
@@ -133,7 +133,7 @@
     }
     p { margin: 0; }
     .cards-list {
-        dt { background: none; border: 0 none; color: inherit; font-size: 12px; margin: 5px 0; padding: 0; }
+        dt { background: none; border: 0 none; color: inherit; font-size: em(12); margin: 5px 0; padding: 0; }
         dd { border: 0 none; margin: 0; padding: 0; }
         .info-table th { font-weight: normal; }
     }
@@ -153,9 +153,9 @@
     li.section {}
 
     .step-title { background: #eee url(../images/bkg_opc-title-off.gif) repeat-x 0 100%; border-color: #fff #d9dde3 #d9dde3; border-style: solid; border-width: 0 1px; padding: 4px 8px 6px; text-align: right;
-        .number { background: #fff; border: 1px solid #fff; color: #999; float: left; font: bold 11px/14px arial, helvetica, sans-serif; margin: 0 5px 0 0; padding: 0 4px; }
-        h2 { color: #999; float: left; font: bold 13px/16px Arial, Helvetica, sans-serif; margin: 0; }
-        a { display: none; float: right; font-size: 11px; line-height: 16px; }
+        .number { background: #fff; border: 1px solid #fff; color: #999; float: left; font: bold em(11)/em(14) arial, helvetica, sans-serif; margin: 0 5px 0 0; padding: 0 4px; }
+        h2 { color: #999; float: left; font: bold em(13)/em(16) Arial, Helvetica, sans-serif; margin: 0; }
+        a { display: none; float: right; font-size: em(11); line-height: 16px; }
     }
 
     .allow .step-title { background: #d0dce1; border: 1px solid #a3aeb3; border-bottom: 0; color: #a4b3b9; cursor: pointer;
@@ -179,7 +179,7 @@
 
 #opc-login {
     .buttons-set { border-top: 0; }
-    h3 { border-bottom: 1px solid #e4e4e4; font-size: 13px; padding-bottom: 2px; text-transform: uppercase; }
+    h3 { border-bottom: 1px solid #e4e4e4; font-size: em(13); padding-bottom: 2px; text-transform: uppercase; }
     h4 { color: #2f2f2f; font-size: 1em; font-weight: bold; margin: 0; }
 }
 
@@ -204,8 +204,8 @@
 }
 
 .multiple-checkout {
-    h2 { font-size: 13px; font-weight: bold; margin: 0 0 10px; }
-    h3, h4 { font-size: 13px; font-weight: bold; color: #E26703; }
+    h2 { font-size: em(13); font-weight: bold; margin: 0 0 10px; }
+    h3, h4 { font-size: em(13); font-weight: bold; color: #E26703; }
     h2 a, h3 a, h4 a { font-weight: normal; }
     .data-table {
         .item-options { margin: 5px 0 0; }
@@ -234,7 +234,7 @@
             .inner div { display: inline; }
             big { display: inline; margin-right: 12px; }
             .price { color: #E26703; }
-            button.button span { font-size: 16px; }
+            button.button span { font-size: em(16); }
             button.button span span { padding: 0 45px 0 36px; }
         }
     }

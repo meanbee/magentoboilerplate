@@ -11,7 +11,7 @@
     &.last { border-bottom: 0; }
     li.item { float: left; padding: 12px 10px 80px; width: 138px; }
     .product-image { display: block; height: 135px; margin: 0 0 10px; width: 135px; }
-    .product-name { color: #203548; font-size: 13px; font-weight: bold; margin: 0 0 5px; 
+    .product-name { color: #203548; font-size: em(13); font-weight: bold; margin: 0 0 5px; 
         a { color: #203548; }
     }
     .price-box { margin: 5px 0; }
@@ -28,13 +28,13 @@
     li.item.last { border-bottom: 0; }
     .product-image { float: left; height: 135px; margin: 0 0 10px; width: 135px; }
     .product-shop { margin-left: 150px; }
-    .product-name { color: #203548; font-size: 13px; font-weight: bold; margin: 0 0 5px;
+    .product-name { color: #203548; font-size: em(13); font-weight: bold; margin: 0 0 5px;
         a { color: #203548; }
     }
     .price-box { float: left; margin: 3px 13px 5px 0; }
     .availability { float: left; margin: 3px 0 0; }
     .desc { clear: both; line-height: 1.35; margin: 0 0 15px; padding: 6px 0 0;
-        .link-learn { font-size: 11px; }
+        .link-learn { font-size: em(11); }
     }
     .add-to-links { clear: both;
         li { display: inline; }

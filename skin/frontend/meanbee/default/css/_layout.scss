@@ -57,7 +57,7 @@
     border-bottom: 1px solid #415966;
 
     .top-container { clear: both; padding: 5px 10px 0 12px; text-align: right;
-        a { color: #ebbc58; font-size: 11px; }
+        a { color: #ebbc58; font-size: em(11); }
     }
 }
 .header { 
@@ -97,7 +97,7 @@
         select.flags option { background-position: 4px 50%; background-repeat: no-repeat; padding-left: 25px; }
     }
     .links { float: right; margin: 0 0 6px; 
-        li { float: left; font-size: 11px; background: url(../images/bkg_pipe1.gif) no-repeat 100% 60%; padding: 0 8px 0 7px; }
+        li { float: left; font-size: em(11); background: url(../images/bkg_pipe1.gif) no-repeat 100% 60%; padding: 0 8px 0 7px; }
         a { color: #ebbc58; }
     }
 }
