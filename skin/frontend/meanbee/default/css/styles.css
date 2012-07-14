@@ -3485,11 +3485,11 @@ tr.summary-details-excluded {
 .account-login .registered-users h2 {
   background-image: url(../images/i_page2.gif); }
 .account-login .buttons-set {
+  background: #dee5e8 url(../images/bkg_buttons-set1.gif) repeat-x 0 0;
   border: 1px solid #bbb6a5;
   border-top: 0;
   margin: 0;
-  padding: 8px 13px;
-  background: #dee5e8 url(../images/bkg_buttons-set1.gif) repeat-x 0 0; }
+  padding: 8px 13px; }
 .account-login .content {
   background: #faf7ee url(../images/bkg_login-box.gif) repeat-x 0 0;
   border: 1px solid #bbb6a5;
@@ -3497,9 +3497,9 @@ tr.summary-details-excluded {
   min-height: 345px;
   padding: 14px 21px; }
   .account-login .content h2 {
-    border-bottom: 1px solid #ddd;
     background-position: 0 1px;
     background-repeat: no-repeat;
+    border-bottom: 1px solid #ddd;
     color: #e76200;
     font-size: 1.083em;
     font-weight: bold;
@@ -3513,8 +3513,8 @@ tr.summary-details-excluded {
   padding-top: 5px; }
 
 .captcha-image {
-  float: left;
   display: inline;
+  float: left;
   margin: 0;
   position: relative;
   width: 258px; }
@@ -3534,9 +3534,9 @@ tr.summary-details-excluded {
   top: 2px; }
 
 .captcha-reload.refreshing {
-  animation: rotate 1.5s infinite linear;
   -webkit-animation: rotate 1.5s infinite linear;
-  -moz-animation: rotate 1.5s infinite linear; }
+  -moz-animation: rotate 1.5s infinite linear;
+  animation: rotate 1.5s infinite linear; }
 
 @-webkit-keyframes rotate {
   0% {
@@ -3577,9 +3577,9 @@ tr.summary-details-excluded {
 .remember-me-popup {
   background: #fff;
   border: 1px solid #ccc;
-  -moz-box-shadow: 0 0 6px #ccc;
-  -webkit-box-shadow: 0 0 6px #ccc;
-  -box-shadow: 0 0 6px #ccc;
+  -webkit-box-shadow: 0 0 6px #cccccc;
+  -moz-box-shadow: 0 0 6px #cccccc;
+  box-shadow: 0 0 6px #cccccc;
   left: 50%;
   margin: -85px 0 0 -200px;
   position: absolute;

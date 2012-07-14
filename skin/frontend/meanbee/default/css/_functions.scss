@@ -5,3 +5,15 @@
 @function em($pixels, $context: $font-start) {
     @return #{ 1 / $context * $pixels }em
 }
+
+@mixin boxShadow($x: 5px, $y: 5px, $blur: 5px, $color: #000) {
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
+}
+
+@mixin animation($name, $duration, $iteration, $timing) {
+    -webkit-animation: $name $duration $iteration $timing;
+    -moz-animation: $name $duration $iteration $timing;
+    animation: $name $duration $iteration $timing;
+}
