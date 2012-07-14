@@ -60,7 +60,7 @@
         a { color: #ebbc58; font-size: em(11); }
     }
 }
-.header { 
+header { 
     margin: 0 auto; padding: 10px; position: relative; text-align: right; width: 930px; z-index: 10;
 
     .logo { float: left; margin: 3px 0 10px 12px; text-decoration: none !important;
@@ -107,7 +107,7 @@
 .footer-container { border-top: 15px solid #b6d1e2;
     .bottom-container { margin: 0 0 5px; }
 }
-.footer { margin: 0 auto; padding: 10px 10px 50px; width: 930px; 
+footer { margin: 0 auto; padding: 10px 10px 50px; text-align: center; width: 930px; 
     .store-switcher { color: #fff; display: inline; margin: 0 5px 0 0;
         label { font-weight: bold; vertical-align: middle; }
         select { padding: 0; vertical-align: middle; }

@@ -287,18 +287,18 @@ ul, ol, dt {
       color: #ebbc58;
       font-size: 0.917em; }
 
-.header {
+header {
   margin: 0 auto;
   padding: 10px;
   position: relative;
   text-align: right;
   width: 930px;
   z-index: 10; }
-  .header .logo {
+  header .logo {
     float: left;
     margin: 3px 0 10px 12px;
     text-decoration: none !important; }
-    .header .logo strong {
+    header .logo strong {
       font-size: 0;
       height: 0;
       left: -999em;
@@ -308,19 +308,19 @@ ul, ol, dt {
       text-indent: -999em;
       top: -999em;
       width: 0; }
-  .header h1.logo {
+  header h1.logo {
     margin: 0; }
-  .header .quick-access {
+  header .quick-access {
     float: right;
     padding: 28px 10px 0 0;
     width: 600px; }
-  .header .welcome-msg {
+  header .welcome-msg {
     color: #fff;
     margin: 0;
     text-align: right; }
-    .header .welcome-msg a {
+    header .welcome-msg a {
       color: #ebbc58; }
-  .header .form-search {
+  header .form-search {
     background: url(../images/bkg_form-search.gif) no-repeat 0 0;
     height: 30px;
     padding: 1px 0 0 16px;
@@ -328,72 +328,72 @@ ul, ol, dt {
     right: 29px;
     top: 0;
     width: 315px; }
-    .header .form-search label {
+    header .form-search label {
       float: left;
       height: 21px;
       overflow: hidden;
       text-align: left;
       text-indent: -999em;
       width: 24px; }
-    .header .form-search input.input-text {
+    header .form-search input.input-text {
       border-color: #5c7989;
       float: left;
       margin-right: 4px;
       width: 209px; }
-    .header .form-search button.button {
+    header .form-search button.button {
       float: left; }
-      .header .form-search button.button span {
+      header .form-search button.button span {
         background: url(../images/btn_search.gif) no-repeat 0 0;
         border: 0;
         font: bold 11px/21px Tahoma, Verdana, Arial, sans-serif;
         height: 21px;
         padding: 0 0 0 3px; }
-        .header .form-search button.button span span {
+        header .form-search button.button span span {
           background-position: 100% 0;
           padding: 0 6px 0 3px; }
-    .header .form-search .search-autocomplete {
+    header .form-search .search-autocomplete {
       left: 40px !important;
       top: 22px !important;
       z-index: 999; }
-      .header .form-search .search-autocomplete ul {
+      header .form-search .search-autocomplete ul {
         background-color: #f9f5f0;
         border: 1px solid #5c7989; }
-      .header .form-search .search-autocomplete li {
+      header .form-search .search-autocomplete li {
         border-bottom: 1px solid #f4eee7;
         cursor: pointer;
         padding: 2px 8px 1px 8px;
         text-align: left; }
-      .header .form-search .search-autocomplete li .amount {
+      header .form-search .search-autocomplete li .amount {
         float: right;
         font-weight: bold; }
-      .header .form-search .search-autocomplete li.odd {
+      header .form-search .search-autocomplete li.odd {
         background-color: #fffefb; }
-      .header .form-search .search-autocomplete li.selected {
+      header .form-search .search-autocomplete li.selected {
         background-color: #f7e8dd; }
-  .header .form-language {
+  header .form-language {
     clear: both;
     padding: 5px 0 0;
     text-align: right; }
-    .header .form-language label {
+    header .form-language label {
       color: #a7c6dd;
       font-weight: bold;
       padding-right: 5px;
       vertical-align: middle; }
-    .header .form-language select {
+    header .form-language select {
       padding: 0; }
-    .header .form-language select.flags option {
+    header .form-language select.flags option {
       background-position: 4px 50%;
       background-repeat: no-repeat;
       padding-left: 25px; }
-  .header .links {
+  header .links {
     float: right;
     margin: 0 0 6px; }
-    .header .links li {
+    header .links li {
       float: left;
       font-size: 0.917em;
       background: url(../images/bkg_pipe1.gif) no-repeat 100% 60%;
       padding: 0 8px 0 7px; }
-    .header .links a {
+    header .links a {
       color: #ebbc58; }
 
 /* ============================================================================= */
@@ -403,50 +403,51 @@ ul, ol, dt {
   .footer-container .bottom-container {
     margin: 0 0 5px; }
 
-.footer {
+footer {
   margin: 0 auto;
   padding: 10px 10px 50px;
+  text-align: center;
   width: 930px; }
-  .footer .store-switcher {
+  footer .store-switcher {
     color: #fff;
     display: inline;
     margin: 0 5px 0 0; }
-    .footer .store-switcher label {
+    footer .store-switcher label {
       font-weight: bold;
       vertical-align: middle; }
-    .footer .store-switcher select {
+    footer .store-switcher select {
       padding: 0;
       vertical-align: middle; }
-  .footer a {
+  footer a {
     color: #fff;
     text-decoration: none; }
-    .footer a:hover {
+    footer a:hover {
       text-decoration: underline; }
-  .footer .bugs {
+  footer .bugs {
     color: #ecf3f6;
     margin: 13px 0 0; }
-    .footer .bugs a {
+    footer .bugs a {
       color: #ecf3f6;
       text-decoration: underline; }
-      .footer .bugs a:hover {
+      footer .bugs a:hover {
         text-decoration: none; }
-  .footer address {
+  footer address {
     color: #ecf3f6;
     margin: 0 0 20px; }
-    .footer address a {
+    footer address a {
       color: #ecf3f6;
       text-decoration: underline; }
-      .footer address a:hover {
+      footer address a:hover {
         text-decoration: none; }
-  .footer ul {
+  footer ul {
     display: inline; }
-  .footer ul.links {
+  footer ul.links {
     display: block; }
-  .footer li {
+  footer li {
     background: url(../images/bkg_pipe2.gif) 100% 60% no-repeat;
     display: inline;
     padding: 0 7px 0 4px; }
-  .footer li.last {
+  footer li.last {
     background: none !important;
     padding-right: 0 !important; }
 
