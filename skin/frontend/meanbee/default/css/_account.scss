@@ -1,10 +1,10 @@
 /* Account Login/Create Pages ============================================================ */
 .account-login {
-    .new-users h2 { background-image: url(../images/i_page1.gif)}
-    .registered-users h2 { background-image: url(../images/i_page2.gif); }
-    .buttons-set { background: #dee5e8 url(../images/bkg_buttons-set1.gif) repeat-x 0 0; border: 1px solid #bbb6a5; border-top: 0; margin: 0; padding: 8px 13px; }
-    .content { background: #faf7ee url(../images/bkg_login-box.gif) repeat-x 0 0; border: 1px solid #bbb6a5; border-bottom: 0; min-height: 345px; padding: 14px 21px;
-        h2 { background-position: 0 1px; background-repeat: no-repeat; border-bottom: 1px solid #ddd; color: #e76200; font-size: em(13); font-weight: bold; margin: 0 0 14px; padding: 0 0 5px 23px; text-transform: uppercase; }
+    .new-users h2 {}
+    .registered-users h2 {}
+    .buttons-set { border-top: 0; margin: 0; padding: 8px 13px; }
+    .content { padding: 14px 21px;
+        h2 { background-position: 0 1px; background-repeat: no-repeat; color: #e76200; font-size: em(13); font-weight: bold; margin: 0 0 14px; padding: 0 0 5px 0; text-transform: uppercase; }
     }
 }
 

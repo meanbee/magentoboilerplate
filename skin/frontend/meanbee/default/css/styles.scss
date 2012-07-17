@@ -42,6 +42,7 @@ img {
     border: 0;
     vertical-align: top;
 }
+label, label em { padding: 5px 0; }
 /* ============================================================================== */
 
 /* Table ======================================================================== */
@@ -275,7 +276,7 @@ p.required { color: #EB340A; font-size: em(11); text-align: right; }
 /* =============================================================================== */
 
 /* Page Heading ================================================================== */
-.page-title { border-bottom: 1px solid #ccc; margin: 0 0 25px; overflow: hidden; width: 100%; 
+.page-title { margin: 0 0 25px; overflow: hidden; width: 100%; 
     h1,
     h2 { color: #0a263c; font-size: em(20); margin: 0; }
     .separator { margin: 0 3px; }
