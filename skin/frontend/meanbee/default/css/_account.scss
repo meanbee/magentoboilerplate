@@ -2,13 +2,20 @@
 .account-login {
     .new-users h2 {}
     .registered-users h2 {}
-    .buttons-set { border-top: 0; margin: 0; padding: 8px 13px; }
+    .buttons-set { margin: 0; padding: 8px 13px;
+        button.button { float: left; }
+    }
     .content { padding: 14px 21px;
         h2 { background-position: 0 1px; background-repeat: no-repeat; font-size: em(13); font-weight: bold; margin: 0 0 14px; padding: 0 0 5px 0; text-transform: uppercase; }
     }
 }
 
-.account-create {}
+.account-create { margin: 0 auto; width: 550px;
+    .buttons-set {
+        button.button { float: left; margin-left: 0; }
+        .back-link { float: right; }
+    }
+}
 
 /* Captcha ================================================================================ */
 .captcha-note      { clear: left; padding-top: 5px; }

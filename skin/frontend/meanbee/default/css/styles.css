@@ -279,7 +279,6 @@ ul, ol, dt {
   float: left; }
 
 .header-container {
-  background: url(../images/bkg_header.jpg) repeat 50% 0;
   border-bottom: 1px solid #415966; }
   .header-container .top-container {
     clear: both;
@@ -326,7 +325,7 @@ header {
     height: 30px;
     padding: 1px 0 0 16px;
     position: absolute;
-    right: 29px;
+    right: 0;
     top: 0;
     width: 315px; }
     header .form-search label {
@@ -389,7 +388,6 @@ header {
     header .links li {
       float: left;
       font-size: 0.917em;
-      background: url(../images/bkg_pipe1.gif) no-repeat 100% 60%;
       padding: 0 8px 0 7px; }
 
 /* ============================================================================= */
@@ -432,7 +430,6 @@ footer {
   footer ul.links {
     display: block; }
   footer li {
-    background: url(../images/bkg_pipe2.gif) 100% 60% no-repeat;
     display: inline;
     padding: 0 7px 0 4px; }
   footer li.last {
@@ -694,9 +691,7 @@ input.input-text:focus, select:focus, textarea:focus {
 
 /* Button sets */
 .buttons-set {
-  border-top: 1px solid #e4e4e4;
   clear: both;
-  margin: 4em 0 0;
   padding: 8px 0 0;
   text-align: right; }
   .buttons-set p.required {
@@ -715,15 +710,10 @@ input.input-text:focus, select:focus, textarea:focus {
   padding: 12px 7px 0 0; }
 
 .fieldset {
-  background: #fbfaf6;
-  border: 1px solid #bbafa0;
   margin: 28px 0;
-  padding: 22px 25px 12px 33px; }
+  padding: 22px 0 12px; }
 
 .fieldset .legend {
-  background: #f9f3e3;
-  border: 1px solid #f19900;
-  color: #e76200;
   float: left;
   font-weight: bold;
   font-size: 1.083em;
@@ -3462,9 +3452,10 @@ tr.summary-details-excluded {
 /* ======================================================================================= */
 /* Account Login/Create Pages ============================================================ */
 .account-login .buttons-set {
-  border-top: 0;
   margin: 0;
   padding: 8px 13px; }
+  .account-login .buttons-set button.button {
+    float: left; }
 .account-login .content {
   padding: 14px 21px; }
   .account-login .content h2 {
@@ -3475,6 +3466,15 @@ tr.summary-details-excluded {
     margin: 0 0 14px;
     padding: 0 0 5px 0;
     text-transform: uppercase; }
+
+.account-create {
+  margin: 0 auto;
+  width: 550px; }
+  .account-create .buttons-set button.button {
+    float: left;
+    margin-left: 0; }
+  .account-create .buttons-set .back-link {
+    float: right; }
 
 /* Captcha ================================================================================ */
 .captcha-note {

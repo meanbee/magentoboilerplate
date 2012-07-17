@@ -52,7 +52,6 @@
 /* Header ======================================================================== */
 .logo { float: left; }
 .header-container { 
-    background: url(../images/bkg_header.jpg) repeat 50% 0;
     border-bottom: 1px solid #415966;
 
     .top-container { clear: both; padding: 5px 10px 0 12px; text-align: right;
@@ -72,7 +71,7 @@ header {
     .welcome-msg { color: #fff; margin: 0; text-align: right;
         a { color: #363636; }
     }
-    .form-search { height: 30px; padding: 1px 0 0 16px; position: absolute; right: 29px; top: 0; width: 315px;
+    .form-search { height: 30px; padding: 1px 0 0 16px; position: absolute; right: 0; top: 0; width: 315px;
         label { float: left; height: 21px; overflow: hidden; text-align: left; text-indent: -999em; width: 24px; }
         input.input-text { border-color: #5c7989; float: left; margin-right: 4px; width: 209px; }
 
@@ -96,7 +95,7 @@ header {
         select.flags option { background-position: 4px 50%; background-repeat: no-repeat; padding-left: 25px; }
     }
     .links { float: right; margin: 0 0 6px; 
-        li { float: left; font-size: em(11); background: url(../images/bkg_pipe1.gif) no-repeat 100% 60%; padding: 0 8px 0 7px; }
+        li { float: left; font-size: em(11); padding: 0 8px 0 7px; }
     }
 }
 /* ============================================================================= */
@@ -121,7 +120,7 @@ footer { margin: 0 auto; padding: 10px 10px 50px; text-align: center; width: 930
     address { color: #363636; margin: 0 0 20px; }
     ul { display: inline; }
     ul.links { display: block; }
-    li { background: url(../images/bkg_pipe2.gif) 100% 60% no-repeat; display: inline; padding: 0 7px 0 4px; }
+    li { display: inline; padding: 0 7px 0 4px; }
     li.last { background: none !important; padding-right: 0 !important; }
 }
 /* ============================================================================= */
