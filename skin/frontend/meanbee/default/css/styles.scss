@@ -118,7 +118,7 @@ input.qty { width: 2.5em !important; }
 button.button::-moz-focus-inner { border: 0; padding: 0; } /* FF Fix */
 button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
 button.button { background: transparent; border: 0; cursor: pointer; margin: 0; overflow: visible; padding: 0; width: auto; 
-    span { background: #f18200; border: 1px solid #de5400; color: #fff; display: block; font: bold em(12)/em(19) Arial, Helvetica, sans-serif; height: 19px; padding: 0 8px; text-align: center; white-space: nowrap; }
+    span { background: #363636; color: #fff; display: block; font: bold em(12)/em(19) Arial, Helvetica, sans-serif; height: 19px; padding: 0 8px; text-align: center; white-space: nowrap; }
     span span { border: 0; padding: 0; }
 }
 button.disabled span { background: #bbb !important; border-color: #bbb !important; }
@@ -139,7 +139,7 @@ input.input-text:focus,select:focus,textarea:focus { background-color: #edf7fd; 
 /* Grouped fields */
 .form-list { 
     li { margin: 0 0 8px; 
-        label { color: #666; float: left; font-weight: bold; position: relative; z-index: 0; 
+        label { float: left; font-weight: bold; position: relative; z-index: 0; 
             &.required {
                 em { float: right; font-style: normal; color: #eb340a; position: absolute; right: -8px; top: 0; }
             }
@@ -153,8 +153,8 @@ input.input-text:focus,select:focus,textarea:focus { background-color: #edf7fd; 
     }
     .input-box { clear: both; display: block; width: 260px; }
     .field { float: left; width: 275px; }
-    input.input-text { width: 254px; }
-    textarea {height: 10em; width: 254px; }
+    input.input-text { padding-left: 5px; width: 254px; }
+    textarea {padding-left: 5px; height: 10em; width: 254px; }
     select { width: 260px; }
     li.wide {
         .input-box { width: 535px; }
@@ -574,7 +574,7 @@ tr {
 /* =============================================================================== */
 
 /* Navigation ================================================================== */
-.nav-container { background: #0a263d url(../images/bkg_nav0.jpg) repeat-y 50% 0; }
+.nav-container {}
 #nav { font-size: em(13); margin: 0 auto; padding: 0 16px; width: 918px; }
 
 /* All Levels */ /* Style consistent throughout all nav levels */
@@ -585,19 +585,19 @@ tr {
 #nav a:hover { display: block; line-height: 1.3em; text-decoration: none; }
 #nav span { cursor: pointer; display: block; white-space: nowrap; }
 #nav li ul span { white-space: normal; }
-#nav ul li.parent a { background: url(../images/bkg_nav2.gif) no-repeat 100% 100%; }
+#nav ul li.parent a {}
 #nav ul li.parent li a { background-image: none; }
 
 /* 0 Level */
 #nav li { float: left; }
 #nav li.active a { color: #d96708; }
-#nav a { color: #a7c6dd; float: left; font-weight: bold; padding: 5px 12px 6px 8px; }
+#nav a { float: left; font-weight: bold; padding: 5px 12px 6px 8px; }
 #nav li.over a,
 #nav a:hover { color: #d96708; }
 
 /* 1st Level */
 #nav ul li,
-#nav ul li.active { background: #ecf3f6 url(../images/bkg_nav1.gif) repeat-x 0 100%; float: none; margin: 0; padding-bottom: 1px; }
+#nav ul li.active { float: none; margin: 0; padding-bottom: 1px; }
 #nav ul li.last { background: #ecf3f6; padding-bottom: 0; }
 
 #nav ul a,
@@ -613,8 +613,8 @@ tr {
 #nav ul ul,
 #nav ul div { top: 5px; }
 
-#nav ul li a { background: #ecf3f6; }
-#nav ul li a:hover { background: #d5e4eb; }
+#nav ul li a { background: #eee; }
+#nav ul li a:hover { background: #ccc; }
 #nav ul li a,
 #nav ul li a:hover { color: #2f2f2f !important; }
 #nav ul span,

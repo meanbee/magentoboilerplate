@@ -53,7 +53,6 @@
 .logo { float: left; }
 .header-container { 
     background: url(../images/bkg_header.jpg) repeat 50% 0;
-    border-top: 5px solid #0d2131; 
     border-bottom: 1px solid #415966;
 
     .top-container { clear: both; padding: 5px 10px 0 12px; text-align: right;
@@ -71,60 +70,55 @@ header {
     h1.logo { margin: 0; }
     .quick-access { float: right; padding: 28px 10px 0 0; width: 600px; }
     .welcome-msg { color: #fff; margin: 0; text-align: right;
-        a { color: #ebbc58; }
+        a { color: #363636; }
     }
-    .form-search { background: url(../images/bkg_form-search.gif) no-repeat 0 0; height: 30px; padding: 1px 0 0 16px; position: absolute; right: 29px; top: 0; width: 315px;
+    .form-search { height: 30px; padding: 1px 0 0 16px; position: absolute; right: 29px; top: 0; width: 315px;
         label { float: left; height: 21px; overflow: hidden; text-align: left; text-indent: -999em; width: 24px; }
         input.input-text { border-color: #5c7989; float: left; margin-right: 4px; width: 209px; }
 
         button.button { float:left;
-            span { background: url(../images/btn_search.gif) no-repeat 0 0; border: 0; font: bold 11px/21px Tahoma, Verdana, Arial, sans-serif; height: 21px; padding: 0 0 0 3px;
+            span { border: 0; font: bold 11px/21px Tahoma, Verdana, Arial, sans-serif; height: 21px; padding: 0 0 0 3px;
                 span { background-position: 100% 0; padding: 0 6px 0 3px; }
             }
         }
 
         .search-autocomplete { left: 40px !important; top: 22px !important; z-index: 999; 
-            ul { background-color: #f9f5f0; border: 1px solid #5c7989; }
+            ul { border: 1px solid #5c7989; }
             li { border-bottom: 1px solid #f4eee7; cursor: pointer; padding: 2px 8px 1px 8px; text-align: left; }
             li .amount { float: right; font-weight: bold; }
-            li.odd { background-color: #fffefb; }
-            li.selected { background-color: #f7e8dd; }
+            li.odd { background-color: #ccc; }
+            li.selected { background-color: #eee; }
         }
     }
     .form-language { clear: both; padding: 5px 0 0; text-align: right;
-        label { color: #a7c6dd; font-weight: bold; padding-right: 5px; vertical-align: middle; }
+        label { font-weight: bold; padding-right: 5px; vertical-align: middle; }
         select { padding: 0; }
         select.flags option { background-position: 4px 50%; background-repeat: no-repeat; padding-left: 25px; }
     }
     .links { float: right; margin: 0 0 6px; 
         li { float: left; font-size: em(11); background: url(../images/bkg_pipe1.gif) no-repeat 100% 60%; padding: 0 8px 0 7px; }
-        a { color: #ebbc58; }
     }
 }
 /* ============================================================================= */
 
 /* Footer ====================================================================== */
-.footer-container { border-top: 15px solid #b6d1e2;
+.footer-container { border-top: 1px solid #363636;
     .bottom-container { margin: 0 0 5px; }
 }
 footer { margin: 0 auto; padding: 10px 10px 50px; text-align: center; width: 930px; 
-    .store-switcher { color: #fff; display: inline; margin: 0 5px 0 0;
+    .store-switcher { display: inline; margin: 0 5px 0 0;
         label { font-weight: bold; vertical-align: middle; }
         select { padding: 0; vertical-align: middle; }
     }
-    a { color: #fff; text-decoration: none;
+    a { text-decoration: none;
         &:hover { text-decoration: underline; }
     }
-    .bugs { color: #ecf3f6; margin: 13px 0 0;
-        a { color: #ecf3f6; text-decoration: underline;
+    .bugs { color: #363636; margin: 13px 0 0;
+        a { text-decoration: underline;
             &:hover { text-decoration: none; }
         }
     }
-    address { color: #ecf3f6; margin: 0 0 20px;
-        a { color: #ecf3f6; text-decoration: underline;
-            &:hover { text-decoration: none; }
-        }
-    }
+    address { color: #363636; margin: 0 0 20px; }
     ul { display: inline; }
     ul.links { display: block; }
     li { background: url(../images/bkg_pipe2.gif) 100% 60% no-repeat; display: inline; padding: 0 7px 0 4px; }
