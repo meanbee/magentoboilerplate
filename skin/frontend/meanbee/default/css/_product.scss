@@ -206,8 +206,8 @@
     h2 { font: bold em(13)/1.35 Arial, Helvetica, sans-serif; }
 }
 
-.product-collateral { background: #faf7ee url(../images/bkg_product_collateral.gif) repeat-x 0 0; padding: 25px;
-    h2 { border-bottom: 1px solid #e5dcc3; color: #e26703; font-weight: bold; font-size: em(15); margin: 0 0 15px; padding: 0 0 1px; }
+.product-collateral { padding: 25px;
+    h2 { font-weight: bold; font-size: em(15); margin: 0 0 15px; padding: 0 0 1px; }
     .box-collateral { margin: 0 0 25px; }
 }
 
@@ -253,7 +253,7 @@
     .price-box { margin: 10px 0; }
     .add-to-links { font-size: em(12); margin: 0; text-align: right;
         li, li .separator { display: inline; }
-        a { color: #1E7EC8 !important; font-weight: normal !important; }
+        a { font-weight: normal !important; }
     }
 }
 
@@ -344,15 +344,15 @@
 .product-view .box-tags { margin: 0;
     h3 { font-size: em(13); }
     .product-tags { display: block; margin: 0 0 15px;
-        li { background: url(../images/bkg_pipe3.gif) no-repeat 100% 4px; display: inline; padding: 0 7px 0 4px; }
+        li { display: inline; padding: 0 7px 0 4px; }
         li.first { padding-left: 0; }
         li.last { background: none; padding-right: 0; }
     }
     .form-add {
         label { color: #0a263c; display: block; font-size: em(13); font-weight: bold; margin: 0 0 5px; }
-        .input-box { background: url(../images/i_tag_add.gif) no-repeat 0 2px; float: left; margin: 0 5px 0 0; padding: 0 0 0 23px; width: 305px; }
+        .input-box { float: left; margin: 0 5px 0 0; padding: 0 0 0 23px; width: 305px; }
         input.input-text { width: 299px; }
-        button.button span { background: #618499; border-color: #406a83; }
+        button.button span {}
     }
     .note { font-size: em(11); margin: 3px 0 0; padding: 0 0 0 23px; }
 }

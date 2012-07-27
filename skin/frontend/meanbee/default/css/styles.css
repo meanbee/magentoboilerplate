@@ -2086,11 +2086,8 @@ tr.summary-details-excluded {
     font: bold 1.083em/1.35 Arial, Helvetica, sans-serif; }
 
 .product-collateral {
-  background: #faf7ee url(../images/bkg_product_collateral.gif) repeat-x 0 0;
   padding: 25px; }
   .product-collateral h2 {
-    border-bottom: 1px solid #e5dcc3;
-    color: #e26703;
     font-weight: bold;
     font-size: 1.25em;
     margin: 0 0 15px;
@@ -2227,7 +2224,6 @@ tr.summary-details-excluded {
   .product-view .product-shop .add-to-links li, .product-view .product-shop .add-to-links li .separator {
     display: inline; }
   .product-view .product-shop .add-to-links a {
-    color: #1E7EC8 !important;
     font-weight: normal !important; }
 
 /* Product Options */
@@ -2412,7 +2408,6 @@ tr.summary-details-excluded {
     display: block;
     margin: 0 0 15px; }
     .product-view .box-tags .product-tags li {
-      background: url(../images/bkg_pipe3.gif) no-repeat 100% 4px;
       display: inline;
       padding: 0 7px 0 4px; }
     .product-view .box-tags .product-tags li.first {
@@ -2427,16 +2422,12 @@ tr.summary-details-excluded {
     font-weight: bold;
     margin: 0 0 5px; }
   .product-view .box-tags .form-add .input-box {
-    background: url(../images/i_tag_add.gif) no-repeat 0 2px;
     float: left;
     margin: 0 5px 0 0;
     padding: 0 0 0 23px;
     width: 305px; }
   .product-view .box-tags .form-add input.input-text {
     width: 299px; }
-  .product-view .box-tags .form-add button.button span {
-    background: #618499;
-    border-color: #406a83; }
   .product-view .box-tags .note {
     font-size: 0.917em;
     margin: 3px 0 0;
