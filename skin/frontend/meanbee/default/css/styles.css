@@ -773,7 +773,6 @@ p.required {
   width: 100%; }
   .page-title h1,
   .page-title h2 {
-    color: #0a263c;
     font-size: 1.667em;
     margin: 0; }
   .page-title .separator {
@@ -804,10 +803,8 @@ p.required {
 /* =============================================================================== */
 /* Pager ========================================================================= */
 .pager {
-  background: white url(../images/bkg_toolbar.gif) repeat-x 0 100%;
-  border-top: 1px solid #e2e2e2;
   font-size: 0.917em;
-  padding: 4px 8px;
+  padding: 10px 0;
   text-align: center; }
   .pager .amount {
     float: left;
@@ -893,19 +890,11 @@ p.required {
   .data-table thead th .tax-flag {
     font-size: 0.917em;
     white-space: nowrap; }
-  .data-table tfoot {
-    border-bottom: 1px solid #d9dde3; }
-    .data-table tfoot tr.first td {
-      background: url(../images/bkg_tfoot.gif) repeat-x 0 0; }
-    .data-table tfoot tr {
-      background-color: #dee5e8 !important; }
-    .data-table tfoot td {
-      border-bottom: 0;
-      border-right: 1px solid #d9dde3;
-      padding-top: 1px;
-      padding-bottom: 1px; }
-    .data-table tfoot strong {
-      font-size: 1.333em; }
+  .data-table tfoot td {
+    padding-top: 1px;
+    padding-bottom: 1px; }
+  .data-table tfoot strong {
+    font-size: 1.333em; }
   .data-table tbody {
     /* Bundle products tables */ }
     .data-table tbody.odd tr {
@@ -2549,8 +2538,6 @@ tr.summary-details-excluded {
 
 /* Product Tags */
 .tags-list {
-  background: #f8f7f5;
-  border: 1px solid #c1c4bc;
   display: block;
   font-size: 1.083em;
   padding: 10px; }
@@ -3400,15 +3387,15 @@ tr.summary-details-excluded {
     float: right; }
 
 /* Forgot Password ======================================================================== */
-.customer-account-forgotpassword .col-main .fieldset {
+.customer-account-forgotpassword .col-main .fieldset, .customer-account-edit .col-main .fieldset, .customer-address-form .col-main .fieldset {
   margin-bottom: 0;
   padding-bottom: 0; }
-.customer-account-forgotpassword .col-main .buttons-set button.button {
+.customer-account-forgotpassword .col-main .buttons-set button.button, .customer-account-edit .col-main .buttons-set button.button, .customer-address-form .col-main .buttons-set button.button {
   float: left;
   margin-left: 0; }
-.customer-account-forgotpassword .col-main .buttons-set .back-link {
+.customer-account-forgotpassword .col-main .buttons-set .back-link, .customer-account-edit .col-main .buttons-set .back-link, .customer-address-form .col-main .buttons-set .back-link {
   float: right; }
-.customer-account-forgotpassword .col-main .buttons-set p.required {
+.customer-account-forgotpassword .col-main .buttons-set p.required, .customer-account-edit .col-main .buttons-set p.required, .customer-address-form .col-main .buttons-set p.required {
   margin-bottom: 30px;
   text-align: left; }
 
@@ -3610,7 +3597,6 @@ tr.summary-details-excluded {
 /********** Dashboard > */
 /* Address Book */
 .addresses-list h2 {
-  color: #e26703;
   font-size: 1.083em;
   font-weight: bold;
   text-transform: uppercase; }
@@ -3628,10 +3614,8 @@ tr.summary-details-excluded {
 .addresses-list .separator {
   margin: 0 3px; }
 .addresses-list li.item {
-  background: white url(../images/bkg_account_box.gif) repeat-x 0 0;
-  border: 1px solid #ccc;
   margin: 0 0 10px;
-  padding: 10px 13px; }
+  padding: 10px 0; }
 .addresses-list li.empty {
   background: none;
   border: 0;
@@ -3645,10 +3629,7 @@ tr.summary-details-excluded {
 
 /* Order View */
 .order-info {
-  background: #dee5e8;
-  border: 1px solid #d0cbc1;
-  margin: 0 0 8px;
-  padding: 4px 8px; }
+  margin: 0 0 8px; }
   .order-info dt, .order-info dd, .order-info ul, .order-info li {
     display: inline; }
   .order-info .current {
@@ -3660,10 +3641,8 @@ tr.summary-details-excluded {
   margin: 10px 0; }
 
 .order-info-box {
-  background: white url(../images/bkg_block-title.gif) repeat-x 0 0;
-  border: 1px solid #d0cbc1;
   margin: 0 0 15px;
-  padding: 12px 15px; }
+  padding: 10px 0; }
   .order-info-box h2 {
     font-size: 1.083em;
     font-weight: bold; }
@@ -3758,6 +3737,10 @@ tr.summary-details-excluded {
       margin-left: 15px; }
 
 /* My Wishlist */
+.my-wishlist fieldset {
+  padding: 0; }
+.my-wishlist .cart-cell button.button {
+  margin: 5px 0; }
 .my-wishlist .data-table td {
   padding: 10px; }
 .my-wishlist .product-image {
@@ -3773,10 +3756,6 @@ tr.summary-details-excluded {
   margin-top: 2em; }
   .my-wishlist .buttons-set button.button {
     float: none; }
-  .my-wishlist .buttons-set .btn-add span,
-  .my-wishlist .buttons-set .btn-share span {
-    background: #618499;
-    border-color: #406a83; }
 
 #wishlist-table .add-to-links {
   white-space: nowrap; }

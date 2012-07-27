@@ -18,7 +18,7 @@
 }
 
 /* Forgot Password ======================================================================== */
-.customer-account-forgotpassword {
+.customer-account-forgotpassword, .customer-account-edit, .customer-address-form {
     .col-main {
         .fieldset { margin-bottom: 0; padding-bottom: 0; }
         .buttons-set {
@@ -117,21 +117,21 @@
 
 /* Address Book */
 .addresses-list {
-    h2 { color: #e26703; font-size: em(13); font-weight: bold; text-transform: uppercase; }
+    h2 { font-size: em(13); font-weight: bold; text-transform: uppercase; }
     h3 { font-size: em(13); font-weight: bold; }
     address { margin: 0 0 3px; }
     p { margin: 0; }
     a { font-weight: bold; }
     .link-remove { color: #646464; }
     .separator { margin: 0 3px; }
-    li.item { background: #fff url(../images/bkg_account_box.gif) repeat-x 0 0; border: 1px solid #ccc; margin: 0 0 10px; padding: 10px 13px; }
+    li.item { margin: 0 0 10px; padding: 10px 0; }
     li.empty { background: none; border: 0; padding: 0; }
     li.empty p { font-weight: bold; }
     .addresses-additional li.item { background: none; border: 0; padding: 0; }
 }
 
 /* Order View */
-.order-info { background: #dee5e8; border: 1px solid #d0cbc1; margin: 0 0 8px; padding: 4px 8px;
+.order-info { margin: 0 0 8px;
     dt, dd, ul, li { display: inline; }
     .current { font-weight: bold; }
     li { margin: 0 3px; }
@@ -139,7 +139,7 @@
 
 .order-date { margin: 10px 0; }
 
-.order-info-box { background: #fff url(../images/bkg_block-title.gif) repeat-x 0 0; border: 1px solid #d0cbc1; margin: 0 0 15px; padding: 12px 15px;
+.order-info-box { margin: 0 0 15px; padding: 10px 0;
     h2 { font-size: em(13); font-weight: bold; }
     .box-payment {
         p { margin: 0 0 3px; }
@@ -195,13 +195,13 @@
 
 /* My Wishlist */
 .my-wishlist {
+    fieldset { padding: 0; }
+    .cart-cell button.button { margin: 5px 0; }
     .data-table td { padding: 10px; }
     .product-image { display: block; height: 113px; margin: 0 0 5px; width: 113px; }
     textarea { display: block; height: 109px; width: 97%; }
     .buttons-set { margin-top: 2em;
         button.button { float: none; }
-        .btn-add span,
-        .btn-share span { background: #618499; border-color: #406a83; }
     }
 }
 #wishlist-table .add-to-links { white-space: nowrap; }

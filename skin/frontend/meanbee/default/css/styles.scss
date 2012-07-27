@@ -278,7 +278,7 @@ p.required { color: #EB340A; font-size: em(11); text-align: right; }
 /* Page Heading ================================================================== */
 .page-title { margin: 0 0 25px; overflow: hidden; width: 100%; 
     h1,
-    h2 { color: #0a263c; font-size: em(20); margin: 0; }
+    h2 { font-size: em(20); margin: 0; }
     .separator { margin: 0 3px; }
     .link-rss { float: right; margin: 7px 0 0; }
 }
@@ -296,7 +296,7 @@ p.required { color: #EB340A; font-size: em(11); text-align: right; }
 /* =============================================================================== */
 
 /* Pager ========================================================================= */
-.pager { background: #fff url(../images/bkg_toolbar.gif) repeat-x 0 100%; border-top: 1px solid #e2e2e2; font-size: em(11); padding: 4px 8px; text-align: center;
+.pager { font-size: em(11); padding: 10px 0; text-align: center;
     .amount { float: left; margin: 0; }
     .limiter { float: right;
         label { vertical-align: middle; }
@@ -350,10 +350,10 @@ p.required { color: #EB340A; font-size: em(11); text-align: right; }
         th .tax-flag { font-size: em(11); white-space: nowrap; }
     }
 
-    tfoot { border-bottom: 1px solid #d9dde3;
-        tr.first td { background: url(../images/bkg_tfoot.gif) repeat-x 0 0; }
-        tr { background-color: #dee5e8 !important; }
-        td { border-bottom: 0; border-right: 1px solid #d9dde3; padding-top: 1px; padding-bottom: 1px; }
+    tfoot {
+        tr.first td {}
+        tr {}
+        td { padding-top: 1px; padding-bottom: 1px; }
         strong { font-size: em(16); }
     }
 
