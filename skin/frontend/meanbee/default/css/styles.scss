@@ -330,7 +330,7 @@ p.required { color: #EB340A; font-size: em(11); text-align: right; }
 /* =============================================================================== */
 
 /* Data Tables =================================================================== */
-.data-table { border: 1px solid #bebcb7; width: 100%;
+.data-table { width: 100%;
     .odd  { background: #f8f7f5 }
     .even { background: #eeeded; }
     tr.even:hover { background: #ebf1f6; }
@@ -342,11 +342,11 @@ p.required { color: #EB340A; font-size: em(11); text-align: right; }
     td { padding: 3px 8px; }
 
     thead {
-        th { border-right: 1px solid #c2d3e0; color: #0a263c; font-weight: bold; padding: 2px 8px; vertical-align: middle; white-space: nowrap; }
+        th { color: #0a263c; font-weight: bold; padding: 2px 8px; vertical-align: middle; white-space: nowrap; }
         th.wrap { white-space: normal; }
         th a,
         th a:hover { color: #fff; }
-        th { background: #d9e5ee url(../images/bkg_th.gif) repeat-x 0 100%; }
+        th { background: #ddd; }
         th .tax-flag { font-size: em(11); white-space: nowrap; }
     }
 
@@ -359,7 +359,7 @@ p.required { color: #EB340A; font-size: em(11); text-align: right; }
 
     tbody {
         th,
-        td { border-bottom: 1px solid #d9dde3; border-right: 1px solid #d9dde3; }
+        td {}
         /* Bundle products tables */
         &.odd tr { background: #f8f7f5 !important; }
         &.even tr { background: #f6f6f6 !important; }
@@ -562,6 +562,7 @@ tr {
     ul { list-style: none !important; margin: 0 !important; padding: 0 !important; }
     li { margin: 0 0 10px !important; }
     li li { margin: 0 0 3px !important; }
+    a { color: white; }
 }
 .error-msg,
 .success-msg,

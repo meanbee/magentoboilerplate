@@ -75,29 +75,29 @@
 .dashboard .col2-set { margin: 0 0 15px; }
 
 /* General Box */
-.box-account { background: #fff url(../images/bkg_account_box.gif) repeat-x 0 0; border: 1px solid #ccc; border-color: #ccc #999 #999 #ccc; margin: 0 0 20px; padding: 15px;
-    .box-head { border-bottom: 1px solid #d9dde3; margin: 0 0 10px; text-align: right;
-        h2 { background-position: 0 0; background-repeat: no-repeat; color: #e65505; float: left; font-size: em(13); font-weight: bold; margin: 0; padding-left: 21px; text-transform: uppercase; }
+.box-account { background: #fff; margin: 0 0 20px;
+    .box-head { margin: 0 0 10px; text-align: right;
+        h2 { color: #0a263c; float: left; font-size: em(13); font-weight: bold; margin: 0; text-transform: uppercase; }
     }
 }
 
-.dashboard .box .box-title { background: url(../images/bkg_divider1.gif) repeat-x 0 100%; margin: 0 0 8px; padding: 0 0 2px; text-align: right;
+.dashboard .box .box-title { margin: 0 0 8px; padding: 0 0 2px; text-align: right;
     h3, h4 { float: left; font-size: em(13); font-weight: bold; margin: 0; }
 }
 
 /* Block: Recent Orders */
-.dashboard .box-recent .box-head h2 { background-image: url(../images/i_folder-table.gif); }
+.dashboard .box-recent .box-head h2 {}
 
 /* Block: Account Information */
 .dashboard .box-info {
-    .box-head h2 { background-image: url(../images/i_ma-info.gif); }
+    .box-head h2 {}
     h4 { font-size: em(11); font-weight: bold; text-transform: uppercase; }
 }
 
 /* Block: Reviews */
 .dashboard .box-reviews {
-    .box-head h2 { background-image: url(../images/i_ma-reviews.gif); }
-    .number { background: #0a263c; color: #fff; float: left; font-size: em(10); font-weight: bold; line-height: 1; margin: 3px -20px 0 0; padding: 2px 3px; }
+    .box-head h2 {}
+    .number { background: #363636; color: #fff; float: left; font-size: em(10); font-weight: bold; line-height: 1; margin: 3px -20px 0 0; padding: 2px 3px; }
     .details { margin-left: 20px; }
     li.item { margin: 0 0 7px; }
     li.item.last { margin: 0; }
@@ -106,8 +106,8 @@
 
 /* Block: Tags */
 .dashboard .box-tags {
-    .box-head h2 { background-image: url(../images/i_ma-tags.gif); }
-    .number { background: #0a263c; color: #fff; float: left; font-size: em(10); font-weight: bold; line-height: 1; margin: 3px -20px 0 0; padding: 2px 3px; }
+    .box-head h2 {}
+    .number { background: #363636; color: #fff; float: left; font-size: em(10); font-weight: bold; line-height: 1; margin: 3px -20px 0 0; padding: 2px 3px; }
     .details { margin-left: 20px; }
     li.item { margin: 0 0 7px; }
     li.item.last { margin: 0; }
