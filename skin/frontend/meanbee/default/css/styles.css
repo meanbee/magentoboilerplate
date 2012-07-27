@@ -3363,11 +3363,12 @@ tr.summary-details-excluded {
 /* Account Login/Create Pages ============================================================ */
 .account-login .buttons-set {
   margin: 0;
-  padding: 8px 13px; }
+  padding: 8px 13px 8px 0; }
   .account-login .buttons-set button.button {
-    float: left; }
+    float: left;
+    margin-left: 0; }
 .account-login .content {
-  padding: 14px 21px; }
+  padding: 14px 21px 14px 0; }
   .account-login .content h2 {
     background-position: 0 1px;
     background-repeat: no-repeat;
@@ -3453,7 +3454,6 @@ tr.summary-details-excluded {
 
 /* Remember Me Popup ===================================================================== */
 .window-overlay {
-  background: url(../images/window_overlay.png) repeat;
   background: rgba(0, 0, 0, 0.35);
   height: 100%;
   left: 0;
@@ -3480,8 +3480,6 @@ tr.summary-details-excluded {
   width: 400px;
   z-index: 1000; }
   .remember-me-popup h3 {
-    background: #d9e5ee;
-    border-bottom: 1px solid #ccc;
     font-size: 1.167em;
     padding: 5px 10px; }
   .remember-me-popup .remember-me-popup-head {
@@ -3498,9 +3496,6 @@ tr.summary-details-excluded {
   .remember-me-popup .remember-me-popup-body {
     padding: 10px; }
     .remember-me-popup .remember-me-popup-body a {
-      background: #f18200;
-      border: 1px solid #de5400;
-      color: #fff;
       display: inline-block;
       font: bold 1em/1.583em Arial, Helvetica, sans-serif;
       height: 19px;
