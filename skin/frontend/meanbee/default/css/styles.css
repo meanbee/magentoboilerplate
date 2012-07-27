@@ -2998,29 +2998,19 @@ tr.summary-details-excluded {
     padding: 0;
     margin: 0 0 5px; }
     .block-progress .block-title strong {
-      color: #0a263c;
       font-size: 1.083em; }
   .block-progress .block-content {
     background: none; }
   .block-progress dt {
-    background: #eee;
-    border: 1px solid #a3aeb3;
-    color: #999;
     font-size: 1.083em;
     font-weight: bold;
     line-height: 1.35;
-    margin: 0 0 6px;
-    padding: 2px 8px; }
+    margin: 0 0 6px; }
     .block-progress dt.complete {
-      background: #d0dce1;
-      color: #5e8ab4;
       margin: 0; }
   .block-progress dd {
-    background: #eee;
-    border: 1px solid #a3aeb3;
-    border-top: 0;
     margin: 0 0 6px;
-    padding: 8px 13px; }
+    padding: 8px 0; }
   .block-progress p {
     margin: 0; }
   .block-progress .cards-list dt {
@@ -3059,15 +3049,10 @@ tr.summary-details-excluded {
       height: 21px;
       line-height: 21px; }
   .opc .step-title {
-    background: #eeeeee url(../images/bkg_opc-title-off.gif) repeat-x 0 100%;
-    border-color: #fff #d9dde3 #d9dde3;
-    border-style: solid;
-    border-width: 0 1px;
     padding: 4px 8px 6px;
     text-align: right; }
     .opc .step-title .number {
       background: #fff;
-      border: 1px solid #fff;
       color: #999;
       float: left;
       font: bold 0.917em/1.167em arial, helvetica, sans-serif;
@@ -3084,31 +3069,19 @@ tr.summary-details-excluded {
       font-size: 0.917em;
       line-height: 16px; }
   .opc .allow .step-title {
-    background: #d0dce1;
+    cursor: pointer; }
+  .opc .active .step-title {
     border: 1px solid #a3aeb3;
     border-bottom: 0;
-    color: #a4b3b9;
-    cursor: pointer; }
-    .opc .allow .step-title .number {
-      background: #dbe6eb;
-      border-color: #dbe6eb;
-      color: #a4b3b9; }
-    .opc .allow .step-title h2 {
-      color: #a4b3b9; }
-  .opc .active .step-title {
-    background: #f9f3e3;
-    border: 1px solid #bbafa0;
-    color: #f18200;
+    background: #363636;
     cursor: default;
     padding-bottom: 5px; }
     .opc .active .step-title .number {
-      background: #f18200;
-      border-color: #f19900;
+      background: #363636;
       color: #fff; }
     .opc .active .step-title h2 {
-      color: #f18200; }
+      color: white; }
   .opc .step {
-    background: #fbfaf6 url(../images/bkg_checkout.gif) repeat-x 0 0;
     border: 1px solid #bbafa0;
     border-top: 0;
     padding: 15px 30px;
@@ -3159,15 +3132,22 @@ tr.summary-details-excluded {
   padding: 10px 10px 0;
   text-align: center; }
 #opc-review .buttons-set {
-  border: 1px solid #d9dde3;
-  border-width: 0 1px 1px;
-  padding: 20px 30px; }
+  padding: 20px 10px; }
   #opc-review .buttons-set p {
     line-height: 40px;
     margin: 0; }
   #opc-review .buttons-set .please-wait {
     height: 40px;
     line-height: 40px; }
+
+#opc-review.active {
+  border: 1px solid #A3AEB3; }
+  #opc-review.active .step-title {
+    border: 0; }
+
+.checkout-onepage-index .col-main fieldset {
+  margin: 0;
+  padding: 0; }
 
 /* Multiple Addresses Checkout */
 .checkout-progress {
