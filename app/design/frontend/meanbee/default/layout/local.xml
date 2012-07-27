@@ -18,6 +18,12 @@
         <remove name="right.poll" />
     </default>
 
+    <catalog_category_view>
+        <reference name="root">
+            <action method="setTemplate"><template>page/3columns.phtml</template></action>
+        </reference>
+    </catalog_category_view>
+
     <contacts_index_index>
 		<reference name="head">
 		    <action method="setTitle"><title>Contact Us</title></action>

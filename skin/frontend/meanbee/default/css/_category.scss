@@ -7,12 +7,12 @@
 .category-products {}
 
 /* View Type: Grid */
-.products-grid { background: url(../images/bkg_grid.gif) repeat 0 0; border-bottom: 1px solid #d9ddd3; position: relative;
+.products-grid { position: relative;
     &.last { border-bottom: 0; }
     li.item { float: left; padding: 12px 10px 80px; width: 138px; }
     .product-image { display: block; height: 135px; margin: 0 0 10px; width: 135px; }
-    .product-name { color: #203548; font-size: em(13); font-weight: bold; margin: 0 0 5px; 
-        a { color: #203548; }
+    .product-name { font-size: em(13); font-weight: bold; margin: 0 0 5px; 
+        a {}
     }
     .price-box { margin: 5px 0; }
     .availability { line-height: 21px; }
@@ -24,12 +24,12 @@
 
 /* View Type: List */
 .products-list {
-    li.item { border-bottom: 1px solid #d9ddd3; padding: 12px 10px; }
+    li.item { padding: 12px 10px; }
     li.item.last { border-bottom: 0; }
     .product-image { float: left; height: 135px; margin: 0 0 10px; width: 135px; }
     .product-shop { margin-left: 150px; }
-    .product-name { color: #203548; font-size: em(13); font-weight: bold; margin: 0 0 5px;
-        a { color: #203548; }
+    .product-name { font-size: em(13); font-weight: bold; margin: 0 0 5px;
+        a {}
     }
     .price-box { float: left; margin: 3px 13px 5px 0; }
     .availability { float: left; margin: 3px 0 0; }

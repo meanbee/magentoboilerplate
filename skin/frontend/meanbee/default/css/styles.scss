@@ -311,9 +311,9 @@ p.required { color: #EB340A; font-size: em(11); text-align: right; }
 /* =============================================================================== */
 
 /* Sorter ======================================================================== */
-.sorter { background: #fff url(../images/bkg_toolbar.gif) repeat-x 0 100%; border-top: 1px solid #e2e2e2; font-size: em(11); padding: 3px 8px;
+.sorter { font-size: em(11);
     .view-mode { float: left; margin: 0; }
-    .sort-by { float: right; padding-right: 36px;
+    .sort-by { float: right;
         label { vertical-align: middle; }
         select { margin: 0 0 1px; padding: 0; vertical-align: middle; }
     }
@@ -323,8 +323,8 @@ p.required { color: #EB340A; font-size: em(11); text-align: right; }
 
 /* Toolbar ======================================================================= */
 .toolbar {
-    .pager { border-bottom: 1px solid #fff; padding: 3px 8px; }
-    .sorter { border-bottom: 1px solid #fff; }
+    .pager {}
+    .sorter {}
 }
 .toolbar-bottom {}
 /* =============================================================================== */

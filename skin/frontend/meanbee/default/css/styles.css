@@ -828,16 +828,12 @@ p.required {
 /* =============================================================================== */
 /* Sorter ======================================================================== */
 .sorter {
-  background: white url(../images/bkg_toolbar.gif) repeat-x 0 100%;
-  border-top: 1px solid #e2e2e2;
-  font-size: 0.917em;
-  padding: 3px 8px; }
+  font-size: 0.917em; }
   .sorter .view-mode {
     float: left;
     margin: 0; }
   .sorter .sort-by {
-    float: right;
-    padding-right: 36px; }
+    float: right; }
     .sorter .sort-by label {
       vertical-align: middle; }
     .sorter .sort-by select {
@@ -847,12 +843,6 @@ p.required {
 
 /* =============================================================================== */
 /* Toolbar ======================================================================= */
-.toolbar .pager {
-  border-bottom: 1px solid #fff;
-  padding: 3px 8px; }
-.toolbar .sorter {
-  border-bottom: 1px solid #fff; }
-
 /* =============================================================================== */
 /* Data Tables =================================================================== */
 .data-table {
@@ -1321,8 +1311,6 @@ tr.summary-details-excluded {
 
 /* View Type: Grid */
 .products-grid {
-  background: url(../images/bkg_grid.gif) repeat 0 0;
-  border-bottom: 1px solid #d9ddd3;
   position: relative; }
   .products-grid.last {
     border-bottom: 0; }
@@ -1336,12 +1324,9 @@ tr.summary-details-excluded {
     margin: 0 0 10px;
     width: 135px; }
   .products-grid .product-name {
-    color: #203548;
     font-size: 1.083em;
     font-weight: bold;
     margin: 0 0 5px; }
-    .products-grid .product-name a {
-      color: #203548; }
   .products-grid .price-box {
     margin: 5px 0; }
   .products-grid .availability {
@@ -1361,7 +1346,6 @@ tr.summary-details-excluded {
 
 /* View Type: List */
 .products-list li.item {
-  border-bottom: 1px solid #d9ddd3;
   padding: 12px 10px; }
 .products-list li.item.last {
   border-bottom: 0; }
@@ -1373,12 +1357,9 @@ tr.summary-details-excluded {
 .products-list .product-shop {
   margin-left: 150px; }
 .products-list .product-name {
-  color: #203548;
   font-size: 1.083em;
   font-weight: bold;
   margin: 0 0 5px; }
-  .products-list .product-name a {
-    color: #203548; }
 .products-list .price-box {
   float: left;
   margin: 3px 13px 5px 0; }
@@ -1528,7 +1509,6 @@ tr.summary-details-excluded {
 .block-layered-nav {
   border: 0; }
   .block-layered-nav .block-title {
-    background: url(../images/bkg_block-layered-title.gif) no-repeat 0 0;
     border: 0;
     height: 24px;
     overflow: hidden;
@@ -1536,33 +1516,23 @@ tr.summary-details-excluded {
     text-indent: -999em; }
   .block-layered-nav .block-subtitle {
     line-height: 1.35;
-    background: #d5e8ff url(../images/bkg_block-layered1.gif) repeat 0 50%;
-    border: 1px solid #b9ccdd;
-    border-width: 1px 0;
-    color: #1f5070;
-    padding: 3px 9px;
+    padding: 3px 9px 3px 0;
     text-transform: uppercase; }
-  .block-layered-nav .block-content {
-    background: #e7f1f4;
-    border: 1px solid #a0b3c3; }
   .block-layered-nav dt {
-    background: url(../images/bkg_block-layered-dt.gif) no-repeat 9px 11px;
     font-weight: bold;
-    padding: 7px 10px 0 25px;
+    padding: 7px 10px 0 0;
     text-transform: uppercase; }
   .block-layered-nav dd {
-    background: url(../images/bkg_block-layered-dd.gif) repeat-x 0 100%;
-    padding: 0 12px 12px; }
+    padding: 0 0 12px;
+    margin-left: 20px; }
   .block-layered-nav dd.last {
     background: none; }
   .block-layered-nav .currently li {
-    background: white url(../images/bkg_block-layered-li.gif) repeat-x 0 100%;
     line-height: 1.5;
-    padding: 6px 24px 6px 10px;
+    padding: 3px 24px 3px 10px;
     position: relative;
     z-index: 1; }
   .block-layered-nav .currently .label {
-    background: url(../images/bkg_block-layered-label.gif) no-repeat 0 4px;
     display: inline-block;
     font-weight: bold;
     padding-left: 15px;
@@ -1580,8 +1550,6 @@ tr.summary-details-excluded {
   .block-layered-nav .currently .btn-previous {
     right: 17px; }
   .block-layered-nav .actions {
-    border: 1px solid #dee5e8;
-    border-width: 1px 0;
     font-size: 0.917em;
     padding: 4px 5px 4px 9px;
     text-align: right; }

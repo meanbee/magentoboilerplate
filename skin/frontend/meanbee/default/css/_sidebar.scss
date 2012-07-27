@@ -82,21 +82,21 @@
 
 /* Block: Layered Navigation */
 .block-layered-nav { border: 0;
-    .block-title { background: url(../images/bkg_block-layered-title.gif) no-repeat 0 0; border: 0; height: 24px; overflow: hidden; padding: 0; text-indent: -999em; }
-    .block-subtitle { line-height: 1.35; background: #d5e8ff url(../images/bkg_block-layered1.gif) repeat 0 50%; border: 1px solid #b9ccdd; border-width: 1px 0; color: #1f5070; padding: 3px 9px; text-transform: uppercase; }
-    .block-content { background: #e7f1f4; border: 1px solid #a0b3c3; }
-    dt { background: url(../images/bkg_block-layered-dt.gif) no-repeat 9px 11px; font-weight: bold; padding: 7px 10px 0 25px; text-transform: uppercase; }
-    dd { background: url(../images/bkg_block-layered-dd.gif) repeat-x 0 100%; padding: 0 12px 12px; }
+    .block-title { border: 0; height: 24px; overflow: hidden; padding: 0; text-indent: -999em; }
+    .block-subtitle { line-height: 1.35; padding: 3px 9px 3px 0; text-transform: uppercase; }
+    .block-content {}
+    dt { font-weight: bold; padding: 7px 10px 0 0; text-transform: uppercase; }
+    dd { padding: 0 0 12px; margin-left: 20px; }
     dd.last { background: none; }
     .currently {
-        li { background: #fff url(../images/bkg_block-layered-li.gif) repeat-x 0 100%; line-height: 1.5; padding: 6px 24px 6px 10px; position: relative; z-index: 1; }
-        .label { background: url(../images/bkg_block-layered-label.gif) no-repeat 0 4px; display: inline-block; font-weight: bold; padding-left: 15px; text-transform: uppercase; vertical-align: top; }
+        li { line-height: 1.5; padding: 3px 24px 3px 10px; position: relative; z-index: 1; }
+        .label { display: inline-block; font-weight: bold; padding-left: 15px; text-transform: uppercase; vertical-align: top; }
         .value { display: inline-block; vertical-align: top; }
         .btn-previous,
         .btn-remove { margin: 0; position: absolute; right: 4px; top: 9px; }
         .btn-previous { right: 17px; }
     }
-    .actions { border: 1px solid #dee5e8; border-width: 1px 0; font-size: em(11); padding: 4px 5px 4px 9px; text-align: right;
+    .actions { font-size: em(11); padding: 4px 5px 4px 9px; text-align: right;
         a { float: none; }
     }
 }
