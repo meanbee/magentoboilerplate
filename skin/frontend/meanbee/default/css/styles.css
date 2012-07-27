@@ -503,7 +503,7 @@ button.button {
     display: block;
     font: bold 1em/1.583em Arial, Helvetica, sans-serif;
     height: 19px;
-    padding: 0 8px;
+    padding: 3px 10px;
     text-align: center;
     white-space: nowrap; }
   button.button span span {
@@ -717,7 +717,7 @@ input.input-text:focus, select:focus, textarea:focus {
   float: left;
   font-weight: bold;
   font-size: 1.083em;
-  margin: -33px 0 0 -10px;
+  margin: -33px 0 0 -9px;
   padding: 0 8px;
   position: relative; }
 
@@ -3475,6 +3475,19 @@ tr.summary-details-excluded {
     margin-left: 0; }
   .account-create .buttons-set .back-link {
     float: right; }
+
+/* Forgot Password ======================================================================== */
+.customer-account-forgotpassword .col-main .fieldset {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+.customer-account-forgotpassword .col-main .buttons-set button.button {
+  float: left;
+  margin-left: 0; }
+.customer-account-forgotpassword .col-main .buttons-set .back-link {
+  float: right; }
+.customer-account-forgotpassword .col-main .buttons-set p.required {
+  margin-bottom: 30px;
+  text-align: left; }
 
 /* Captcha ================================================================================ */
 .captcha-note {

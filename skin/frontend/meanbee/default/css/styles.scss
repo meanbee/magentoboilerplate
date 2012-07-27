@@ -118,7 +118,7 @@ input.qty { width: 2.5em !important; }
 button.button::-moz-focus-inner { border: 0; padding: 0; } /* FF Fix */
 button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
 button.button { background: transparent; border: 0; cursor: pointer; margin: 0; overflow: visible; padding: 0; width: auto; 
-    span { background: #363636; color: #fff; display: block; font: bold em(12)/em(19) Arial, Helvetica, sans-serif; height: 19px; padding: 0 8px; text-align: center; white-space: nowrap; }
+    span { background: #363636; color: #fff; display: block; font: bold em(12)/em(19) Arial, Helvetica, sans-serif; height: 19px; padding: 3px 10px; text-align: center; white-space: nowrap; }
     span span { border: 0; padding: 0; }
 }
 button.disabled span { background: #bbb !important; border-color: #bbb !important; }
@@ -257,7 +257,7 @@ input.input-text:focus,select:focus,textarea:focus { background-color: #edf7fd; 
 .buttons-set-order .please-wait { padding: 12px 7px 0 0; }
 
 .fieldset { margin: 28px 0; padding: 22px 0 12px; }
-.fieldset .legend { float: left; font-weight: bold; font-size: em(13); margin: -33px 0 0 -10px; padding: 0 8px; position: relative; }
+.fieldset .legend { float: left; font-weight: bold; font-size: em(13); margin: -33px 0 0 -9px; padding: 0 8px; position: relative; }
 
 /* Form Validation */
 .validation-advice { background: url(../images/validation_advice_bg.gif) no-repeat 2px 0; color: #eb340a; clear: both; font-size: em(11); font-weight: bold; line-height: 13px; margin: 3px 0 0; min-height: 13px; padding-left: 17px; }

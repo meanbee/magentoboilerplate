@@ -17,6 +17,18 @@
     }
 }
 
+/* Forgot Password ======================================================================== */
+.customer-account-forgotpassword {
+    .col-main {
+        .fieldset { margin-bottom: 0; padding-bottom: 0; }
+        .buttons-set {
+            button.button { float: left; margin-left: 0;}
+            .back-link { float: right; }
+            p.required { margin-bottom: 30px; text-align: left; }
+        }
+    }
+}
+
 /* Captcha ================================================================================ */
 .captcha-note      { clear: left; padding-top: 5px; }
 .captcha-image     { display: inline; float: left; margin: 0; position: relative; width: 258px; }
