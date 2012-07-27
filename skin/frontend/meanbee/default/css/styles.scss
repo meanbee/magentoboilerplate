@@ -123,8 +123,8 @@ button.button { background: transparent; border: 0; cursor: pointer; margin: 0; 
 }
 button.disabled span { background: #bbb !important; border-color: #bbb !important; }
 
-button.btn-checkout span { border: 0; background: url(../images/btn_checkout.gif) no-repeat 0 0; color: #fff; font: bold em(15)/em(40) Arial, Helvetica, sans-serif; height: 40px; padding: 0 0 0 9px;
-    span { background-position: 100% 0; padding: 0 25px 0 16px; }
+button.btn-checkout span { border: 0; font: bold em(15) Arial, Helvetica, sans-serif; height: 30px; padding: 0 10px;
+    span { line-height: 30px; }
 }
 button.btn-checkout.no-checkout span { background-position: 0 100%; color: #b8baba;
     span { background-position: 100% 100%; }
@@ -632,6 +632,7 @@ tr {
 @import "sidebar";
 @import "product";
 @import "content";
+@import "cart";
 @import "checkout";
 @import "account";
 
