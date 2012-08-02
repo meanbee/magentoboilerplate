@@ -52,8 +52,6 @@
 /* Header ======================================================================== */
 .logo { float: left; }
 .header-container { 
-    border-bottom: 1px solid #415966;
-
     .top-container { clear: both; padding: 5px 10px 0 12px; text-align: right;
         a { color: #ebbc58; font-size: em(11); }
     }
@@ -101,7 +99,7 @@ header {
 /* ============================================================================= */
 
 /* Footer ====================================================================== */
-.footer-container { border-top: 1px solid #363636;
+.footer-container {
     .bottom-container { margin: 0 0 5px; }
 }
 footer { margin: 0 auto; padding: 10px 10px 50px; text-align: center; width: 930px; 

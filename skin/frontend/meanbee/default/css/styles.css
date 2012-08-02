@@ -280,15 +280,13 @@ ul, ol, dt {
 .logo {
   float: left; }
 
-.header-container {
-  border-bottom: 1px solid #415966; }
-  .header-container .top-container {
-    clear: both;
-    padding: 5px 10px 0 12px;
-    text-align: right; }
-    .header-container .top-container a {
-      color: #ebbc58;
-      font-size: 0.917em; }
+.header-container .top-container {
+  clear: both;
+  padding: 5px 10px 0 12px;
+  text-align: right; }
+  .header-container .top-container a {
+    color: #ebbc58;
+    font-size: 0.917em; }
 
 header {
   margin: 0 auto;
@@ -394,10 +392,8 @@ header {
 
 /* ============================================================================= */
 /* Footer ====================================================================== */
-.footer-container {
-  border-top: 1px solid #363636; }
-  .footer-container .bottom-container {
-    margin: 0 0 5px; }
+.footer-container .bottom-container {
+  margin: 0 0 5px; }
 
 footer {
   margin: 0 auto;
@@ -1383,7 +1379,6 @@ tr.summary-details-excluded {
 /* ======================================================================================= */
 /* Sidebar ======================================================================= */
 .block {
-  border: 1px solid #c4c1bc;
   margin: 0 0 15px; }
   .block .block-title strong {
     display: block;
@@ -2077,9 +2072,6 @@ tr.summary-details-excluded {
       display: block !important; }
       .add-to-box .add-to-links li .separator {
         display: none !important; }
-
-.product-view {
-  border: 1px solid #c4c6c8; }
 
 .product-essential {
   background: white url(../images/bkg_product-view.gif) no-repeat 100% 0;
@@ -3904,7 +3896,8 @@ tr.summary-details-excluded {
 .page-print .print-head:after,
 .advanced-search-summary:after,
 .gift-messages-form .item:after,
-.send-friend .form-list li p:after {
+.send-friend .form-list li p:after,
+header:after {
   display: block;
   content: ".";
   clear: both;
@@ -3912,3 +3905,7 @@ tr.summary-details-excluded {
   line-height: 0;
   height: 0;
   overflow: hidden; }
+
+/* =============================================================================== */
+/* Developer border stack ======================================================== */
+/* =============================================================================== */

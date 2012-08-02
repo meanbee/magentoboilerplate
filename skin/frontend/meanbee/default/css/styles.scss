@@ -711,4 +711,34 @@ tr {
 .page-print .print-head:after,
 .advanced-search-summary:after,
 .gift-messages-form .item:after,
-.send-friend .form-list li p:after { display: block; content: "."; clear: both; font-size: 0; line-height: 0; height: 0; overflow: hidden; }
+.send-friend .form-list li p:after,
+header:after { display: block; content: "."; clear: both; font-size: 0; line-height: 0; height: 0; overflow: hidden; }
+
+/* =============================================================================== */
+
+/* Developer border stack ======================================================== */
+// .header-container,
+// .footer-container,
+// .col-main,
+// .col2-set,
+// .col-1,
+// .col-2,
+// .sidebar,
+// .breadcrumbs,
+// nav,
+// footer,
+// header,
+// .main,
+// .block,
+// .product-view,
+// .product-essential,
+// .box-collateral,
+// .toolbar,
+// .form-search,
+// ul.links,
+// .box-account {
+//     -webkit-box-shadow: inset 0 0 1px #000000;
+//     box-shadow: inset 0 0 1px #000000;
+// }
+
+/* =============================================================================== */
