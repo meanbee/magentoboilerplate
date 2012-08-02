@@ -13,7 +13,7 @@ abbr {
 textarea {
     resize: vertical; 
 }
-/*::selection,::-moz-selection {  }*/
+::selection,::-moz-selection { text-shadow: none; }
 
 html { 
     background: white;
