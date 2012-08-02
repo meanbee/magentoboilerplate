@@ -1,0 +1,6 @@
+<?php /** @var $this Meanbee_Boilerplate_Block_Page_Footer_Js */ ?>
+<?php if ($this->hasScripts()): ?>
+    <?php foreach ($this->getScripts() as $script): ?>
+        <script src="<?php echo $script ?>"></script>
+    <?php endforeach ?>
+<?php endif ?>

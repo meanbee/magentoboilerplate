@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Meanbee_Boilerplate>
+            <version>1.0.1</version>
+        </Meanbee_Boilerplate>
+    </modules>
+    <global>
+        <models>
+            <boilerplate>
+                <class>Meanbee_Boilerplate_Model</class>
+            </boilerplate>
+        </models>
+        <blocks>
+            <boilerplate>
+                <class>Meanbee_Boilerplate_Block</class>
+            </boilerplate>
+        </blocks>
+        <helpers>
+            <boilerplate>
+                <class>Meanbee_Boilerplate_Helper</class>
+            </boilerplate>
+        </helpers>
+    </global>
+</config>

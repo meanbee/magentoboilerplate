@@ -1,5 +1,10 @@
 <layout>
     <default>
+        <remove name="right.permanent.callout" />
+        <remove name="left.permanent.callout" />
+        <remove name="paypal.partner.right.logo" />
+        <remove name="right.poll" />
+
         <reference name="head">
         	<action method="removeItem"><type>skin_css</type><name>css/widgets.css</name></action>
         	<action method="removeItem"><type>skin_css</type><name>css/styles.css</name></action>
@@ -9,13 +14,13 @@
             <action method="addItem"><type>skin_css</type><name>css/widgets.css</name></action>
             <action method="addItem"><type>skin_js</type><name>js/html5shiv.js</name></action>
             <action method="addItem"><type>skin_js</type><name>js/selectivizr-min.js</name></action>
-            <action method="addItem"><type>skin_js</type><name>js/prototype.formalize.min.js</name></action>
         </reference>
 
-        <remove name="right.permanent.callout" />
-		<remove name="left.permanent.callout" />
-		<remove name="paypal.partner.right.logo" />
-        <remove name="right.poll" />
+        <reference name="before_body_end">
+            <block type="boilerplate/page_footer_js" name="footer.scripts" template="page/html/footer_scripts.phtml">
+                <action method="addSkinJs"><name>js/prototype.formalize.min.js</name></action>
+            </block>
+        </reference>
     </default>
 
     <catalog_category_view>
