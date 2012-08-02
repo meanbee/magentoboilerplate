@@ -422,7 +422,7 @@ footer {
         text-decoration: none; }
   footer address {
     color: #363636;
-    margin: 0 0 20px; }
+    margin: 20px 0; }
   footer ul {
     display: inline; }
   footer ul.links {

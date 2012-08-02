@@ -27,7 +27,15 @@
 <div class="footer-container">
     <footer role="contentinfo">
         <?php echo $this->getChildHtml() ?>
-        <p class="bugs"><?php echo $this->__('Help Us to Keep Magento Healthy') ?> - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong><?php echo $this->__('Report All Bugs') ?></strong></a> <?php echo $this->__('(ver. %s)', Mage::getVersion()) ?></p>
-        <address><?php echo $this->getCopyright() ?></address>
+        <address itemscope itemtype="http://schema.org/Organization">
+            <span itemprop="name">
+                <?php echo Mage::getStoreConfig('general/store_information/name'); ?>
+            </span>
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <?php echo Mage::getStoreConfig('general/store_information/address'); ?>
+            </span><br/>
+            <span itemprop="telephone"><?php echo Mage::getStoreConfig('general/store_information/phone'); ?></span>
+            <?php echo $this->getCopyright() ?>
+        </address>
     </footer>
 </div>
