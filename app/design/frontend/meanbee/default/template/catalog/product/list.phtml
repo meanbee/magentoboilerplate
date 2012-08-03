@@ -60,7 +60,9 @@
                     <?php if($_product->isSaleable()): ?>
                         <p><button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button></p>
                     <?php else: ?>
-                        <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+                    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <p class="availability out-of-stock"><span><link itemprop="availability" href="http://schema.org/OutOfStock" /><?php echo $this->__('Out of stock') ?></span></p>
+                    </div>
                     <?php endif; ?>
                     <div class="desc std">
                         <span itemprop="description"><?php echo $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description') ?></span>
@@ -102,7 +104,9 @@
                     <?php if($_product->isSaleable()): ?>
                         <button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
                     <?php else: ?>
-                        <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+                    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <p class="availability out-of-stock"><span><link itemprop="availability" href="http://schema.org/OutOfStock" /><?php echo $this->__('Out of stock') ?></span></p>
+                    </div>
                     <?php endif; ?>
                     <ul class="add-to-links">
                         <?php if ($this->helper('wishlist')->isAllow()) : ?>
