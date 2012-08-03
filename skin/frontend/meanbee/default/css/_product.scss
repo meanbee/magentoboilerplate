@@ -362,6 +362,7 @@
     article.review { margin: 15px 0; 
         header a, header span { font-weight: bold; }
         small { font-style: italic; }
+        .review-rating-summary { font-size: 0; }
     }
     .form-add { margin: 15px 0 0;
         h3 { font-size: em(13); font-weight: normal; }

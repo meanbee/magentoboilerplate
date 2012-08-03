@@ -2433,6 +2433,8 @@ tr.summary-details-excluded {
     font-weight: bold; }
   .product-view .box-reviews article.review small {
     font-style: italic; }
+  .product-view .box-reviews article.review .review-rating-summary {
+    font-size: 0; }
 .product-view .box-reviews .form-add {
   margin: 15px 0 0; }
   .product-view .box-reviews .form-add h3 {
