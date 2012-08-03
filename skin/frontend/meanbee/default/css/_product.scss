@@ -359,10 +359,10 @@
 
 /* Block: Reviews */
 .product-view .box-reviews {
-    dl { margin: 15px 0; }
-    dt a, dt span { font-weight: bold; }
-    dd { margin: 0 0 15px; }
-    dd small { font-style: italic; }
+    article.review { margin: 15px 0; 
+        header a, header span { font-weight: bold; }
+        small { font-style: italic; }
+    }
     .form-add { margin: 15px 0 0;
         h3 { font-size: em(13); font-weight: normal; }
         h3 span { font-weight: bold; }

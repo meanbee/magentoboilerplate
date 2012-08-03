@@ -287,19 +287,18 @@ ul, ol, dt {
   .header-container .top-container a {
     color: #ebbc58;
     font-size: 0.917em; }
-
-header {
+.header-container header {
   margin: 0 auto;
   padding: 10px;
   position: relative;
   text-align: right;
   width: 930px;
   z-index: 10; }
-  header .logo {
+  .header-container header .logo {
     float: left;
     margin: 3px 0 10px 12px;
     text-decoration: none !important; }
-    header .logo strong {
+    .header-container header .logo strong {
       font-size: 0;
       height: 0;
       left: -999em;
@@ -309,83 +308,83 @@ header {
       text-indent: -999em;
       top: -999em;
       width: 0; }
-  header h1.logo {
+  .header-container header h1.logo {
     margin: 0; }
-  header .quick-access {
+  .header-container header .quick-access {
     float: right;
     padding: 28px 10px 0 0;
     width: 600px; }
-  header .welcome-msg {
+  .header-container header .welcome-msg {
     color: #fff;
     margin: 0;
     text-align: right; }
-    header .welcome-msg a {
+    .header-container header .welcome-msg a {
       color: #363636; }
-  header .form-search {
+  .header-container header .form-search {
     height: 30px;
     padding: 1px 0 0 16px;
     position: absolute;
     right: 0;
     top: 0;
     width: 315px; }
-    header .form-search label {
+    .header-container header .form-search label {
       float: left;
       height: 21px;
       overflow: hidden;
       text-align: left;
       text-indent: -999em;
       width: 24px; }
-    header .form-search input.input-text {
+    .header-container header .form-search input.input-text {
       border-color: #5c7989;
       float: left;
       margin-right: 4px;
       width: 209px; }
-    header .form-search button.button {
+    .header-container header .form-search button.button {
       float: left; }
-      header .form-search button.button span {
+      .header-container header .form-search button.button span {
         border: 0;
         font: bold 11px/21px Tahoma, Verdana, Arial, sans-serif;
         height: 21px;
         padding: 0 0 0 3px; }
-        header .form-search button.button span span {
+        .header-container header .form-search button.button span span {
           background-position: 100% 0;
           padding: 0 6px 0 3px; }
-    header .form-search .search-autocomplete {
+    .header-container header .form-search .search-autocomplete {
       left: 40px !important;
       top: 22px !important;
       z-index: 999; }
-      header .form-search .search-autocomplete ul {
+      .header-container header .form-search .search-autocomplete ul {
         border: 1px solid #5c7989; }
-      header .form-search .search-autocomplete li {
+      .header-container header .form-search .search-autocomplete li {
         border-bottom: 1px solid #f4eee7;
         cursor: pointer;
         padding: 2px 8px 1px 8px;
         text-align: left; }
-      header .form-search .search-autocomplete li .amount {
+      .header-container header .form-search .search-autocomplete li .amount {
         float: right;
         font-weight: bold; }
-      header .form-search .search-autocomplete li.odd {
+      .header-container header .form-search .search-autocomplete li.odd {
         background-color: #ccc; }
-      header .form-search .search-autocomplete li.selected {
+      .header-container header .form-search .search-autocomplete li.selected {
         background-color: #eee; }
-  header .form-language {
+  .header-container header .form-language {
     clear: both;
     padding: 5px 0 0;
     text-align: right; }
-    header .form-language label {
+    .header-container header .form-language label {
       font-weight: bold;
       padding-right: 5px;
       vertical-align: middle; }
-    header .form-language select {
+    .header-container header .form-language select {
       padding: 0; }
-    header .form-language select.flags option {
+    .header-container header .form-language select.flags option {
       background-position: 4px 50%;
       background-repeat: no-repeat;
       padding-left: 25px; }
-  header .links {
+  .header-container header .links {
     float: right;
     margin: 0 0 6px; }
-    header .links li {
+    .header-container header .links li {
       float: left;
       font-size: 0.917em;
       padding: 0 8px 0 7px; }
@@ -2428,14 +2427,12 @@ tr.summary-details-excluded {
     padding: 0 0 0 23px; }
 
 /* Block: Reviews */
-.product-view .box-reviews dl {
+.product-view .box-reviews article.review {
   margin: 15px 0; }
-.product-view .box-reviews dt a, .product-view .box-reviews dt span {
-  font-weight: bold; }
-.product-view .box-reviews dd {
-  margin: 0 0 15px; }
-.product-view .box-reviews dd small {
-  font-style: italic; }
+  .product-view .box-reviews article.review header a, .product-view .box-reviews article.review header span {
+    font-weight: bold; }
+  .product-view .box-reviews article.review small {
+    font-style: italic; }
 .product-view .box-reviews .form-add {
   margin: 15px 0 0; }
   .product-view .box-reviews .form-add h3 {
