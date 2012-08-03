@@ -41,7 +41,9 @@
                     <col width="1" />
                     <col />
                     <tbody>
+                        <?php $percentage = 0; ?>
                         <?php foreach ($_votes as $_vote): ?>
+                        <?php $percentage += $_vote->getPercent(); ?>
                         <tr>
                             <th><?php echo $this->escapeHtml($_vote->getRatingCode()) ?></th>
                             <td>
@@ -54,6 +56,7 @@
                     </tbody>
                 </table>
                 <?php endif; ?>
+                <div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating"><meta itemprop="worstRating" content = "20"><span itemprop="ratingValue"><?php echo round($percentage / count($_votes), 0); ?></span>/<span itemprop="bestRating">100</span></div>
                 <p itemprop="reviewBody"><?php echo nl2br($this->htmlEscape($_review->getDetail())) ?></p>
                 <small class="date"><?php $date = $this->formatDate($_review->getCreatedAt());
                 echo $this->__('(Posted on <meta itemprop="datePublished" content="%s">%s)', $date, $date, 'long') ?></small>
