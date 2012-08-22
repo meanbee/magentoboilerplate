@@ -26,7 +26,8 @@
 ?>
 <?php $_item = $this->getItem()?>
 <tr>
-    <td><h3 class="product-name"><?php echo $this->htmlEscape($this->getProductName()) ?></h3>
+    <td class="review-table-image"><img src="<?php echo $this->helper('catalog/image')->init($_item->getProduct(), 'thumbnail')->resize(50,50); ?>" width="50" height="50" alt="<?php echo $this->escapeHtml($_item->getProduct()->getName()) ?>" class="thumb" /></td>
+    <td class="review-table-description"><h3 class="product-name"><?php echo $this->htmlEscape($this->getProductName()) ?></h3>
         <?php if ($_options = $this->getOptionList()):?>
         <dl class="item-options">
             <?php foreach ($_options as $_option) : ?>
