@@ -3653,6 +3653,8 @@ tr.summary-details-excluded {
 .my-wishlist .data-table tbody tr {
   background: none;
   border-bottom: 1px solid #eee; }
+.my-wishlist .data-table tr.even:hover {
+  background: none; }
 
 #wishlist-table .add-to-links {
   white-space: nowrap; }
