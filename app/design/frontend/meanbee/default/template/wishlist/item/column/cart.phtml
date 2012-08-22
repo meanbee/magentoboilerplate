@@ -30,7 +30,6 @@ $item = $this->getItem();
 $product = $item->getProduct();
 ?>
 <div class="cart-cell">
-<?php echo $this->getPriceHtml($product);?>
 <div class="add-to-cart-alt">
 <?php if ($item->canHaveQty() && $item->getProduct()->isVisibleInSiteVisibility()): ?>
     <input type="text" class="input-text qty validate-not-negative-number" name="qty[<?php echo $item->getId() ?>]" value="<?php echo $this->getAddToCartQty($item) * 1 ?>" />
