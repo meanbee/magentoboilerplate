@@ -3650,6 +3650,9 @@ tr.summary-details-excluded {
   margin-top: 2em; }
   .my-wishlist .buttons-set button.button {
     float: none; }
+.my-wishlist .data-table tbody tr {
+  background: none;
+  border-bottom: 1px solid #eee; }
 
 #wishlist-table .add-to-links {
   white-space: nowrap; }

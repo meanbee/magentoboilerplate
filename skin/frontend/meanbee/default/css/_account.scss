@@ -203,6 +203,9 @@
     .buttons-set { margin-top: 2em;
         button.button { float: none; }
     }
+    .data-table {
+        tbody tr { background: none; border-bottom: 1px solid #eee; }
+    }
 }
 #wishlist-table .add-to-links { white-space: nowrap; }
 
