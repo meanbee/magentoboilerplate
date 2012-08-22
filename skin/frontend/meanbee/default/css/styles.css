@@ -3677,6 +3677,12 @@ tr.summary-details-excluded {
 /* My Reviews */
 #my-reviews-table td {
   padding: 10px; }
+#my-reviews-table .product-image, #my-reviews-table .product-name {
+  float: left; }
+#my-reviews-table .product-image {
+  margin-right: 5%; }
+#my-reviews-table .product-name {
+  width: 60%; }
 
 .product-review h3 {
   color: #2f2f2f;

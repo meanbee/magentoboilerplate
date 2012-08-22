@@ -220,7 +220,12 @@
 }
 
 /* My Reviews */
-#my-reviews-table td { padding: 10px; }
+#my-reviews-table {
+    td { padding: 10px; }
+    .product-image, .product-name { float: left; }
+    .product-image { margin-right: 5%; }
+    .product-name { width: 60%; }
+}
 
 .product-review {
     h3 { color: #2f2f2f; font-size: em(12); margin: 0 0 3px; }
