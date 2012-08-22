@@ -15,6 +15,11 @@
             <boilerplate>
                 <class>Meanbee_Boilerplate_Block</class>
             </boilerplate>
+            <customer>
+                <rewrite>
+                    <account_navigation>Meanbee_Boilerplate_Block_Customer_Account_Navigation</account_navigation>
+                </rewrite>
+            </customer>
         </blocks>
         <helpers>
             <boilerplate>
