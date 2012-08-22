@@ -2731,8 +2731,10 @@ tr.summary-details-excluded {
   .sp-methods dt {
     font-weight: bold;
     margin: 13px 0 5px; }
-  .sp-methods dd li {
-    margin: 5px 0; }
+  .sp-methods dd {
+    margin-left: 0; }
+    .sp-methods dd li {
+      margin: 5px 0; }
   .sp-methods label {
     color: #666;
     font-weight: bold; }
@@ -2746,7 +2748,7 @@ tr.summary-details-excluded {
   .sp-methods input.cvv {
     width: 3em !important; }
   .sp-methods .form-list {
-    padding-left: 20px; }
+    margin-top: 20px; }
     .sp-methods .form-list li {
       margin: 0 0 8px; }
   .sp-methods .checkmo-list li {
@@ -3013,24 +3015,25 @@ tr.summary-details-excluded {
       display: none; }
     .opc .buttons-set .back-link a {
       background: url(../images/i_arrow-top.gif) no-repeat 0 50%;
-      padding-left: 16px; }
+      padding-left: 0; }
     .opc .buttons-set.disabled button.button {
       display: none; }
     .opc .buttons-set .please-wait {
       height: 21px;
       line-height: 21px; }
+  .opc #checkout-step-payment fieldset {
+    margin: 0; }
   .opc .step-title {
-    padding: 4px 8px 6px;
+    background: #eee;
+    padding: 8px 8px;
     text-align: right; }
     .opc .step-title .number {
-      background: #fff;
-      color: #999;
+      background: #eee;
       float: left;
       font: bold 0.917em/1.167em arial, helvetica, sans-serif;
       margin: 0 5px 0 0;
-      padding: 0 4px; }
+      padding: 2px 4px 0; }
     .opc .step-title h2 {
-      color: #999;
       float: left;
       font: bold 1.083em/1.333em Arial, Helvetica, sans-serif;
       margin: 0; }
@@ -3042,20 +3045,10 @@ tr.summary-details-excluded {
   .opc .allow .step-title {
     cursor: pointer; }
   .opc .active .step-title {
-    border: 1px solid #a3aeb3;
-    border-bottom: 0;
-    background: #363636;
     cursor: default;
     padding-bottom: 5px; }
-    .opc .active .step-title .number {
-      background: #363636;
-      color: #fff; }
-    .opc .active .step-title h2 {
-      color: white; }
   .opc .step {
-    border: 1px solid #bbafa0;
-    border-top: 0;
-    padding: 15px 30px;
+    padding: 15px;
     position: relative; }
     .opc .step .tool-tip {
       right: 30px; }
@@ -3110,15 +3103,21 @@ tr.summary-details-excluded {
   #opc-review .buttons-set .please-wait {
     height: 40px;
     line-height: 40px; }
+#opc-review .order-review {
+  margin: 15px auto;
+  width: 90%; }
 
-#opc-review.active {
-  border: 1px solid #A3AEB3; }
-  #opc-review.active .step-title {
-    border: 0; }
+#opc-review.active .step-title {
+  border: 0; }
 
 .checkout-onepage-index .col-main fieldset {
-  margin: 0;
-  padding: 0; }
+  margin: 0 auto;
+  padding: 0;
+  width: 550px; }
+
+#co-shipping-form .form-list {
+  margin: 0 auto;
+  width: 550px; }
 
 /* Multiple Addresses Checkout */
 .checkout-progress {
