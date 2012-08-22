@@ -202,11 +202,11 @@
 
 .product-view {}
 
-.product-essential { background: #fff url(../images/bkg_product-view.gif) no-repeat 100% 0; padding: 25px;
+.product-essential { background: #fff; padding: 25px 25px 25px 0;
     h2 { font: bold em(13)/1.35 Arial, Helvetica, sans-serif; }
 }
 
-.product-collateral { padding: 25px;
+.product-collateral { padding: 25px 25px 25px 0;
     h2 { font-weight: bold; font-size: em(15); margin: 0 0 15px; padding: 0 0 1px; }
     .box-collateral { margin: 0 0 25px; }
 }
@@ -230,7 +230,7 @@
         h2 { border-bottom: 1px solid #ccc; font-size: em(11); margin: 0 0 8px; text-transform: uppercase; }
         ul { margin-left: -9px }
         li { float: left; margin: 0 0 8px 9px; }
-        li a { border: 2px solid #ddd; float: left; height: 56px; overflow: hidden; width: 56px; }
+        li a { border: 1px solid #ddd; float: left; height: 56px; overflow: hidden; width: 56px; }
     }
 }
 
@@ -249,7 +249,7 @@
     .product-name { margin: 0 0 5px; }
     .product-name h1 { font: bold em(15)/1.35 Arial, Helvetica, sans-serif; margin: 0; }
     .availability { margin: 10px 0; }
-    .short-description { background: url(../images/bkg_divider1.gif) repeat-x 0 0; margin: 10px 0; padding: 10px 0 0; }
+    .short-description { margin: 10px 0; padding: 10px 0 0; }
     .price-box { margin: 10px 0; }
     .add-to-links { font-size: em(12); margin: 0; text-align: right;
         li, li .separator { display: inline; }
@@ -258,7 +258,7 @@
 }
 
 /* Product Options */
-.product-options { background-color: #f6f6f6; border: 1px solid #e4e4e4; margin: 20px 0 0; padding: 10px 15px 20px; position: relative;
+.product-options { margin: 20px 0 0; padding: 10px 0; position: relative;
     dl.last dd.last { border-bottom: 0; margin-bottom: 0; padding-bottom: 5px; }
 
     dt { font-weight: normal; padding: 10px 0 0;
@@ -293,7 +293,7 @@
     p.required { position: absolute; right: 20px; top: 20px; }
 }
 
-.product-options-bottom { background-color: #fffada; border: 1px solid #e4e4e4; border-top: 0; padding: 15px 20px;
+.product-options-bottom { padding: 15px 20px;
     .product-pricing, .tier-prices { border: 0; background: 0; color: #e26703; margin: 0; padding: 0 0 10px; }
     .tier-prices li { background: 0; padding: 2px 0; }
     .tier-prices .price, .tier-prices .benefit { color: #e26703; }
@@ -329,13 +329,13 @@
 .product-view .box-up-sell {
     h2 { border-bottom: 0; padding: 0; margin: 0 0 8px; }
 
-    .products-grid {border: 1px solid #e5dcc3; width: 100%;
-        td { background: #f6f2e7; border-right: 1px solid #e5dcc3; border-bottom: 1px solid #e5dcc3; line-height: 1.6em; padding: 15px 10px 12px; width: 25%; }
+    .products-grid { width: 100%;
+        td { line-height: 1.6em; padding: 15px 10px 12px; width: 25%; }
         td.last { border-right :0; }
         tr.last td { border-bottom: 0; }
-        td img { border: 1px solid #e5dcc3; }
+        td img {}
         .product-image { text-align: center; }
-        td.empty { background: #f1ecdb; border-right: 0; }
+        td.empty {}
         .ratings .rating-box { display: block; float: none; margin: 0 0 3px; }
     }
 }

@@ -13,7 +13,7 @@ abbr {
 textarea {
     resize: vertical; 
 }
-::selection,::-moz-selection { text-shadow: none; }
+::selection,::-moz-selection { background: #000; color: #fff; text-shadow: none; }
 
 html { 
     background: white;
@@ -30,7 +30,7 @@ a { color: blue;
 
 /* Headings ===================================================================== */
 h1,h2,h3,
-h4,h5,h6      { color: #0a263c; font-weight: bold; line-height: 1.35; margin: 0 0 5px; }
+h4,h5,h6      { color: #000; font-weight: bold; line-height: 1.35; margin: 0 0 5px; }
 h1            { font-size: em(32); font-weight:normal; } /* = 32px */
 h2            { font-size: em(26); font-weight:normal; } /* = 26px */
 h3            { font-size: em(22); } /* = 22px */
