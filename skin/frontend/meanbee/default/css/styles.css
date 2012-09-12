@@ -790,7 +790,6 @@ p.required {
 .subtitle,
 .sub-title {
   clear: both;
-  color: #e25203;
   font-size: 1.25em;
   font-weight: bold;
   margin: 0 0 6px;
@@ -3133,8 +3132,8 @@ tr.summary-details-excluded {
     text-align: center;
     width: 19%; }
   .checkout-progress li.active {
-    border-top-color: #e96200;
-    color: #e96200; }
+    border-top-color: #363636;
+    color: #363636; }
 
 .multiple-checkout h2 {
   font-size: 1.083em;
@@ -3142,8 +3141,7 @@ tr.summary-details-excluded {
   margin: 0 0 10px; }
 .multiple-checkout h3, .multiple-checkout h4 {
   font-size: 1.083em;
-  font-weight: bold;
-  color: #E26703; }
+  font-weight: bold; }
 .multiple-checkout h2 a, .multiple-checkout h3 a, .multiple-checkout h4 a {
   font-weight: normal; }
 .multiple-checkout .data-table .item-options {
@@ -3158,17 +3156,6 @@ tr.summary-details-excluded {
   margin-top: -120px;
   right: 20px;
   top: 50%; }
-.multiple-checkout .col2-set, .multiple-checkout .col3-set {
-  background: #fbfaf6 url(../images/bkg_checkout.gif) repeat-x 0 0;
-  border: 1px solid #bbb6a5;
-  margin: 0 0 25px;
-  padding: 20px; }
-.multiple-checkout .col2-set h2.legend {
-  background: #f9f3e3;
-  border-bottom: 1px solid #bbafa0;
-  margin: -20px -20px 15px;
-  padding: 5px 10px;
-  position: relative; }
 .multiple-checkout .col2-set h3.legend {
   color: #0a263c;
   margin: 0 0 10px; }
@@ -3178,8 +3165,6 @@ tr.summary-details-excluded {
   position: relative; }
 .multiple-checkout .box {
   margin: 0 0 15px; }
-  .multiple-checkout .box h2 {
-    color: #e26703; }
 .multiple-checkout .place-order .please-wait {
   float: right;
   padding: 27px 7px 0 0; }
@@ -3208,17 +3193,10 @@ tr.summary-details-excluded {
   padding: 0 45px 0 36px; }
 
 /* Step 1 */
-.multiple-checkout .title-buttons button.button span {
-  background: #618499;
-  border-color: #406a83; }
-
 #multiship-addresses-table td {
   padding: 10px; }
 #multiship-addresses-table tfoot td {
   padding: 5px 10px; }
-#multiship-addresses-table tfoot button.button span {
-  background: #618499;
-  border-color: #406a83; }
 
 /* Step 2 */
 .multiple-checkout .gift-messages {
@@ -3239,19 +3217,14 @@ tr.summary-details-excluded {
   .multiple-checkout .gift-messages-form .item .details .form-list li.wide textarea {
     width: 439px; }
 
-.checkout-multishipping-shipping .box-sp-methods {
-  background: #f9f3e3;
-  border: 1px solid #d9d2be;
-  padding: 13px;
-  position: relative; }
-  .checkout-multishipping-shipping .box-sp-methods .pointer {
-    background: url(../images/bkg_sp-methods.gif) no-repeat 0 0;
-    height: 41px;
-    overflow: hidden;
-    position: absolute;
-    right: -40px;
-    top: -20px;
-    width: 178px; }
+.checkout-multishipping-shipping .box-sp-methods .pointer {
+  background: url(../images/bkg_sp-methods.gif) no-repeat 0 0;
+  height: 41px;
+  overflow: hidden;
+  position: absolute;
+  right: -40px;
+  top: -20px;
+  width: 178px; }
 
 /* Step 3 */
 .checkout-multishipping-billing .multiple-checkout {

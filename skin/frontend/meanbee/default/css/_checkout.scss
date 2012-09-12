@@ -209,12 +209,12 @@
 /* Multiple Addresses Checkout */
 .checkout-progress { margin: 0 0 20px; padding: 0 90px;
     li { border-top: 10px solid #999; color: #abb5ba; float: left; font-weight: bold; margin: 0 3px 0 0; padding: 2px 0 0; text-align: center; width: 19%; }
-    li.active { border-top-color: #e96200; color: #e96200; }
+    li.active { border-top-color: rgb(54, 54, 54); color: rgb(54, 54, 54); }
 }
 
 .multiple-checkout {
     h2 { font-size: em(13); font-weight: bold; margin: 0 0 10px; }
-    h3, h4 { font-size: em(13); font-weight: bold; color: #E26703; }
+    h3, h4 { font-size: em(13); font-weight: bold; }
     h2 a, h3 a, h4 a { font-weight: normal; }
     .data-table {
         .item-options { margin: 5px 0 0; }
@@ -225,15 +225,11 @@
 
     .tool-tip { margin-top: -120px; right: 20px; top: 50%; }
 
-    .col2-set, .col3-set { background: #fbfaf6 url(../images/bkg_checkout.gif) repeat-x 0 0; border: 1px solid #bbb6a5; margin: 0 0 25px; padding: 20px; }
     .col2-set {
-        h2.legend { background: #f9f3e3; border-bottom: 1px solid #bbafa0; margin: -20px -20px 15px; padding: 5px 10px; position: relative; }
         h3.legend { color: #0a263c; margin: 0 0 10px; }
         .divider { margin: 0 -20px; padding: 25px 0; position: relative; }
     }
-    .box { margin: 0 0 15px;
-        h2 { color: #e26703; }
-    }
+    .box { margin: 0 0 15px; }
 
     .place-order {
         .please-wait { float: right; padding: 27px 7px 0 0; }
@@ -250,11 +246,11 @@
 }
 
 /* Step 1 */
-.multiple-checkout .title-buttons button.button span { background: #618499; border-color: #406a83; }
+.multiple-checkout .title-buttons button.button span {}
 #multiship-addresses-table {
     td { padding: 10px; }
     tfoot td { padding: 5px 10px; }
-    tfoot button.button span { background: #618499; border-color: #406a83; }
+    tfoot button.button span {}
 }
 
 /* Step 2 */
@@ -271,7 +267,7 @@
         }
     }
 }
-.checkout-multishipping-shipping .box-sp-methods { background: #f9f3e3; border: 1px solid #d9d2be; padding: 13px; position: relative;
+.checkout-multishipping-shipping .box-sp-methods {
     .pointer { background: url(../images/bkg_sp-methods.gif) no-repeat 0 0; height: 41px; overflow: hidden; position: absolute; right: -40px; top: -20px; width: 178px; }
 }
 
