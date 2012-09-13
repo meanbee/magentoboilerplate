@@ -545,9 +545,9 @@ input.input-text:focus, select:focus, textarea:focus {
     position: relative;
     z-index: 0; }
     .form-list li label.required em {
+      color: #eb340a;
       float: right;
       font-style: normal;
-      color: #eb340a;
       position: absolute;
       right: -8px;
       top: 0; }
