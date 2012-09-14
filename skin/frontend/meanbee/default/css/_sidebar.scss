@@ -3,7 +3,8 @@
     .block-title {
         strong { 
             display: block; 
-            font: bold em(12)/em(16) Arial, Helvetica, sans-serif; 
+            font-size: em(12); 
+            font-weight: bold;
             min-height: 16px; 
             padding: 1px 0 1px; 
             text-transform: uppercase;
@@ -122,7 +123,9 @@
 
         strong { 
             color: #fff; 
-            font: bold em(13)/em(21) Arial, Helvetica, sans-serif; 
+            font-size: em(13);
+            font-weight: bold;
+            line-height: em(21);
             padding: 0 0 0 21px; 
             text-transform: none;
         }

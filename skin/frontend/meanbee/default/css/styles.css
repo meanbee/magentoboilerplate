@@ -1382,7 +1382,8 @@ tr.summary-details-excluded {
   margin: 0 0 15px; }
   .block .block-title strong {
     display: block;
-    font: bold 1em/1.333em Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
     min-height: 16px;
     padding: 1px 0 1px;
     text-transform: uppercase; }
@@ -1489,7 +1490,9 @@ tr.summary-details-excluded {
     padding: 0; }
     .block-currency .block-title strong {
       color: #fff;
-      font: bold 1.083em/1.75em Arial, Helvetica, sans-serif;
+      font-size: 1.083em;
+      font-weight: bold;
+      line-height: 1.75em;
       padding: 0 0 0 21px;
       text-transform: none; }
   .block-currency .block-content {
@@ -2077,7 +2080,9 @@ tr.summary-details-excluded {
   background: #fff;
   padding: 25px 25px 25px 0; }
   .product-essential h2 {
-    font: bold 1.083em/1.35 Arial, Helvetica, sans-serif; }
+    font-weight: bold;
+    font-size: 1.083em;
+    line-height: 1.35; }
 
 .product-collateral {
   padding: 25px 25px 25px 0; }
@@ -2201,7 +2206,8 @@ tr.summary-details-excluded {
 .product-view .product-shop .product-name {
   margin: 0 0 5px; }
 .product-view .product-shop .product-name h1 {
-  font: bold 1.25em/1.35 Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
   margin: 0; }
 .product-view .product-shop .availability {
   margin: 10px 0; }
@@ -2672,7 +2678,9 @@ tr.summary-details-excluded {
   padding: 12px 15px; }
 
 .cart .discount h2, .cart .shipping h2 {
-  font: bold 13px/16px Arial, Helvetica, sans-serif;
+  font-size: 1.083em;
+  font-weight: bold;
+  line-height: 1.333em;
   padding: 0;
   text-transform: uppercase; }
 
@@ -3027,12 +3035,16 @@ tr.summary-details-excluded {
     .opc .step-title .number {
       background: #eee;
       float: left;
-      font: bold 0.917em/1.167em arial, helvetica, sans-serif;
+      font-size: 0.917em;
+      font-weight: bold;
+      line-height: 1.167em;
       margin: 0 5px 0 0;
       padding: 2px 4px 0; }
     .opc .step-title h2 {
       float: left;
-      font: bold 1.083em/1.333em Arial, Helvetica, sans-serif;
+      font-size: 1.083em;
+      font-weight: bold;
+      line-height: 1.333em;
       margin: 0; }
     .opc .step-title a {
       display: none;
@@ -3366,8 +3378,10 @@ tr.summary-details-excluded {
     padding: 10px; }
     .remember-me-popup .remember-me-popup-body a {
       display: inline-block;
-      font: bold 1em/1.583em Arial, Helvetica, sans-serif;
+      font-size: 1em;
+      font-weight: bold;
       height: 19px;
+      line-height: 1.583em;
       padding: 0 8px;
       text-align: center;
       text-decoration: none;

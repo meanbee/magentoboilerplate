@@ -145,8 +145,10 @@
     .remember-me-popup-body { padding: 10px;
         a { 
             display: inline-block; 
-            font: bold em(12)/em(19) Arial, Helvetica, sans-serif; 
+            font-size: em(12);
+            font-weight: bold; 
             height: 19px; 
+            line-height: em(19);
             padding: 0 8px; 
             text-align: center; 
             text-decoration: none; 

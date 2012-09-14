@@ -342,13 +342,17 @@
         .number { 
             background: #eee; 
             float: left; 
-            font: bold em(11)/em(14) arial, helvetica, sans-serif; 
+            font-size: em(11);
+            font-weight: bold;
+            line-height: em(14);
             margin: 0 5px 0 0; 
             padding: 2px 4px 0; 
         }
         h2 { 
             float: left; 
-            font: bold em(13)/em(16) Arial, Helvetica, sans-serif; 
+            font-size: em(13);
+            font-weight: bold;
+            line-height: em(16);
             margin: 0; 
         }
         a { 

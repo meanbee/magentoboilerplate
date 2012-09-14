@@ -403,7 +403,10 @@
     background: #fff; 
     padding: 25px 25px 25px 0;
 
-    h2 { font: bold em(13)/1.35 Arial, Helvetica, sans-serif; }
+    h2 { 
+        font-weight: bold; 
+        font-size: em(13);
+        line-height: 1.35; }
 }
 
 .product-collateral { 
@@ -543,7 +546,8 @@
 .product-view .product-shop {
     .product-name { margin: 0 0 5px; }
     .product-name h1 { 
-        font: bold em(15)/1.35 Arial, Helvetica, sans-serif; 
+        font-size: em(15);
+        font-weight: bold;
         margin: 0; 
     }
     .availability { margin: 10px 0; }

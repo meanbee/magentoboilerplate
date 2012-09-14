@@ -83,7 +83,9 @@
     padding: 12px 15px; 
 }
 .cart .discount h2, .cart .shipping h2 { 
-    font: bold 13px/16px Arial, Helvetica, sans-serif; 
+    font-size: em(13);
+    font-weight: bold;
+    line-height: em(16);
     padding: 0; 
     text-transform: uppercase; 
 }
