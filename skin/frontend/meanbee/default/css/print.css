@@ -1,37 +1,30 @@
 body {
    background: white;
    font-size: 12pt;
-   }
+}
+
 #nav {
    display: none;
-   }
+}
+
 .main-container {
-   width: auto;
-   margin: 0 5%;
-   padding: 0;
-   border: 0;
-   float: none !important;
-   color: black;
    background: transparent none;
-   }
-.main-container {
-   margin-left: 10%;
-   padding-top: 1em;
+   border: 0;
    border-top: 1px solid #930;
-   }
+   color: black;
+   float: none !important;
+   margin: 0 5% 0 10%;
+   padding: 1em 0 0 0;
+   width: auto;
+}
+
 .logo {
    vertical-align: bottom;
-   }
+}
+
 a:link, a:visited {
    color: #013987;
    background: transparent;
    font-weight: bold;
    text-decoration: underline;
-   }
-.main-container a:link:after, .main-container a:visited:after {
-   content: " (" attr(href) ") ";
-   font-size: 90%;
-   }
-.main-container a[href^="/"]:after {
-   content: " (http://www.alistapart.com" attr(href) ") ";
-   }
+}
