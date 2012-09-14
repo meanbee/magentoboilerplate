@@ -98,7 +98,9 @@
 }
 }
 
-.product-view .product-shop .availability { font-size: em(11);
+.product-view .product-shop .availability { 
+    font-size: em(11);
+
     span { font-weight: normal; }
 }
 
@@ -775,7 +777,6 @@
     }
     .form-add {
         label { 
-            color: #0a263c; 
             display: block; 
             font-size: em(13); 
             font-weight: bold; 
@@ -784,7 +785,6 @@
         .input-box { 
             float: left; 
             margin: 0 5px 0 0; 
-            padding: 0 0 0 23px; 
             width: 305px; 
         }
         input.input-text { width: 299px; }

@@ -2395,7 +2395,6 @@ tr.summary-details-excluded {
       background: none;
       padding-right: 0; }
   .product-view .box-tags .form-add label {
-    color: #0a263c;
     display: block;
     font-size: 1.083em;
     font-weight: bold;
@@ -2403,7 +2402,6 @@ tr.summary-details-excluded {
   .product-view .box-tags .form-add .input-box {
     float: left;
     margin: 0 5px 0 0;
-    padding: 0 0 0 23px;
     width: 305px; }
   .product-view .box-tags .form-add input.input-text {
     width: 299px; }
