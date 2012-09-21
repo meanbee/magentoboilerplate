@@ -25,3 +25,8 @@ The Magento Boilerplate is a base template for use in theme development. It was 
 #### Scripts included
   - HTML5 shiv
   - Selectivzr
+  
+#### Design tweaks
+  - Added product image to reviews in account area
+  - Added product image to review step in checkout
+  
