@@ -38,9 +38,10 @@
             <col width="1" />
             <tbody>
                 <?php foreach ($this->getCollection() as $_review): ?>
+                <?php $sku = $_review->getEntityPkValue(); $_product = Mage::getModel('catalog/product')->load($sku); ?>
                 <tr>
                     <td><span class="nobr"><?php echo $this->dateFormat($_review->getReviewCreatedAt()); ?></span></td>
-                    <td><a href="<?php echo $this->getProductLink() ?>id/<?php echo $_review->getEntityPkValue() ?>" title="<?php echo $this->htmlEscape($_review->getName()) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_review, 'thumbnail')->resize(50, 50); ?>" width="50" height="50" alt="<?php echo $this->htmlEscape($_review->getName()) ?>" /></a><h2 class="product-name"><a href="<?php echo $this->getProductLink() ?>id/<?php echo $_review->getEntityPkValue() ?>"><?php echo $this->htmlEscape($_review->getName()) ?></a></h2></td>
+                    <td><a href="<?php echo $this->getProductLink() ?>id/<?php echo $_review->getEntityPkValue() ?>" title="<?php echo $this->htmlEscape($_review->getName()) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail')->resize(50, 50); ?>" width="50" height="50" alt="<?php echo $this->htmlEscape($_review->getName()) ?>" /></a><h2 class="product-name"><a href="<?php echo $this->getProductLink() ?>id/<?php echo $_review->getEntityPkValue() ?>"><?php echo $this->htmlEscape($_review->getName()) ?></a></h2></td>
                     <td>
                     <?php if($_review->getSum()): ?>
                         <div class="rating-box">
